@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/donjoe/ros2_ws/install/more_interfaces/include/**",
+        "/home/donjoe/ros2_ws/install/custom_msg/include/**",
+        "/home/donjoe/ros2_ws/install/custom_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

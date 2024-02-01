@@ -1,0 +1,10 @@
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/uninstall.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/controller_uninstall.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/controller.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/test.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/edit_cache.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/rebuild_cache.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/list_install_components.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/install.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/install/local.dir
+/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/install/strip.dir

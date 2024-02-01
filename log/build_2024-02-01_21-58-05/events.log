@@ -1,0 +1,257 @@
+[0.000000] (-) TimerEvent: {}
+[0.000150] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000176] (controller) JobStarted: {'identifier': 'controller'}
+[0.047437] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.048859] (controller) Command: {'cmd': ['/usr/bin/cmake', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller', '-DCMAKE_INSTALL_PREFIX=/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/ros2_ws/install/more_interfaces/lib:/home/donjoe/ros2_ws/install/custom_msg/lib:/home/donjoe/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/3435_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin:/snap/bin'), ('WT_SESSION', '1ef76289-aeb9-407f-a6dc-74088ef717c1'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/donjoe/ros2_ws/install/more_interfaces:/home/donjoe/ros2_ws/install/faker-test:/home/donjoe/ros2_ws/install/custom_msg:/home/donjoe/ros2_ws/install/custom_interfaces:/home/donjoe/ros2_ws/install/cpp_srvcli:/home/donjoe/ros2_ws/install/cpp_pubsub:/home/donjoe/ros2_ws/install/cpp_parameters:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/ros2_ws/install/more_interfaces/local/lib/python3.10/dist-packages:/home/donjoe/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/home/donjoe/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/donjoe/ros2_ws/install/more_interfaces:/home/donjoe/ros2_ws/install/faker-test:/home/donjoe/ros2_ws/install/custom_msg:/home/donjoe/ros2_ws/install/custom_interfaces:/home/donjoe/ros2_ws/install/cpp_srvcli:/home/donjoe/ros2_ws/install/cpp_pubsub:/home/donjoe/ros2_ws/install/cpp_parameters:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.060753] (controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098208] (-) TimerEvent: {}
+[0.171467] (controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.198345] (-) TimerEvent: {}
+[0.298709] (-) TimerEvent: {}
+[0.311505] (controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.313119] (controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.318383] (controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.329088] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.342934] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.385412] (controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.386446] (controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.398943] (-) TimerEvent: {}
+[0.499354] (-) TimerEvent: {}
+[0.599813] (-) TimerEvent: {}
+[0.700202] (-) TimerEvent: {}
+[0.800747] (-) TimerEvent: {}
+[0.901439] (-) TimerEvent: {}
+[1.001866] (-) TimerEvent: {}
+[1.102480] (-) TimerEvent: {}
+[1.203170] (-) TimerEvent: {}
+[1.303760] (-) TimerEvent: {}
+[1.404232] (-) TimerEvent: {}
+[1.504696] (-) TimerEvent: {}
+[1.605122] (-) TimerEvent: {}
+[1.705616] (-) TimerEvent: {}
+[1.806095] (-) TimerEvent: {}
+[1.906534] (-) TimerEvent: {}
+[2.006977] (-) TimerEvent: {}
+[2.107418] (-) TimerEvent: {}
+[2.207861] (-) TimerEvent: {}
+[2.308299] (-) TimerEvent: {}
+[2.408785] (-) TimerEvent: {}
+[2.509383] (-) TimerEvent: {}
+[2.609892] (-) TimerEvent: {}
+[2.710394] (-) TimerEvent: {}
+[2.810817] (-) TimerEvent: {}
+[2.911216] (-) TimerEvent: {}
+[3.011597] (-) TimerEvent: {}
+[3.112057] (-) TimerEvent: {}
+[3.212449] (-) TimerEvent: {}
+[3.312949] (-) TimerEvent: {}
+[3.413468] (-) TimerEvent: {}
+[3.513944] (-) TimerEvent: {}
+[3.614441] (-) TimerEvent: {}
+[3.715092] (-) TimerEvent: {}
+[3.815619] (-) TimerEvent: {}
+[3.916280] (-) TimerEvent: {}
+[4.016858] (-) TimerEvent: {}
+[4.117287] (-) TimerEvent: {}
+[4.217722] (-) TimerEvent: {}
+[4.318172] (-) TimerEvent: {}
+[4.418677] (-) TimerEvent: {}
+[4.519175] (-) TimerEvent: {}
+[4.619629] (-) TimerEvent: {}
+[4.720123] (-) TimerEvent: {}
+[4.820686] (-) TimerEvent: {}
+[4.921419] (-) TimerEvent: {}
+[5.022065] (-) TimerEvent: {}
+[5.122547] (-) TimerEvent: {}
+[5.223147] (-) TimerEvent: {}
+[5.233524] (controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.323322] (-) TimerEvent: {}
+[5.351703] (controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.423540] (-) TimerEvent: {}
+[5.457776] (controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.523767] (-) TimerEvent: {}
+[5.557173] (controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.557329] (controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.557373] (controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.561891] (controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.565106] (controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.565256] (controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.568745] (controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.576425] (controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.624002] (-) TimerEvent: {}
+[5.633185] (controller) StdoutLine: {'line': b'-- Generating done\n'}
+[5.641349] (controller) StdoutLine: {'line': b'-- Build files have been written to: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller\n'}
+[5.647787] (controller) CommandEnded: {'returncode': 0}
+[5.649622] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[5.649874] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/ros2_ws/install/more_interfaces/lib:/home/donjoe/ros2_ws/install/custom_msg/lib:/home/donjoe/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/3435_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin:/snap/bin'), ('WT_SESSION', '1ef76289-aeb9-407f-a6dc-74088ef717c1'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/donjoe/ros2_ws/install/more_interfaces:/home/donjoe/ros2_ws/install/faker-test:/home/donjoe/ros2_ws/install/custom_msg:/home/donjoe/ros2_ws/install/custom_interfaces:/home/donjoe/ros2_ws/install/cpp_srvcli:/home/donjoe/ros2_ws/install/cpp_pubsub:/home/donjoe/ros2_ws/install/cpp_parameters:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/ros2_ws/install/more_interfaces/local/lib/python3.10/dist-packages:/home/donjoe/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/home/donjoe/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/donjoe/ros2_ws/install/more_interfaces:/home/donjoe/ros2_ws/install/faker-test:/home/donjoe/ros2_ws/install/custom_msg:/home/donjoe/ros2_ws/install/custom_interfaces:/home/donjoe/ros2_ws/install/cpp_srvcli:/home/donjoe/ros2_ws/install/cpp_pubsub:/home/donjoe/ros2_ws/install/cpp_parameters:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[5.686298] (controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/publisher.cpp.o\x1b[0m\n'}
+[5.724154] (-) TimerEvent: {}
+[5.824650] (-) TimerEvent: {}
+[5.925091] (-) TimerEvent: {}
+[6.025510] (-) TimerEvent: {}
+[6.125887] (-) TimerEvent: {}
+[6.226336] (-) TimerEvent: {}
+[6.326771] (-) TimerEvent: {}
+[6.427226] (-) TimerEvent: {}
+[6.527619] (-) TimerEvent: {}
+[6.628003] (-) TimerEvent: {}
+[6.728468] (-) TimerEvent: {}
+[6.828954] (-) TimerEvent: {}
+[6.929415] (-) TimerEvent: {}
+[7.029872] (-) TimerEvent: {}
+[7.130304] (-) TimerEvent: {}
+[7.230781] (-) TimerEvent: {}
+[7.331179] (-) TimerEvent: {}
+[7.431633] (-) TimerEvent: {}
+[7.532061] (-) TimerEvent: {}
+[7.632518] (-) TimerEvent: {}
+[7.732881] (-) TimerEvent: {}
+[7.833305] (-) TimerEvent: {}
+[7.933808] (-) TimerEvent: {}
+[8.034297] (-) TimerEvent: {}
+[8.134735] (-) TimerEvent: {}
+[8.235062] (-) TimerEvent: {}
+[8.335459] (-) TimerEvent: {}
+[8.435957] (-) TimerEvent: {}
+[8.536447] (-) TimerEvent: {}
+[8.636919] (-) TimerEvent: {}
+[8.737277] (-) TimerEvent: {}
+[8.837738] (-) TimerEvent: {}
+[8.938111] (-) TimerEvent: {}
+[9.038552] (-) TimerEvent: {}
+[9.138999] (-) TimerEvent: {}
+[9.239392] (-) TimerEvent: {}
+[9.339853] (-) TimerEvent: {}
+[9.440252] (-) TimerEvent: {}
+[9.540624] (-) TimerEvent: {}
+[9.641005] (-) TimerEvent: {}
+[9.741354] (-) TimerEvent: {}
+[9.841826] (-) TimerEvent: {}
+[9.942225] (-) TimerEvent: {}
+[10.042580] (-) TimerEvent: {}
+[10.143023] (-) TimerEvent: {}
+[10.243413] (-) TimerEvent: {}
+[10.343842] (-) TimerEvent: {}
+[10.444293] (-) TimerEvent: {}
+[10.544828] (-) TimerEvent: {}
+[10.647376] (-) TimerEvent: {}
+[10.748592] (-) TimerEvent: {}
+[10.849040] (-) TimerEvent: {}
+[10.949557] (-) TimerEvent: {}
+[11.050022] (-) TimerEvent: {}
+[11.150403] (-) TimerEvent: {}
+[11.250877] (-) TimerEvent: {}
+[11.351264] (-) TimerEvent: {}
+[11.451665] (-) TimerEvent: {}
+[11.551999] (-) TimerEvent: {}
+[11.652347] (-) TimerEvent: {}
+[11.752780] (-) TimerEvent: {}
+[11.853238] (-) TimerEvent: {}
+[11.953696] (-) TimerEvent: {}
+[12.054174] (-) TimerEvent: {}
+[12.154576] (-) TimerEvent: {}
+[12.255049] (-) TimerEvent: {}
+[12.355505] (-) TimerEvent: {}
+[12.456022] (-) TimerEvent: {}
+[12.556554] (-) TimerEvent: {}
+[12.657028] (-) TimerEvent: {}
+[12.757398] (-) TimerEvent: {}
+[12.857805] (-) TimerEvent: {}
+[12.958279] (-) TimerEvent: {}
+[13.058648] (-) TimerEvent: {}
+[13.159081] (-) TimerEvent: {}
+[13.259603] (-) TimerEvent: {}
+[13.360140] (-) TimerEvent: {}
+[13.460559] (-) TimerEvent: {}
+[13.561053] (-) TimerEvent: {}
+[13.661509] (-) TimerEvent: {}
+[13.761882] (-) TimerEvent: {}
+[13.862249] (-) TimerEvent: {}
+[13.962763] (-) TimerEvent: {}
+[14.063206] (-) TimerEvent: {}
+[14.163563] (-) TimerEvent: {}
+[14.263947] (-) TimerEvent: {}
+[14.364305] (-) TimerEvent: {}
+[14.464658] (-) TimerEvent: {}
+[14.565173] (-) TimerEvent: {}
+[14.665726] (-) TimerEvent: {}
+[14.766199] (-) TimerEvent: {}
+[14.866691] (-) TimerEvent: {}
+[14.967172] (-) TimerEvent: {}
+[15.067624] (-) TimerEvent: {}
+[15.168082] (-) TimerEvent: {}
+[15.268536] (-) TimerEvent: {}
+[15.369109] (-) TimerEvent: {}
+[15.469545] (-) TimerEvent: {}
+[15.574385] (-) TimerEvent: {}
+[15.676367] (-) TimerEvent: {}
+[15.777132] (-) TimerEvent: {}
+[15.877615] (-) TimerEvent: {}
+[15.978065] (-) TimerEvent: {}
+[16.078519] (-) TimerEvent: {}
+[16.179078] (-) TimerEvent: {}
+[16.279500] (-) TimerEvent: {}
+[16.379977] (-) TimerEvent: {}
+[16.480487] (-) TimerEvent: {}
+[16.581055] (-) TimerEvent: {}
+[16.681470] (-) TimerEvent: {}
+[16.781840] (-) TimerEvent: {}
+[16.882249] (-) TimerEvent: {}
+[16.982582] (-) TimerEvent: {}
+[17.082973] (-) TimerEvent: {}
+[17.183410] (-) TimerEvent: {}
+[17.283759] (-) TimerEvent: {}
+[17.384108] (-) TimerEvent: {}
+[17.484438] (-) TimerEvent: {}
+[17.584813] (-) TimerEvent: {}
+[17.685228] (-) TimerEvent: {}
+[17.785564] (-) TimerEvent: {}
+[17.885909] (-) TimerEvent: {}
+[17.986404] (-) TimerEvent: {}
+[18.086850] (-) TimerEvent: {}
+[18.187237] (-) TimerEvent: {}
+[18.287628] (-) TimerEvent: {}
+[18.388449] (-) TimerEvent: {}
+[18.488942] (-) TimerEvent: {}
+[18.589343] (-) TimerEvent: {}
+[18.689853] (-) TimerEvent: {}
+[18.790530] (-) TimerEvent: {}
+[18.891211] (-) TimerEvent: {}
+[18.992749] (-) TimerEvent: {}
+[19.093216] (-) TimerEvent: {}
+[19.193656] (-) TimerEvent: {}
+[19.294158] (-) TimerEvent: {}
+[19.405614] (-) TimerEvent: {}
+[19.506112] (-) TimerEvent: {}
+[19.509222] (controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable controller\x1b[0m\n'}
+[19.606293] (-) TimerEvent: {}
+[19.706947] (-) TimerEvent: {}
+[19.807335] (-) TimerEvent: {}
+[19.907747] (-) TimerEvent: {}
+[19.966969] (controller) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[19.988281] (controller) CommandEnded: {'returncode': 0}
+[20.007913] (-) TimerEvent: {}
+[20.013134] (controller) JobProgress: {'identifier': 'controller', 'progress': 'install'}
+[20.023753] (controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/ros2_ws/install/more_interfaces/lib:/home/donjoe/ros2_ws/install/custom_msg/lib:/home/donjoe/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/3435_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin:/snap/bin'), ('WT_SESSION', '1ef76289-aeb9-407f-a6dc-74088ef717c1'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/donjoe/ros2_ws/install/more_interfaces:/home/donjoe/ros2_ws/install/faker-test:/home/donjoe/ros2_ws/install/custom_msg:/home/donjoe/ros2_ws/install/custom_interfaces:/home/donjoe/ros2_ws/install/cpp_srvcli:/home/donjoe/ros2_ws/install/cpp_pubsub:/home/donjoe/ros2_ws/install/cpp_parameters:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/ros2_ws/install/more_interfaces/local/lib/python3.10/dist-packages:/home/donjoe/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/home/donjoe/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/donjoe/ros2_ws/install/more_interfaces:/home/donjoe/ros2_ws/install/faker-test:/home/donjoe/ros2_ws/install/custom_msg:/home/donjoe/ros2_ws/install/custom_interfaces:/home/donjoe/ros2_ws/install/cpp_srvcli:/home/donjoe/ros2_ws/install/cpp_pubsub:/home/donjoe/ros2_ws/install/cpp_parameters:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[20.032544] (controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.035063] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/controller\n'}
+[20.040294] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/controller" to ""\n'}
+[20.042161] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/package_run_dependencies/controller\n'}
+[20.042471] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/parent_prefix_path/controller\n'}
+[20.042642] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.sh\n'}
+[20.043326] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.dsv\n'}
+[20.043522] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.sh\n'}
+[20.043725] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.dsv\n'}
+[20.043930] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.bash\n'}
+[20.044085] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.sh\n'}
+[20.044625] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.zsh\n'}
+[20.045342] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.dsv\n'}
+[20.045514] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.dsv\n'}
+[20.046616] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/packages/controller\n'}
+[20.046969] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig.cmake\n'}
+[20.047132] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig-version.cmake\n'}
+[20.047326] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.xml\n'}
+[20.052383] (controller) CommandEnded: {'returncode': 0}
+[20.108007] (-) TimerEvent: {}
+[20.200153] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[20.202139] (-) EventReactorShutdown: {}

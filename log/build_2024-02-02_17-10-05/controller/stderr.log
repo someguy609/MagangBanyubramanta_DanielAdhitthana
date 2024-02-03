@@ -1,0 +1,51 @@
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:52:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::declare_parameters(std::vector<rclcpp::Parameter>&)[m[K’
+   52 |         [01;31m[Kthis->declare_parameters(def_params)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:478:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> std::vector<BufferT> rclcpp::Node::declare_parameters(const string&, const std::map<std::__cxx11::basic_string<char>, ParameterT>&, bool)[m[K’
+  478 |   [01;36m[Kdeclare_parameters[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:478:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:52:33:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+   52 |         [01;36m[Kthis->declare_parameters(def_params)[m[K;
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> std::vector<BufferT> rclcpp::Node::declare_parameters(const string&, const std::map<std::__cxx11::basic_string<char>, std::pair<ParameterT, rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> > > >&, bool)[m[K’
+  492 |   [01;36m[Kdeclare_parameters[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:52:33:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+   52 |         [01;36m[Kthis->declare_parameters(def_params)[m[K;
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::topic_callback(const Joy&) const[m[K’:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:61:47:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   61 |         int linear_scale = [01;31m[Kthis->get_parameter("linear_scale")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+      |                                               [01;31m[K|[m[K
+      |                                               [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:62:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   62 |         int angular_scale = [01;31m[Kthis->get_parameter("angular_scale")[m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+      |                                                [01;31m[K|[m[K
+      |                                                [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:29:[m[K [01;31m[Kerror: [m[K‘[01m[KParamater[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KParameter[m[K’?
+   75 |         std::vector<rclcpp::[01;31m[KParamater[m[K> new_params{
+      |                             [01;31m[K^~~~~~~~~[m[K
+      |                             [32m[KParameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   75 |         std::vector<rclcpp::Paramater[01;31m[K>[m[K new_params{
+      |                                      [01;31m[K^[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:40:[m[K [01;31m[Kerror: [m[Kscalar object ‘[01m[Knew_params[m[K’ requires one element in initializer
+   75 |         std::vector<rclcpp::Paramater> [01;31m[Knew_params[m[K{
+      |                                        [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ctrl.dir/build.make:76: CMakeFiles/ctrl.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/ctrl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

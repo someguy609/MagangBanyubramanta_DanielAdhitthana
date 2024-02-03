@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:17 (ament_target_packages):
-  Unknown CMake command "ament_target_packages".
-
-[0m

@@ -7,19 +7,31 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-add_executable(
-  controller
-  src/publisher.cpp
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Motion.msg"
 )
-ament_target_dependencies(controller rclcpp sensor_msgs)
+
+ament_export_dependencies(rosidl_default_runtime)
+
+add_executable(
+  node
+  src/controller.cpp
+)
+ament_target_dependencies(node rclcpp sensor_msgs)
 
 install(TARGETS
-  controller
+  node
   DESTINATION lib/${PROJECT_NAME}
 )
+
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} rosidl_typesupport_cpp)
+
+target_link_libraries(node "${cpp_typesupport_target}")
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

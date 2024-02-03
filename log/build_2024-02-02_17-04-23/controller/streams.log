@@ -1,0 +1,63 @@
+[0.076s] Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_generator_c[0m
+[0.138s] [  3%] Built target controller__cpp
+[0.146s] [ 12%] Built target controller__rosidl_generator_c
+[0.147s] [ 12%] Built target ament_cmake_python_copy_controller
+[0.158s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_cpp[0m
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_introspection_cpp[0m
+[0.167s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_fastrtps_c[0m
+[0.176s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_fastrtps_cpp[0m
+[0.182s] [ 21%] Built target controller__rosidl_typesupport_introspection_cpp
+[0.197s] [ 30%] Built target controller__rosidl_typesupport_cpp
+[0.205s] [ 39%] Built target controller__rosidl_typesupport_fastrtps_cpp
+[0.216s] [ 48%] Built target controller__rosidl_typesupport_fastrtps_c
+[0.226s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_introspection_c[0m
+[0.247s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_c[0m
+[0.269s] [ 57%] Built target controller__rosidl_typesupport_introspection_c
+[0.301s] [ 66%] Built target controller__rosidl_typesupport_c
+[0.352s] [35m[1mConsolidate compiler generated dependencies of target ctrl[0m
+[0.376s] [ 69%] [32mBuilding CXX object CMakeFiles/ctrl.dir/src/controller.cpp.o[0m
+[0.387s] [ 69%] Built target controller
+[0.464s] [ 72%] Built target controller__py
+[0.475s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_generator_py[0m
+[0.491s] [ 78%] Built target controller__rosidl_generator_py
+[0.506s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_introspection_c__pyext[0m
+[0.531s] [ 84%] Built target controller__rosidl_typesupport_introspection_c__pyext
+[0.538s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.563s] [ 90%] Built target controller__rosidl_typesupport_fastrtps_c__pyext
+[0.572s] [35m[1mConsolidate compiler generated dependencies of target controller__rosidl_typesupport_c__pyext[0m
+[0.602s] [ 96%] Built target controller__rosidl_typesupport_c__pyext
+[0.680s] running egg_info
+[0.681s] writing controller.egg-info/PKG-INFO
+[0.682s] writing dependency_links to controller.egg-info/dependency_links.txt
+[0.682s] writing top-level names to controller.egg-info/top_level.txt
+[0.686s] reading manifest file 'controller.egg-info/SOURCES.txt'
+[0.687s] writing manifest file 'controller.egg-info/SOURCES.txt'
+[0.736s] [ 96%] Built target ament_cmake_python_build_controller_egg
+[4.185s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::topic_callback(const Joy&) const[m[K’:
+[4.185s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:59:47:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+[4.185s]    59 |         int linear_scale = [01;31m[Kthis->get_parameter("linear_scale")[m[K;
+[4.185s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[4.185s]       |                                               [01;31m[K|[m[K
+[4.185s]       |                                               [01;31m[Krclcpp::Parameter[m[K
+[4.185s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:60:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+[4.185s]    60 |         int angular_scale = [01;31m[Kthis->get_parameter("angular_scale")[m[K;
+[4.186s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[4.186s]       |                                                [01;31m[K|[m[K
+[4.186s]       |                                                [01;31m[Krclcpp::Parameter[m[K
+[4.186s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:74:29:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst Controller[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.186s]    74 |         [01;31m[Kthis->set_parameters({rclcpp::Parameter("linear_scale", linear_scale),[m[K
+[4.186s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.186s]    75 | [01;31m[K                              rclcpp::Parameter("angular_scale", angular_scale)})[m[K;
+[4.186s]       |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.186s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[4.187s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.187s]                  from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:6[m[K:
+[4.187s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:593:3:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kstd::vector<rcl_interfaces::msg::SetParametersResult_<std::allocator<void> > > rclcpp::Node::set_parameters(const std::vector<rclcpp::Parameter>&)[m[K’
+[4.187s]   593 |   [01;36m[Kset_parameters[m[K(const std::vector<rclcpp::Parameter> & parameters);
+[4.187s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[7.942s] gmake[2]: *** [CMakeFiles/ctrl.dir/build.make:76: CMakeFiles/ctrl.dir/src/controller.cpp.o] Error 1
+[7.943s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/ctrl.dir/all] Error 2
+[7.943s] gmake: *** [Makefile:146: all] Error 2
+[7.947s] Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4

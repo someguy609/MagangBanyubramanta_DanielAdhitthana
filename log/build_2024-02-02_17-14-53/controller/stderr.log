@@ -1,0 +1,24 @@
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::topic_callback(const Joy&) const[m[K’:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:28:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst Controller[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   75 |         [01;31m[Kthis->set_parameter(rclcpp::Parameter("linear_scale", linear_scale))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:555:3:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Krcl_interfaces::msg::SetParametersResult rclcpp::Node::set_parameter(const rclcpp::Parameter&)[m[K’
+  555 |   [01;36m[Kset_parameter[m[K(const rclcpp::Parameter & parameter);
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:76:28:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst Controller[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   76 |         [01;31m[Kthis->set_parameter(rclcpp::Parameter("angular_scale", angular_scale))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:555:3:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Krcl_interfaces::msg::SetParametersResult rclcpp::Node::set_parameter(const rclcpp::Parameter&)[m[K’
+  555 |   [01;36m[Kset_parameter[m[K(const rclcpp::Parameter & parameter);
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ctrl.dir/build.make:76: CMakeFiles/ctrl.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/ctrl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

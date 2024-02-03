@@ -1,0 +1,24 @@
+[  9%] Built target controller__rosidl_generator_c
+[ 12%] Built target controller__cpp
+[ 12%] Built target ament_cmake_python_copy_controller
+[ 21%] Built target controller__rosidl_typesupport_fastrtps_c
+[ 30%] Built target controller__rosidl_typesupport_introspection_c
+[ 39%] Built target controller__rosidl_typesupport_c
+[ 48%] Built target controller__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target controller__rosidl_typesupport_introspection_cpp
+[ 66%] Built target controller__rosidl_typesupport_cpp
+[35m[1mConsolidate compiler generated dependencies of target ctrl[0m
+[ 66%] Built target controller
+[ 69%] [32mBuilding CXX object CMakeFiles/ctrl.dir/src/controller.cpp.o[0m
+[ 72%] Built target controller__py
+[ 78%] Built target controller__rosidl_generator_py
+[ 84%] Built target controller__rosidl_typesupport_introspection_c__pyext
+[ 90%] Built target controller__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target controller__rosidl_typesupport_c__pyext
+running egg_info
+writing controller.egg-info/PKG-INFO
+writing dependency_links to controller.egg-info/dependency_links.txt
+writing top-level names to controller.egg-info/top_level.txt
+reading manifest file 'controller.egg-info/SOURCES.txt'
+writing manifest file 'controller.egg-info/SOURCES.txt'
+[ 96%] Built target ament_cmake_python_build_controller_egg

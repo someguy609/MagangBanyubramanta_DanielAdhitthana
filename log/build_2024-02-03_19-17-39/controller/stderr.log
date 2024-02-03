@@ -1,0 +1,10 @@
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::topic_callback(const Joy&)[m[K’:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:59:50:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_scale[m[K’ was not declared in this scope
+   59 |                 data.x_cmd = msg.axes[LR_LEFT] * [01;31m[Klinear_scale[m[K;
+      |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:61:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_scale[m[K’ was not declared in this scope
+   61 |                 data.yaw = msg.axes[LR_RIGHT] * [01;31m[Kangular_scale[m[K;
+      |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

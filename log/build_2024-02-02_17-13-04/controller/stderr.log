@@ -1,0 +1,36 @@
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::topic_callback(const Joy&) const[m[K’:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:60:47:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   60 |         int linear_scale = [01;31m[Kthis->get_parameter("linear_scale")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+      |                                               [01;31m[K|[m[K
+      |                                               [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:61:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   61 |         int angular_scale = [01;31m[Kthis->get_parameter("angular_scale")[m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+      |                                                [01;31m[K|[m[K
+      |                                                [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::set_parameter(const char [13], int&) const[m[K’
+   75 |         [01;31m[Kthis->set_parameter("linear_scale", linear_scale)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:555:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krcl_interfaces::msg::SetParametersResult rclcpp::Node::set_parameter(const rclcpp::Parameter&)[m[K’
+  555 |   [01;36m[Kset_parameter[m[K(const rclcpp::Parameter & parameter);
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:555:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:76:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::set_parameter(const char [14], int&) const[m[K’
+   76 |         [01;31m[Kthis->set_parameter("angular_scale", angular_scale)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:555:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krcl_interfaces::msg::SetParametersResult rclcpp::Node::set_parameter(const rclcpp::Parameter&)[m[K’
+  555 |   [01;36m[Kset_parameter[m[K(const rclcpp::Parameter & parameter);
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:555:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/ctrl.dir/build.make:76: CMakeFiles/ctrl.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/ctrl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

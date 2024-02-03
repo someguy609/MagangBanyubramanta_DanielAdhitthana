@@ -1,0 +1,2 @@
+Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4
+Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4

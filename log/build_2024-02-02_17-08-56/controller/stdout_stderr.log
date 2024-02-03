@@ -1,0 +1,60 @@
+[  3%] Built target controller__cpp
+[ 12%] Built target controller__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_controller
+[ 21%] Built target controller__rosidl_typesupport_cpp
+[ 30%] Built target controller__rosidl_typesupport_fastrtps_cpp
+[ 39%] Built target controller__rosidl_typesupport_introspection_cpp
+[ 57%] Built target controller__rosidl_typesupport_fastrtps_c
+[ 57%] Built target controller__rosidl_typesupport_introspection_c
+[ 66%] Built target controller__rosidl_typesupport_c
+[35m[1mConsolidate compiler generated dependencies of target ctrl[0m
+[ 66%] Built target controller
+[ 69%] [32mBuilding CXX object CMakeFiles/ctrl.dir/src/controller.cpp.o[0m
+[ 72%] Built target controller__py
+[ 78%] Built target controller__rosidl_generator_py
+[ 84%] Built target controller__rosidl_typesupport_fastrtps_c__pyext
+[ 90%] Built target controller__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target controller__rosidl_typesupport_c__pyext
+running egg_info
+writing controller.egg-info/PKG-INFO
+writing dependency_links to controller.egg-info/dependency_links.txt
+writing top-level names to controller.egg-info/top_level.txt
+reading manifest file 'controller.egg-info/SOURCES.txt'
+writing manifest file 'controller.egg-info/SOURCES.txt'
+[ 96%] Built target ament_cmake_python_build_controller_egg
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::topic_callback(const Joy&) const[m[K’:
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:61:47:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   61 |         int linear_scale = [01;31m[Kthis->get_parameter("linear_scale")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+      |                                               [01;31m[K|[m[K
+      |                                               [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:62:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   62 |         int angular_scale = [01;31m[Kthis->get_parameter("angular_scale")[m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+      |                                                [01;31m[K|[m[K
+      |                                                [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:29:[m[K [01;31m[Kerror: [m[K‘[01m[KParamater[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KParameter[m[K’?
+   75 |         std::vector<rclcpp::[01;31m[KParamater[m[K> new_params
+      |                             [01;31m[K^~~~~~~~~[m[K
+      |                             [32m[KParameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   75 |         std::vector<rclcpp::Paramater[01;31m[K>[m[K new_params
+      |                                      [01;31m[K^[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:77:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K;[m[K’ token
+   77 |             rclcpp::Parameter("linear_scale", linear_scale)[01;31m[K;[m[K
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:76:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   76 |         [01;36m[K{[m[K
+      |         [01;36m[K^[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:77:21:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Parameter[m[K’ to ‘[01m[Kint[m[K’ in initialization
+   77 |             rclcpp::[01;31m[KParameter("linear_scale", linear_scale)[m[K;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [01;31m[K|[m[K
+      |                     [01;31m[Krclcpp::Parameter[m[K
+[01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/src/controller.cpp:75:40:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_params[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   75 |         std::vector<rclcpp::Paramater> [01;35m[Knew_params[m[K
+      |                                        [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ctrl.dir/build.make:76: CMakeFiles/ctrl.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/ctrl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,162 @@
+[0.096s] Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4
+[0.550s] [  9%] Built target controller__rosidl_generator_c
+[0.562s] [ 12%] Built target controller__cpp
+[0.587s] [ 12%] Built target ament_cmake_python_copy_controller
+[0.619s] [ 21%] Built target controller__rosidl_typesupport_fastrtps_c
+[0.636s] [ 30%] Built target controller__rosidl_typesupport_introspection_c
+[0.643s] [ 39%] Built target controller__rosidl_typesupport_fastrtps_cpp
+[0.646s] [ 48%] Built target controller__rosidl_typesupport_c
+[0.710s] [ 57%] Built target controller__rosidl_typesupport_cpp
+[0.737s] [ 66%] Built target controller__rosidl_typesupport_introspection_cpp
+[0.770s] [ 66%] Built target controller
+[0.825s] [35m[1mConsolidate compiler generated dependencies of target ctrl[0m
+[0.847s] [ 69%] Built target controller__py
+[0.878s] [ 72%] [32mBuilding CXX object CMakeFiles/ctrl.dir/src/controller.cpp.o[0m
+[0.884s] [ 78%] Built target controller__rosidl_generator_py
+[1.077s] [ 84%] Built target controller__rosidl_typesupport_fastrtps_c__pyext
+[1.097s] [ 90%] Built target controller__rosidl_typesupport_introspection_c__pyext
+[1.319s] [ 96%] Built target controller__rosidl_typesupport_c__pyext
+[1.765s] running egg_info
+[1.767s] writing controller.egg-info/PKG-INFO
+[1.769s] writing dependency_links to controller.egg-info/dependency_links.txt
+[1.774s] writing top-level names to controller.egg-info/top_level.txt
+[1.786s] reading manifest file 'controller.egg-info/SOURCES.txt'
+[1.802s] writing manifest file 'controller.egg-info/SOURCES.txt'
+[1.903s] [ 96%] Built target ament_cmake_python_build_controller_egg
+[22.586s] [100%] [32m[1mLinking CXX executable ctrl[0m
+[25.279s] [100%] Built target ctrl
+[25.491s] Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4
+[25.695s] Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller
+[25.759s] -- Install configuration: ""
+[25.763s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/rosidl_interfaces/controller
+[25.764s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller
+[25.766s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg
+[25.766s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/motion.h
+[25.771s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail
+[25.772s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__struct.h
+[25.775s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__type_support.h
+[25.775s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__functions.h
+[25.782s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__functions.c
+[25.796s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_generator_c__visibility_control.h
+[25.801s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/library_path.sh
+[25.806s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/library_path.dsv
+[25.816s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_c.so
+[25.822s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_c.so" to ""
+[25.822s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller
+[25.823s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg
+[25.824s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[25.824s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail
+[25.825s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_fastrtps_c.h
+[25.828s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_c.so
+[25.830s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_c.so" to ""
+[25.830s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller
+[25.830s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg
+[25.830s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[25.830s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail
+[25.831s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__type_support.c
+[25.833s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_introspection_c.h
+[25.837s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_c.so
+[25.840s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_c.so" to ""
+[25.841s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_c.so
+[25.844s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_c.so" to ""
+[25.844s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller
+[25.845s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg
+[25.845s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/motion.hpp
+[25.846s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail
+[25.846s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__builder.hpp
+[25.846s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__struct.hpp
+[25.848s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__traits.hpp
+[25.853s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller
+[25.853s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg
+[25.854s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[25.854s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail
+[25.854s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp
+[25.854s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/dds_fastrtps
+[25.856s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_cpp.so
+[25.858s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_cpp.so" to ""
+[25.858s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller
+[25.859s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg
+[25.859s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail
+[25.860s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__type_support.cpp
+[25.862s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp
+[25.866s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_cpp.so
+[25.867s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_cpp.so" to ""
+[25.869s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_cpp.so
+[25.872s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_cpp.so" to ""
+[25.872s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/pythonpath.sh
+[25.872s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/pythonpath.dsv
+[25.874s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info
+[25.875s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/top_level.txt
+[25.876s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/PKG-INFO
+[25.877s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/SOURCES.txt
+[25.879s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/dependency_links.txt
+[25.880s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller
+[25.880s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg
+[25.881s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/_motion.py
+[25.884s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/_motion_s.c
+[25.888s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/__init__.py
+[25.891s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c
+[25.893s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/libcontroller__rosidl_generator_py.so
+[25.894s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[25.896s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c
+[25.897s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[25.899s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/_controller_s.ep.rosidl_typesupport_c.c
+[25.900s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[25.900s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/__init__.py
+[26.083s] Listing '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller'...
+[26.083s] Compiling '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/__init__.py'...
+[26.083s] Listing '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg'...
+[26.086s] Compiling '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/__init__.py'...
+[26.086s] Compiling '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/_motion.py'...
+[26.093s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[26.094s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.094s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.095s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.096s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[26.097s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[26.098s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_py.so
+[26.100s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_py.so" to ""
+[26.102s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/msg/Motion.idl
+[26.106s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/msg/Motion.msg
+[26.108s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/ctrl
+[26.113s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/ctrl" to ""
+[26.113s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+[26.114s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+[26.116s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.sh
+[26.116s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.dsv
+[26.118s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.sh
+[26.118s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.dsv
+[26.122s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.bash
+[26.122s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.sh
+[26.122s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.zsh
+[26.122s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.dsv
+[26.123s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.dsv
+[26.124s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/packages/controller
+[26.127s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_cExport.cmake
+[26.127s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_cExport-noconfig.cmake
+[26.129s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cExport.cmake
+[26.129s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[26.130s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cExport.cmake
+[26.130s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[26.135s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cExport.cmake
+[26.136s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cExport-noconfig.cmake
+[26.136s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_cppExport.cmake
+[26.138s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cppExport.cmake
+[26.138s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.139s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cppExport.cmake
+[26.140s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.141s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cppExport.cmake
+[26.141s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cppExport-noconfig.cmake
+[26.142s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_pyExport.cmake
+[26.143s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_pyExport-noconfig.cmake
+[26.143s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/rosidl_cmake-extras.cmake
+[26.143s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.144s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_libraries-extras.cmake
+[26.144s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_targets-extras.cmake
+[26.144s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[26.145s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.145s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[26.145s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig.cmake
+[26.145s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig-version.cmake
+[26.145s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.xml
+[26.177s] Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller

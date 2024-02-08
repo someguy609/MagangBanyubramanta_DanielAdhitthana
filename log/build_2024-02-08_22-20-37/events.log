@@ -1,0 +1,298 @@
+[0.000000] (-) TimerEvent: {}
+[0.002618] (-) JobUnselected: {'identifier': 'controller'}
+[0.005549] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.006813] (camera) JobStarted: {'identifier': 'camera'}
+[0.099499] (-) TimerEvent: {}
+[0.132337] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.137763] (camera) JobProgress: {'identifier': 'camera', 'progress': 'build'}
+[0.139708] (camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/donjoe/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/379_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199716] (-) TimerEvent: {}
+[0.300324] (-) TimerEvent: {}
+[0.401036] (-) TimerEvent: {}
+[0.501879] (-) TimerEvent: {}
+[0.602667] (-) TimerEvent: {}
+[0.687410] (camera) StdoutLine: {'line': b'[ 12%] Built target camera__cpp\n'}
+[0.691387] (camera) StdoutLine: {'line': b'[ 12%] Built target camera__rosidl_generator_c\n'}
+[0.702825] (-) TimerEvent: {}
+[0.721268] (camera) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_camera\n'}
+[0.745185] (camera) StdoutLine: {'line': b'[ 21%] Built target camera__rosidl_typesupport_fastrtps_cpp\n'}
+[0.747569] (camera) StdoutLine: {'line': b'[ 30%] Built target camera__rosidl_typesupport_cpp\n'}
+[0.761552] (camera) StdoutLine: {'line': b'[ 39%] Built target camera__rosidl_typesupport_introspection_cpp\n'}
+[0.767444] (camera) StdoutLine: {'line': b'[ 48%] Built target camera__rosidl_typesupport_fastrtps_c\n'}
+[0.779799] (camera) StdoutLine: {'line': b'[ 57%] Built target camera__rosidl_typesupport_c\n'}
+[0.787722] (camera) StdoutLine: {'line': b'[ 66%] Built target camera__rosidl_typesupport_introspection_c\n'}
+[0.800715] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node\x1b[0m\n'}
+[0.802945] (-) TimerEvent: {}
+[0.812232] (camera) StdoutLine: {'line': b'[ 66%] Built target camera\n'}
+[0.826282] (camera) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[0.845714] (camera) StdoutLine: {'line': b'[ 72%] Built target camera__py\n'}
+[0.880391] (camera) StdoutLine: {'line': b'[ 78%] Built target camera__rosidl_generator_py\n'}
+[0.903084] (-) TimerEvent: {}
+[0.909413] (camera) StdoutLine: {'line': b'[ 84%] Built target camera__rosidl_typesupport_introspection_c__pyext\n'}
+[0.920622] (camera) StdoutLine: {'line': b'[ 90%] Built target camera__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.933886] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_c__pyext\n'}
+[1.003522] (-) TimerEvent: {}
+[1.103984] (-) TimerEvent: {}
+[1.182522] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[1.185452] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[1.188029] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[1.188557] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[1.197978] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.198903] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[1.204114] (-) TimerEvent: {}
+[1.255742] (camera) StdoutLine: {'line': b'[ 96%] Built target ament_cmake_python_build_camera_egg\n'}
+[1.304342] (-) TimerEvent: {}
+[1.404815] (-) TimerEvent: {}
+[1.505342] (-) TimerEvent: {}
+[1.605895] (-) TimerEvent: {}
+[1.706370] (-) TimerEvent: {}
+[1.807234] (-) TimerEvent: {}
+[1.908007] (-) TimerEvent: {}
+[2.008498] (-) TimerEvent: {}
+[2.112590] (-) TimerEvent: {}
+[2.213161] (-) TimerEvent: {}
+[2.313687] (-) TimerEvent: {}
+[2.418827] (-) TimerEvent: {}
+[2.519277] (-) TimerEvent: {}
+[2.619823] (-) TimerEvent: {}
+[2.720353] (-) TimerEvent: {}
+[2.820859] (-) TimerEvent: {}
+[2.930980] (-) TimerEvent: {}
+[3.031497] (-) TimerEvent: {}
+[3.132007] (-) TimerEvent: {}
+[3.232588] (-) TimerEvent: {}
+[3.333052] (-) TimerEvent: {}
+[3.433501] (-) TimerEvent: {}
+[3.533972] (-) TimerEvent: {}
+[3.634438] (-) TimerEvent: {}
+[3.734909] (-) TimerEvent: {}
+[3.835346] (-) TimerEvent: {}
+[3.935868] (-) TimerEvent: {}
+[4.036392] (-) TimerEvent: {}
+[4.136856] (-) TimerEvent: {}
+[4.237337] (-) TimerEvent: {}
+[4.337897] (-) TimerEvent: {}
+[4.438459] (-) TimerEvent: {}
+[4.538973] (-) TimerEvent: {}
+[4.639485] (-) TimerEvent: {}
+[4.740009] (-) TimerEvent: {}
+[4.840475] (-) TimerEvent: {}
+[4.941031] (-) TimerEvent: {}
+[5.041523] (-) TimerEvent: {}
+[5.142033] (-) TimerEvent: {}
+[5.246150] (-) TimerEvent: {}
+[5.346635] (-) TimerEvent: {}
+[5.447146] (-) TimerEvent: {}
+[5.547697] (-) TimerEvent: {}
+[5.648182] (-) TimerEvent: {}
+[5.748636] (-) TimerEvent: {}
+[5.849195] (-) TimerEvent: {}
+[5.949724] (-) TimerEvent: {}
+[6.050246] (-) TimerEvent: {}
+[6.150750] (-) TimerEvent: {}
+[6.251251] (-) TimerEvent: {}
+[6.351789] (-) TimerEvent: {}
+[6.452488] (-) TimerEvent: {}
+[6.553329] (-) TimerEvent: {}
+[6.653937] (-) TimerEvent: {}
+[6.754485] (-) TimerEvent: {}
+[6.855108] (-) TimerEvent: {}
+[6.955588] (-) TimerEvent: {}
+[7.056111] (-) TimerEvent: {}
+[7.156635] (-) TimerEvent: {}
+[7.257258] (-) TimerEvent: {}
+[7.357854] (-) TimerEvent: {}
+[7.458363] (-) TimerEvent: {}
+[7.558832] (-) TimerEvent: {}
+[7.659368] (-) TimerEvent: {}
+[7.759875] (-) TimerEvent: {}
+[7.860461] (-) TimerEvent: {}
+[7.870544] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KCamera::Camera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.871226] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:60:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.871366] (camera) StderrLine: {'line': b'   60 |             auto \x1b[01;35m\x1b[Kmessage\x1b[m\x1b[K = camera::msg::Object();\n'}
+[7.871461] (camera) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.960651] (-) TimerEvent: {}
+[8.061281] (-) TimerEvent: {}
+[8.162000] (-) TimerEvent: {}
+[8.262826] (-) TimerEvent: {}
+[8.363443] (-) TimerEvent: {}
+[8.463938] (-) TimerEvent: {}
+[8.564517] (-) TimerEvent: {}
+[8.665023] (-) TimerEvent: {}
+[8.765595] (-) TimerEvent: {}
+[8.866073] (-) TimerEvent: {}
+[8.966628] (-) TimerEvent: {}
+[9.067098] (-) TimerEvent: {}
+[9.167621] (-) TimerEvent: {}
+[9.268105] (-) TimerEvent: {}
+[9.368777] (-) TimerEvent: {}
+[9.469414] (-) TimerEvent: {}
+[9.569979] (-) TimerEvent: {}
+[9.670549] (-) TimerEvent: {}
+[9.771067] (-) TimerEvent: {}
+[9.871825] (-) TimerEvent: {}
+[9.972936] (-) TimerEvent: {}
+[10.073654] (-) TimerEvent: {}
+[10.175053] (-) TimerEvent: {}
+[10.275838] (-) TimerEvent: {}
+[10.376918] (-) TimerEvent: {}
+[10.478125] (-) TimerEvent: {}
+[10.578964] (-) TimerEvent: {}
+[10.679575] (-) TimerEvent: {}
+[10.780087] (-) TimerEvent: {}
+[10.880623] (-) TimerEvent: {}
+[10.981117] (-) TimerEvent: {}
+[11.081663] (-) TimerEvent: {}
+[11.182314] (-) TimerEvent: {}
+[11.282950] (-) TimerEvent: {}
+[11.383608] (-) TimerEvent: {}
+[11.484201] (-) TimerEvent: {}
+[11.584821] (-) TimerEvent: {}
+[11.685284] (-) TimerEvent: {}
+[11.688523] (camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[11.785808] (-) TimerEvent: {}
+[11.886528] (-) TimerEvent: {}
+[11.987508] (-) TimerEvent: {}
+[12.088431] (-) TimerEvent: {}
+[12.189376] (-) TimerEvent: {}
+[12.290128] (-) TimerEvent: {}
+[12.390883] (-) TimerEvent: {}
+[12.491621] (-) TimerEvent: {}
+[12.592278] (-) TimerEvent: {}
+[12.693093] (-) TimerEvent: {}
+[12.793834] (-) TimerEvent: {}
+[12.894605] (-) TimerEvent: {}
+[12.995307] (-) TimerEvent: {}
+[13.095950] (-) TimerEvent: {}
+[13.196812] (-) TimerEvent: {}
+[13.265275] (camera) StdoutLine: {'line': b'[100%] Built target node\n'}
+[13.281829] (camera) CommandEnded: {'returncode': 0}
+[13.297009] (-) TimerEvent: {}
+[13.338626] (camera) JobProgress: {'identifier': 'camera', 'progress': 'install'}
+[13.349345] (camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/donjoe/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/379_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.366913] (camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.367867] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/rosidl_interfaces/camera\n'}
+[13.368443] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[13.368797] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[13.368903] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[13.369004] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.h\n'}
+[13.369108] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.h\n'}
+[13.369295] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.c\n'}
+[13.369552] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.h\n'}
+[13.369826] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.h\n'}
+[13.370100] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.370490] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.sh\n'}
+[13.370683] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.dsv\n'}
+[13.372339] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_c.so\n'}
+[13.373007] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[13.373242] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[13.373421] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.373642] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[13.373970] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_c.h\n'}
+[13.374818] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_c.so\n'}
+[13.375165] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[13.375605] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[13.375850] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.hpp\n'}
+[13.376158] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[13.376304] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.hpp\n'}
+[13.376409] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__traits.hpp\n'}
+[13.376507] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__builder.hpp\n'}
+[13.376604] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[13.376820] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[13.376999] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.377247] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[13.377497] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.377720] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/dds_fastrtps\n'}
+[13.378130] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.378257] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[13.378356] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[13.378456] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.378560] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[13.378660] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_c.h\n'}
+[13.378801] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.c\n'}
+[13.379165] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_c.so\n'}
+[13.379992] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_c.so\n'}
+[13.380446] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[13.380629] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[13.380735] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[13.380861] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.cpp\n'}
+[13.380963] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.382248] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_cpp.so\n'}
+[13.382888] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_cpp.so\n'}
+[13.383279] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.sh\n'}
+[13.383621] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.dsv\n'}
+[13.384085] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info\n'}
+[13.384276] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[13.385322] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[13.386712] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[13.387076] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[13.387556] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera\n'}
+[13.387880] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.388217] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg\n'}
+[13.388345] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object.py\n'}
+[13.388455] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object_s.c\n'}
+[13.388564] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/__init__.py\n'}
+[13.388672] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_c.c\n'}
+[13.388904] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.389100] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.389286] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.389524] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.389786] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/libcamera__rosidl_generator_py.so\n'}
+[13.390157] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/__init__.py\n'}
+[13.397229] (-) TimerEvent: {}
+[13.457423] (camera) StdoutLine: {'line': b"Listing '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera'...\n"}
+[13.457768] (camera) StdoutLine: {'line': b"Listing '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg'...\n"}
+[13.470803] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.474263] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.474865] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.475575] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_py.so\n'}
+[13.475838] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.idl\n'}
+[13.476045] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.msg\n'}
+[13.477770] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node\n'}
+[13.497434] (-) TimerEvent: {}
+[13.499589] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node" to ""\n'}
+[13.499979] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/package_run_dependencies/camera\n'}
+[13.500338] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/parent_prefix_path/camera\n'}
+[13.500596] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.sh\n'}
+[13.500924] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.dsv\n'}
+[13.501116] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.sh\n'}
+[13.501209] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.dsv\n'}
+[13.501293] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.bash\n'}
+[13.501383] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.sh\n'}
+[13.501474] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.zsh\n'}
+[13.501573] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.dsv\n'}
+[13.501665] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.dsv\n'}
+[13.508180] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/packages/camera\n'}
+[13.509227] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake\n'}
+[13.510429] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.510872] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.518639] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.519038] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake\n'}
+[13.519190] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.519309] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.519420] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.519527] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.519631] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake\n'}
+[13.519750] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.525062] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.525522] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.532468] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake\n'}
+[13.534189] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.535186] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake\n'}
+[13.535861] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.536072] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake-extras.cmake\n'}
+[13.536192] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.536294] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.536394] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.536502] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.536627] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.536744] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.536831] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig.cmake\n'}
+[13.536901] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig-version.cmake\n'}
+[13.536971] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.xml\n'}
+[13.552625] (camera) CommandEnded: {'returncode': 0}
+[13.597841] (-) TimerEvent: {}
+[13.698396] (-) TimerEvent: {}
+[13.799047] (-) TimerEvent: {}
+[13.853897] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[13.855535] (-) EventReactorShutdown: {}

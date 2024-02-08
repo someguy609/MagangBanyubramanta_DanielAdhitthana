@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <chrono>
 #include <functional>
 #include <memory>
@@ -7,6 +8,13 @@
 #include "rclcpp/rclcpp.hpp"
 #include "opencv2/opencv.hpp"
 #include "camera/msg/object.hpp"
+
+#define RED 0
+#define YELLOW 60
+#define BLUE 230
+#define HUE_THRESHOLD 50
+#define MIN_SATURATION 50
+#define MIN_VALUE 50
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -32,10 +40,29 @@ public:
             if (!cap_.read(frame))
             {
                 RCLCPP_ERROR(this->get_logger(), "Failed to read frame");
-                return;
+                break;
             }
 
-            // deteksi disini
+            cv::Mat hsv_frame;
+            cv::cvtColor(frame, hsv_frame, cv::COLOR_BGR2HSV);
+
+            if (hsv_frame.empty())
+            {
+                RCLCPP_ERROR(this->get_logger(), "Failed to convert frame to HSV");
+                break;
+            }
+
+            cv::Mat red, yellow, blue;
+            cv::inRange(hsv_frame, cv::Scalar(std::max(0, RED - HUE_THRESHOLD), MIN_SATURATION, MIN_VALUE), cv::Scalar(std::min(255, RED + HUE_THRESHOLD), 255, 255), red);
+            cv::inRange(hsv_frame, cv::Scalar(std::max(0, YELLOW - HUE_THRESHOLD), MIN_SATURATION, MIN_VALUE), cv::Scalar(std::min(255, YELLOW + HUE_THRESHOLD), 255, 255), yellow);
+            cv::inRange(hsv_frame, cv::Scalar(std::max(0, BLUE - HUE_THRESHOLD), MIN_SATURATION, MIN_VALUE), cv::Scalar(std::min(255, BLUE + HUE_THRESHOLD), 255, 255), blue);
+
+            auto message = camera::msg::Object();
+            message.red = !red.empty();
+            message.yellow = !yellow.empty();
+            message.blue = !blue.empty();
+
+            publisher_->publish(message);
 
             int key = cv::waitKey(0);
             if (key == 'q')
@@ -52,7 +79,6 @@ public:
 private:
     rclcpp::Publisher<camera::msg::Object>::SharedPtr publisher_;
     cv::VideoCapture cap_;
-    // rclcpp::TimerBase::SharedPtr timer_;
 };
 
 int main(int argc, char **argv)

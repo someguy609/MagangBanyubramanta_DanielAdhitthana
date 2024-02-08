@@ -3,4 +3,5 @@
 ## TODO
 
 - [x] Base Node
-- [ ] Detection
+- [x] Detection
+- [ ] Testing

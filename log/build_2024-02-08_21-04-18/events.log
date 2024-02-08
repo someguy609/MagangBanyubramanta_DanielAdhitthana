@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.000649] (-) JobUnselected: {'identifier': 'controller'}
+[0.000705] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.000767] (camera) JobStarted: {'identifier': 'camera'}
+[0.029951] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.030025] (camera) Command: {'cmd': ['/usr/bin/cmake', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera', '-DCMAKE_INSTALL_PREFIX=/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('USER', 'donjoe'), ('SHLVL', '1'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('LESS', '-R'), ('ZSH', '/home/donjoe/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'donjoe'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('WSL_INTEROP', '/run/WSL/379_interop'), ('NAME', 'LAPTOP-GBMF4AJI'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/usr/bin/zsh'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSL2_GUI_APPS_ENABLED', '1'), ('WSLENV', '')]), 'shell': False}
+[0.098132] (-) TimerEvent: {}
+[0.198884] (-) TimerEvent: {}
+[0.299276] (-) TimerEvent: {}
+[0.399652] (-) TimerEvent: {}
+[0.455376] (camera) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.499795] (-) TimerEvent: {}
+[0.600225] (-) TimerEvent: {}
+[0.700628] (-) TimerEvent: {}
+[0.800972] (-) TimerEvent: {}
+[0.901323] (-) TimerEvent: {}
+[1.001774] (-) TimerEvent: {}
+[1.015937] (camera) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.101912] (-) TimerEvent: {}
+[1.202268] (-) TimerEvent: {}
+[1.302689] (-) TimerEvent: {}
+[1.334784] (camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.402930] (-) TimerEvent: {}
+[1.494443] (camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.499381] (camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.502036] (camera) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.503150] (-) TimerEvent: {}
+[1.503729] (camera) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.508527] (camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.603296] (-) TimerEvent: {}
+[1.642872] (camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.649887] (camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.650275] (camera) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.650585] (camera) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.703458] (-) TimerEvent: {}
+[1.803938] (-) TimerEvent: {}
+[1.904452] (-) TimerEvent: {}
+[2.005079] (-) TimerEvent: {}
+[2.105636] (-) TimerEvent: {}
+[2.206283] (-) TimerEvent: {}
+[2.306921] (-) TimerEvent: {}
+[2.407432] (-) TimerEvent: {}
+[2.507969] (-) TimerEvent: {}
+[2.608712] (-) TimerEvent: {}
+[2.709390] (-) TimerEvent: {}
+[2.809979] (-) TimerEvent: {}
+[2.910616] (-) TimerEvent: {}
+[2.933499] (camera) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[2.933800] (camera) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.933870] (camera) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.933927] (camera) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.933982] (camera) StderrLine: {'line': b'\n'}
+[2.934037] (camera) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.934093] (camera) StderrLine: {'line': b'  any of the following names:\n'}
+[2.934148] (camera) StderrLine: {'line': b'\n'}
+[2.934202] (camera) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.934257] (camera) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.934311] (camera) StderrLine: {'line': b'\n'}
+[2.934366] (camera) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.934424] (camera) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.934480] (camera) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.934535] (camera) StderrLine: {'line': b'  has been installed.\n'}
+[2.934591] (camera) StderrLine: {'line': b'\n'}
+[2.934647] (camera) StderrLine: {'line': b'\x1b[0m\n'}
+[2.934703] (camera) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.934774] (camera) StdoutLine: {'line': b'See also "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/CMakeOutput.log".\n'}
+[2.937628] (camera) CommandEnded: {'returncode': 1}
+[2.980901] (camera) JobEnded: {'identifier': 'camera', 'rc': 1}
+[2.991792] (-) EventReactorShutdown: {}

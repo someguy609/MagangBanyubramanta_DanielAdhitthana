@@ -1,0 +1,226 @@
+[0.000000] (-) TimerEvent: {}
+[0.000794] (-) JobUnselected: {'identifier': 'controller'}
+[0.000854] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.000901] (camera) JobStarted: {'identifier': 'camera'}
+[0.038287] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.039360] (camera) JobProgress: {'identifier': 'camera', 'progress': 'build'}
+[0.039418] (camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/donjoe/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/379_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.056683] (camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099589] (-) TimerEvent: {}
+[0.163645] (camera) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199752] (-) TimerEvent: {}
+[0.300250] (-) TimerEvent: {}
+[0.303285] (camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.304946] (camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.309159] (camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.316858] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.328032] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.371078] (camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.371960] (camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400381] (-) TimerEvent: {}
+[0.500775] (-) TimerEvent: {}
+[0.601210] (-) TimerEvent: {}
+[0.701702] (-) TimerEvent: {}
+[0.802128] (-) TimerEvent: {}
+[0.902531] (-) TimerEvent: {}
+[1.002931] (-) TimerEvent: {}
+[1.103395] (-) TimerEvent: {}
+[1.204086] (-) TimerEvent: {}
+[1.304611] (-) TimerEvent: {}
+[1.405318] (-) TimerEvent: {}
+[1.505748] (-) TimerEvent: {}
+[1.606114] (-) TimerEvent: {}
+[1.706526] (-) TimerEvent: {}
+[1.806918] (-) TimerEvent: {}
+[1.907341] (-) TimerEvent: {}
+[2.007793] (-) TimerEvent: {}
+[2.108338] (-) TimerEvent: {}
+[2.208857] (-) TimerEvent: {}
+[2.309464] (-) TimerEvent: {}
+[2.410032] (-) TimerEvent: {}
+[2.510600] (-) TimerEvent: {}
+[2.611200] (-) TimerEvent: {}
+[2.711796] (-) TimerEvent: {}
+[2.812372] (-) TimerEvent: {}
+[2.912869] (-) TimerEvent: {}
+[3.013429] (-) TimerEvent: {}
+[3.114173] (-) TimerEvent: {}
+[3.214592] (-) TimerEvent: {}
+[3.315248] (-) TimerEvent: {}
+[3.415845] (-) TimerEvent: {}
+[3.516582] (-) TimerEvent: {}
+[3.617236] (-) TimerEvent: {}
+[3.717787] (-) TimerEvent: {}
+[3.818357] (-) TimerEvent: {}
+[3.918829] (-) TimerEvent: {}
+[4.019385] (-) TimerEvent: {}
+[4.119999] (-) TimerEvent: {}
+[4.220567] (-) TimerEvent: {}
+[4.321134] (-) TimerEvent: {}
+[4.421495] (-) TimerEvent: {}
+[4.521998] (-) TimerEvent: {}
+[4.622594] (-) TimerEvent: {}
+[4.723174] (-) TimerEvent: {}
+[4.823732] (-) TimerEvent: {}
+[4.924181] (-) TimerEvent: {}
+[5.024857] (-) TimerEvent: {}
+[5.125605] (-) TimerEvent: {}
+[5.226189] (-) TimerEvent: {}
+[5.326843] (-) TimerEvent: {}
+[5.360295] (camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.427024] (-) TimerEvent: {}
+[5.475828] (camera) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[5.527242] (-) TimerEvent: {}
+[5.627649] (-) TimerEvent: {}
+[5.658078] (camera) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.727883] (-) TimerEvent: {}
+[5.828311] (-) TimerEvent: {}
+[5.871318] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.928534] (-) TimerEvent: {}
+[5.954932] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.972152] (camera) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.987084] (camera) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.987299] (camera) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.987378] (camera) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.994374] (camera) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.999948] (camera) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.000371] (camera) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[6.000518] (camera) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.000802] (camera) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.001427] (camera) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.001509] (camera) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.001703] (camera) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.002881] (camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.026390] (camera) StdoutLine: {'line': b'-- Generating done\n'}
+[6.028719] (-) TimerEvent: {}
+[6.029732] (camera) StdoutLine: {'line': b'-- Build files have been written to: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera\n'}
+[6.053347] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_generator_c\x1b[0m\n'}
+[6.058600] (camera) StdoutLine: {'line': b'[  3%] Built target camera__cpp\n'}
+[6.063940] (camera) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_generator_c.dir/rosidl_generator_c/camera/msg/detail/object__functions.c.o\x1b[0m\n'}
+[6.065568] (camera) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_camera\n'}
+[6.067017] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_typesupport_cpp\x1b[0m\n'}
+[6.067216] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.074496] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[6.078634] (camera) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/camera/msg/object__type_support.cpp.o\x1b[0m\n'}
+[6.080633] (camera) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/camera/msg/detail/dds_fastrtps/object__type_support.cpp.o\x1b[0m\n'}
+[6.085840] (camera) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/camera/msg/detail/object__type_support.cpp.o\x1b[0m\n'}
+[6.114242] (camera) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libcamera__rosidl_generator_c.so\x1b[0m\n'}
+[6.128896] (-) TimerEvent: {}
+[6.229384] (-) TimerEvent: {}
+[6.266496] (camera) StdoutLine: {'line': b'[ 21%] Built target camera__rosidl_generator_c\n'}
+[6.329817] (-) TimerEvent: {}
+[6.430179] (-) TimerEvent: {}
+[6.504296] (camera) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.530321] (-) TimerEvent: {}
+[6.596299] (camera) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.601962] (camera) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.630491] (-) TimerEvent: {}
+[6.673563] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[6.675943] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[6.677018] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[6.678023] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[6.679174] (camera) StdoutLine: {'line': b'[ 33%] Built target camera__rosidl_typesupport_cpp\n'}
+[6.688599] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[6.690809] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[6.692054] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[6.705925] (camera) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/camera/msg/detail/object__type_support_c.cpp.o\x1b[0m\n'}
+[6.730661] (-) TimerEvent: {}
+[6.760089] (camera) StdoutLine: {'line': b'[ 36%] Built target ament_cmake_python_build_camera_egg\n'}
+[6.773268] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.791136] (camera) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/camera/msg/detail/object__type_support.c.o\x1b[0m\n'}
+[6.792756] (camera) StdoutLine: {'line': b'[ 42%] Built target camera__rosidl_typesupport_introspection_cpp\n'}
+[6.806772] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera__rosidl_typesupport_c\x1b[0m\n'}
+[6.817962] (camera) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_c.dir/rosidl_typesupport_c/camera/msg/object__type_support.cpp.o\x1b[0m\n'}
+[6.830794] (-) TimerEvent: {}
+[6.840777] (camera) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libcamera__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.847332] (camera) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.881168] (camera) StdoutLine: {'line': b'[ 54%] Built target camera__rosidl_typesupport_fastrtps_cpp\n'}
+[6.924611] (camera) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[6.930990] (-) TimerEvent: {}
+[7.005669] (camera) StdoutLine: {'line': b'[ 60%] Built target camera__rosidl_typesupport_introspection_c\n'}
+[7.024457] (camera) StdoutLine: {'line': b'[ 63%] Built target camera__rosidl_typesupport_c\n'}
+[7.031158] (-) TimerEvent: {}
+[7.098986] (camera) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.131309] (-) TimerEvent: {}
+[7.231797] (-) TimerEvent: {}
+[7.236545] (camera) StdoutLine: {'line': b'[ 69%] Built target camera__rosidl_typesupport_fastrtps_c\n'}
+[7.249116] (camera) StdoutLine: {'line': b'[ 69%] Built target camera\n'}
+[7.263270] (camera) StdoutLine: {'line': b'[ 72%] Built target camera__py\n'}
+[7.277793] (camera) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_generator_py.dir/rosidl_generator_py/camera/msg/_object_s.c.o\x1b[0m\n'}
+[7.331958] (-) TimerEvent: {}
+[7.410189] (camera) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/libcamera__rosidl_generator_py.so\x1b[0m\n'}
+[7.432122] (-) TimerEvent: {}
+[7.529681] (camera) StdoutLine: {'line': b'[ 78%] Built target camera__rosidl_generator_py\n'}
+[7.532352] (-) TimerEvent: {}
+[7.550553] (camera) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.551208] (camera) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.554213] (camera) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.632521] (-) TimerEvent: {}
+[7.683044] (camera) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.686014] (camera) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.691115] (camera) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.732933] (-) TimerEvent: {}
+[7.834270] (-) TimerEvent: {}
+[7.840840] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_c__pyext\n'}
+[7.849020] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.867632] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_introspection_c__pyext\n'}
+[7.934433] (-) TimerEvent: {}
+[8.034861] (-) TimerEvent: {}
+[8.135264] (-) TimerEvent: {}
+[8.235684] (-) TimerEvent: {}
+[8.336244] (-) TimerEvent: {}
+[8.436660] (-) TimerEvent: {}
+[8.537052] (-) TimerEvent: {}
+[8.637490] (-) TimerEvent: {}
+[8.737882] (-) TimerEvent: {}
+[8.838374] (-) TimerEvent: {}
+[8.938935] (-) TimerEvent: {}
+[9.039403] (-) TimerEvent: {}
+[9.139936] (-) TimerEvent: {}
+[9.240349] (-) TimerEvent: {}
+[9.340842] (-) TimerEvent: {}
+[9.441305] (-) TimerEvent: {}
+[9.541708] (-) TimerEvent: {}
+[9.642153] (-) TimerEvent: {}
+[9.742573] (-) TimerEvent: {}
+[9.843131] (-) TimerEvent: {}
+[9.943820] (-) TimerEvent: {}
+[10.044249] (-) TimerEvent: {}
+[10.144828] (-) TimerEvent: {}
+[10.146708] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:11:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kusing-declaration may not name namespace \xe2\x80\x98\x1b[01m\x1b[Kstd::literals::chrono_literals\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.146966] (camera) StderrLine: {'line': b'   11 | using std::\x1b[01;31m\x1b[Kchrono_literals\x1b[m\x1b[K;\n'}
+[10.147130] (camera) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.147210] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:29:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobject\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcamera::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KObject\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.147271] (camera) StderrLine: {'line': b'   29 |     rclcpp::Publisher<camera::msg::\x1b[01;31m\x1b[Kobject\x1b[m\x1b[K>::SharedPtr publisher_;\n'}
+[10.147320] (camera) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.147365] (camera) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[KObject\x1b[m\x1b[K\n'}
+[10.147409] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:29:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[10.147456] (camera) StderrLine: {'line': b'   29 |     rclcpp::Publisher<camera::msg::object\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_;\n'}
+[10.147503] (camera) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.147547] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:29:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[10.147593] (camera) StderrLine: {'line': b'   29 |     rclcpp::Publisher<camera::msg::object>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K publisher_;\n'}
+[10.147639] (camera) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.147683] (camera) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[10.150042] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:29:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.150259] (camera) StderrLine: {'line': b'   29 |     rclcpp::Publisher<camera::msg::object>::SharedPtr \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K;\n'}
+[10.150342] (camera) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.150413] (camera) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[10.151508] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KCamera::Camera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.151656] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:20:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.151700] (camera) StderrLine: {'line': b'   20 |             \x1b[01;31m\x1b[K1000ms\x1b[m\x1b[K,\n'}
+[10.151738] (camera) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.245069] (-) TimerEvent: {}
+[10.345501] (-) TimerEvent: {}
+[10.445953] (-) TimerEvent: {}
+[10.546447] (-) TimerEvent: {}
+[10.646861] (-) TimerEvent: {}
+[10.747288] (-) TimerEvent: {}
+[10.847745] (-) TimerEvent: {}
+[10.948168] (-) TimerEvent: {}
+[10.974034] (camera) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1\n'}
+[10.974674] (camera) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/node.dir/all] Error 2\n'}
+[10.974782] (camera) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.976897] (camera) CommandEnded: {'returncode': 2}
+[11.048523] (-) TimerEvent: {}
+[11.077845] (camera) JobEnded: {'identifier': 'camera', 'rc': 2}
+[11.088763] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera': /usr/bin/cmake /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera -DCMAKE_INSTALL_PREFIX=/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera
+Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '1': /usr/bin/cmake /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera -DCMAKE_INSTALL_PREFIX=/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera

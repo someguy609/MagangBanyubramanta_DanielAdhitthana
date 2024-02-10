@@ -4,4 +4,6 @@
 
 - [x] Base Node
 - [x] Detection
-- [ ] Testing
+- [x] Testing
+- [ ] Fix values
+- [ ] Fine tune detection

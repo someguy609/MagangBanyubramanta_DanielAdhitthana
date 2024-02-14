@@ -1,0 +1,249 @@
+[0.272s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera -DCMAKE_INSTALL_PREFIX=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera
+[0.378s] -- The C compiler identification is GNU 11.4.0
+[0.499s] -- The CXX compiler identification is GNU 11.4.0
+[0.515s] -- Detecting C compiler ABI info
+[0.654s] -- Detecting C compiler ABI info - done
+[0.668s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.668s] -- Detecting C compile features
+[0.669s] -- Detecting C compile features - done
+[0.675s] -- Detecting CXX compiler ABI info
+[0.827s] -- Detecting CXX compiler ABI info - done
+[0.854s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.855s] -- Detecting CXX compile features
+[0.857s] -- Detecting CXX compile features - done
+[0.874s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.206s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.383s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.499s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.513s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.532s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.579s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.629s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.846s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.854s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.092s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.144s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.230s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.249s] -- Looking for pthread.h
+[2.390s] -- Looking for pthread.h - found
+[2.391s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.525s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.528s] -- Found Threads: TRUE  
+[2.864s] -- Found OpenCV: /usr/local (found version "4.9.0") 
+[2.866s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.329s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.031s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.294s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.337s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.341s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.389s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.389s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.389s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.389s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.427s] -- Found PythonExtra: .so  
+[4.491s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.532s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.533s] -- Configured cppcheck include dirs: 
+[4.533s] -- Configured cppcheck exclude dirs and/or files: 
+[4.535s] -- Added test 'lint_cmake' to check CMake code style
+[4.537s] -- Added test 'uncrustify' to check C / C++ code style
+[4.537s] -- Configured uncrustify additional arguments: 
+[4.538s] -- Added test 'xmllint' to check XML markup files
+[4.544s] -- Configuring done
+[4.629s] -- Generating done
+[4.636s] -- Build files have been written to: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
+[4.661s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera -DCMAKE_INSTALL_PREFIX=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera
+[4.664s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[4.748s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.771s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.792s] [  6%] Built target ament_cmake_python_copy_camera
+[5.566s] running egg_info
+[5.568s] creating camera.egg-info
+[5.568s] writing camera.egg-info/PKG-INFO
+[5.568s] writing dependency_links to camera.egg-info/dependency_links.txt
+[5.569s] writing top-level names to camera.egg-info/top_level.txt
+[5.569s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[5.576s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[5.577s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[5.638s] [  6%] Built target ament_cmake_python_build_camera_egg
+[5.757s] [  9%] [32mBuilding C object CMakeFiles/camera__rosidl_generator_c.dir/rosidl_generator_c/camera/msg/detail/object__functions.c.o[0m
+[5.798s] [  9%] Built target camera__cpp
+[5.847s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.894s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.916s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.022s] [ 21%] [32m[1mLinking C shared library libcamera__rosidl_generator_c.so[0m
+[6.289s] [ 21%] Built target camera__rosidl_generator_c
+[6.388s] [ 24%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.247s] [ 27%] [32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/camera/msg/object__type_support.cpp.o[0m
+[7.459s] [ 30%] [32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/camera/msg/detail/object__type_support.cpp.o[0m
+[7.913s] [ 33%] [32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/camera/msg/detail/object__type_support_c.cpp.o[0m
+[8.056s] [ 36%] [32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/camera/msg/detail/dds_fastrtps/object__type_support.cpp.o[0m
+[9.135s] [ 39%] [32m[1mLinking CXX shared library libcamera__rosidl_typesupport_cpp.so[0m
+[9.479s] [ 39%] Built target camera__rosidl_typesupport_cpp
+[9.587s] [ 42%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.126s] [ 45%] [32m[1mLinking CXX shared library libcamera__rosidl_typesupport_introspection_cpp.so[0m
+[10.566s] [ 45%] Built target camera__rosidl_typesupport_introspection_cpp
+[10.698s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.775s] [ 51%] [32m[1mLinking CXX shared library libcamera__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.954s] [ 54%] [32m[1mLinking CXX shared library libcamera__rosidl_typesupport_fastrtps_c.so[0m
+[11.555s] [ 54%] Built target camera__rosidl_typesupport_fastrtps_cpp
+[11.596s] [ 54%] Built target camera__rosidl_typesupport_fastrtps_c
+[11.778s] [ 57%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[12.034s] [ 60%] [32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_c.dir/rosidl_typesupport_c/camera/msg/object__type_support.cpp.o[0m
+[12.065s] [ 63%] [32mBuilding C object CMakeFiles/camera__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/camera/msg/detail/object__type_support.c.o[0m
+[12.226s] [ 66%] [32m[1mLinking CXX shared library libcamera__rosidl_typesupport_c.so[0m
+[12.307s] [ 69%] [32m[1mLinking C shared library libcamera__rosidl_typesupport_introspection_c.so[0m
+[12.409s] [ 69%] Built target camera__rosidl_typesupport_introspection_c
+[12.568s] [ 69%] Built target camera__rosidl_typesupport_c
+[12.677s] [ 69%] Built target camera
+[12.788s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.578s] [ 72%] Built target camera__py
+[14.744s] [ 75%] [32mBuilding C object CMakeFiles/camera__rosidl_generator_py.dir/rosidl_generator_py/camera/msg/_object_s.c.o[0m
+[15.301s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/camera/libcamera__rosidl_generator_py.so[0m
+[15.535s] [ 78%] Built target camera__rosidl_generator_py
+[15.667s] [ 81%] [32mBuilding C object CMakeFiles/camera__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[15.694s] [ 84%] [32mBuilding C object CMakeFiles/camera__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_c.c.o[0m
+[15.712s] [ 87%] [32mBuilding C object CMakeFiles/camera__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[16.273s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[16.323s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[16.337s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[16.484s] [ 96%] Built target camera__rosidl_typesupport_introspection_c__pyext
+[16.486s] [ 96%] Built target camera__rosidl_typesupport_fastrtps_c__pyext
+[16.489s] [ 96%] Built target camera__rosidl_typesupport_c__pyext
+[29.347s] [100%] [32m[1mLinking CXX executable node[0m
+[30.065s] [100%] Built target node
+[30.098s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[30.232s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
+[30.245s] -- Install configuration: ""
+[30.246s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/rosidl_interfaces/camera
+[30.246s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[30.246s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[30.247s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[30.247s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.h
+[30.247s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.h
+[30.247s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.h
+[30.247s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.c
+[30.248s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.h
+[30.248s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_generator_c__visibility_control.h
+[30.248s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.sh
+[30.248s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.dsv
+[30.249s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_c.so
+[30.249s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_c.so" to ""
+[30.250s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[30.250s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[30.250s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[30.250s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[30.251s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[30.251s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_c.so
+[30.253s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_c.so" to ""
+[30.253s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[30.254s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[30.254s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.hpp
+[30.254s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[30.254s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.hpp
+[30.254s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__builder.hpp
+[30.255s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__traits.hpp
+[30.255s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[30.255s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[30.255s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[30.255s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[30.255s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/dds_fastrtps
+[30.256s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[30.256s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so
+[30.256s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so" to ""
+[30.256s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[30.257s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[30.257s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[30.257s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.c
+[30.257s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_c.h
+[30.258s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[30.258s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_c.so
+[30.258s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_c.so" to ""
+[30.258s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_c.so
+[30.259s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_c.so" to ""
+[30.259s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[30.259s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[30.259s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[30.259s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[30.260s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.cpp
+[30.260s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_cpp.so
+[30.260s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_cpp.so" to ""
+[30.260s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_cpp.so
+[30.260s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_cpp.so" to ""
+[30.261s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.sh
+[30.261s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.dsv
+[30.261s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info
+[30.262s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/PKG-INFO
+[30.263s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/SOURCES.txt
+[30.264s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/dependency_links.txt
+[30.264s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/top_level.txt
+[30.264s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera
+[30.264s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c
+[30.264s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[30.265s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[30.265s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/libcamera__rosidl_generator_py.so
+[30.265s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c
+[30.266s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg
+[30.266s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object_s.c
+[30.266s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object.py
+[30.266s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/__init__.py
+[30.266s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/__init__.py
+[30.267s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[30.267s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_c.c
+[30.327s] Listing '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera'...
+[30.328s] Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/__init__.py'...
+[30.328s] Listing '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg'...
+[30.328s] Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/__init__.py'...
+[30.328s] Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object.py'...
+[30.335s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[30.336s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[30.336s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[30.337s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[30.337s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[30.338s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[30.343s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_py.so
+[30.349s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_py.so" to ""
+[30.349s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.idl
+[30.349s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.msg
+[30.349s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node
+[30.350s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node" to ""
+[30.350s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/package_run_dependencies/camera
+[30.350s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/parent_prefix_path/camera
+[30.350s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.sh
+[30.351s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.dsv
+[30.351s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.sh
+[30.351s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.dsv
+[30.351s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.bash
+[30.351s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.sh
+[30.352s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.zsh
+[30.352s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.dsv
+[30.352s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.dsv
+[30.352s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/packages/camera
+[30.353s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake
+[30.353s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport-noconfig.cmake
+[30.355s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake
+[30.355s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[30.355s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake
+[30.355s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake
+[30.356s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[30.356s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake
+[30.356s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[30.357s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake
+[30.357s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport-noconfig.cmake
+[30.357s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake
+[30.358s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[30.358s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake
+[30.358s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport-noconfig.cmake
+[30.359s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake
+[30.359s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport-noconfig.cmake
+[30.360s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake-extras.cmake
+[30.361s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[30.361s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_libraries-extras.cmake
+[30.361s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_targets-extras.cmake
+[30.362s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[30.362s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.367s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[30.367s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig.cmake
+[30.367s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig-version.cmake
+[30.367s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.xml
+[30.375s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera

@@ -1,9 +1,9 @@
 {
   "package_name": "controller",
-  "output_dir": "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/rosidl_generator_c/controller",
+  "output_dir": "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/rosidl_generator_c/controller",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/rosidl_adapter/controller:msg/Motion.idl"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/rosidl_adapter/controller:msg/Motion.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +19,6 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/rosidl_adapter/controller/msg/Motion.idl"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/rosidl_adapter/controller/msg/Motion.idl"
   ]
 }

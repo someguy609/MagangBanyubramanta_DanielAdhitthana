@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
 
 # Utility rule file for camera.
 
@@ -66,7 +66,7 @@ include CMakeFiles/camera.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/camera.dir/progress.make
 
-CMakeFiles/camera: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/msg/Object.msg
+CMakeFiles/camera: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera/msg/Object.msg
 
 camera: CMakeFiles/camera
 camera: CMakeFiles/camera.dir/build.make
@@ -81,6 +81,6 @@ CMakeFiles/camera.dir/clean:
 .PHONY : CMakeFiles/camera.dir/clean
 
 CMakeFiles/camera.dir/depend:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/camera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/camera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/camera.dir/depend
 

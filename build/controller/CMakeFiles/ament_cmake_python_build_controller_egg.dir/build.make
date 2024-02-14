@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller
 
 # Utility rule file for ament_cmake_python_build_controller_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_controller_egg.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_build_controller_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_controller_egg:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_python/controller && /usr/bin/python3.10 setup.py egg_info
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_python/controller && /usr/bin/python3.10 setup.py egg_info
 
 ament_cmake_python_build_controller_egg: CMakeFiles/ament_cmake_python_build_controller_egg
 ament_cmake_python_build_controller_egg: CMakeFiles/ament_cmake_python_build_controller_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_controller_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_controller_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_controller_egg.dir/depend:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/ament_cmake_python_build_controller_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/ament_cmake_python_build_controller_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_controller_egg.dir/depend
 

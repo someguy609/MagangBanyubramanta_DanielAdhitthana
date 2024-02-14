@@ -1,8 +1,8 @@
-# Install script for directory: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/controller__py
+# Install script for directory: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/controller__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/controller")
+  set(CMAKE_INSTALL_PREFIX "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,0 +1,869 @@
+[0.000000] (-) TimerEvent: {}
+[0.001064] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.001308] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.001346] (camera) JobStarted: {'identifier': 'camera'}
+[0.100065] (-) TimerEvent: {}
+[0.158061] (controller) JobStarted: {'identifier': 'controller'}
+[0.200588] (-) TimerEvent: {}
+[0.272232] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.272876] (camera) Command: {'cmd': ['/usr/bin/cmake', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera', '-DCMAKE_INSTALL_PREFIX=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/Documents'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1310'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b08933e6_99d4_4fbe_952e_3e2a9bf847e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NHHSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble')]), 'shell': False}
+[0.278385] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.278924] (controller) Command: {'cmd': ['/usr/bin/cmake', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller', '-DCMAKE_INSTALL_PREFIX=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/Documents'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1310'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b08933e6_99d4_4fbe_952e_3e2a9bf847e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NHHSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble')]), 'shell': False}
+[0.300762] (-) TimerEvent: {}
+[0.378678] (camera) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.380145] (controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400904] (-) TimerEvent: {}
+[0.497745] (controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.500276] (camera) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.500983] (-) TimerEvent: {}
+[0.515958] (controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.516295] (camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601143] (-) TimerEvent: {}
+[0.645919] (controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.654655] (camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.667374] (controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.668069] (controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.668742] (camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.669141] (controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.669423] (camera) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.670191] (camera) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.676262] (camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.676550] (controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701279] (-) TimerEvent: {}
+[0.801909] (-) TimerEvent: {}
+[0.827889] (camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.831282] (controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.855558] (camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.856284] (camera) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.857776] (camera) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.860184] (controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.860406] (controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.861030] (controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.874982] (camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.875449] (controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902036] (-) TimerEvent: {}
+[1.006921] (-) TimerEvent: {}
+[1.107548] (-) TimerEvent: {}
+[1.203517] (controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.207509] (camera) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.207845] (-) TimerEvent: {}
+[1.308242] (-) TimerEvent: {}
+[1.382777] (controller) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.383745] (camera) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.391681] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.408337] (-) TimerEvent: {}
+[1.411129] (controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.500320] (camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.510363] (-) TimerEvent: {}
+[1.513871] (camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.531394] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.533167] (camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.579794] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.610465] (-) TimerEvent: {}
+[1.630220] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.634922] (controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.710584] (-) TimerEvent: {}
+[1.810996] (-) TimerEvent: {}
+[1.847223] (camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.848189] (controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.855199] (camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.855475] (controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.911115] (-) TimerEvent: {}
+[2.011503] (-) TimerEvent: {}
+[2.092962] (camera) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.093797] (controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.111629] (-) TimerEvent: {}
+[2.144778] (controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.145325] (camera) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.211778] (-) TimerEvent: {}
+[2.230753] (camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.231246] (controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.250481] (camera) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.250982] (controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.311919] (-) TimerEvent: {}
+[2.391097] (controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.391448] (controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.391717] (camera) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.391913] (camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.412058] (-) TimerEvent: {}
+[2.512676] (-) TimerEvent: {}
+[2.526200] (camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.529289] (camera) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.561664] (controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.564484] (controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.612797] (-) TimerEvent: {}
+[2.713568] (-) TimerEvent: {}
+[2.814214] (-) TimerEvent: {}
+[2.864922] (camera) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.9.0") \n'}
+[2.867234] (camera) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.914351] (-) TimerEvent: {}
+[3.014967] (-) TimerEvent: {}
+[3.086730] (controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.115096] (-) TimerEvent: {}
+[3.215761] (-) TimerEvent: {}
+[3.316247] (-) TimerEvent: {}
+[3.329869] (camera) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.416408] (-) TimerEvent: {}
+[3.517034] (-) TimerEvent: {}
+[3.617646] (-) TimerEvent: {}
+[3.718138] (-) TimerEvent: {}
+[3.818679] (-) TimerEvent: {}
+[3.919215] (-) TimerEvent: {}
+[4.019837] (-) TimerEvent: {}
+[4.031774] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.072343] (controller) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.119976] (-) TimerEvent: {}
+[4.220617] (-) TimerEvent: {}
+[4.295034] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.320744] (-) TimerEvent: {}
+[4.338096] (camera) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.342337] (camera) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.389897] (camera) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.390220] (camera) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.390329] (camera) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.390424] (camera) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.420876] (-) TimerEvent: {}
+[4.426524] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.428549] (camera) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.491767] (camera) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.521008] (-) TimerEvent: {}
+[4.533157] (camera) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.534304] (camera) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.534524] (camera) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.536261] (camera) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.538243] (camera) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.538559] (camera) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.539427] (camera) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.544951] (camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.621131] (-) TimerEvent: {}
+[4.630524] (camera) StdoutLine: {'line': b'-- Generating done\n'}
+[4.636627] (camera) StdoutLine: {'line': b'-- Build files have been written to: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera\n'}
+[4.662288] (camera) CommandEnded: {'returncode': 0}
+[4.663339] (camera) JobProgress: {'identifier': 'camera', 'progress': 'build'}
+[4.664610] (camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/Documents'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1310'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b08933e6_99d4_4fbe_952e_3e2a9bf847e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NHHSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble')]), 'shell': False}
+[4.721336] (-) TimerEvent: {}
+[4.748643] (camera) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.772210] (camera) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.792685] (camera) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_camera\n'}
+[4.821468] (-) TimerEvent: {}
+[4.922054] (-) TimerEvent: {}
+[5.007338] (controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.022185] (-) TimerEvent: {}
+[5.066331] (controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.070517] (controller) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.130931] (-) TimerEvent: {}
+[5.137990] (controller) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.138799] (controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.139221] (controller) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.139560] (controller) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.222006] (controller) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.231303] (-) TimerEvent: {}
+[5.324488] (controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.331419] (-) TimerEvent: {}
+[5.399617] (controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.402168] (controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.402529] (controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.404998] (controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.407990] (controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.408394] (controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.410239] (controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.422870] (controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.434431] (-) TimerEvent: {}
+[5.526552] (controller) StdoutLine: {'line': b'-- Generating done\n'}
+[5.534551] (-) TimerEvent: {}
+[5.536197] (controller) StdoutLine: {'line': b'-- Build files have been written to: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller\n'}
+[5.563192] (controller) CommandEnded: {'returncode': 0}
+[5.564096] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[5.564175] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/Documents'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1310'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b08933e6_99d4_4fbe_952e_3e2a9bf847e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NHHSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble')]), 'shell': False}
+[5.566714] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[5.568725] (camera) StdoutLine: {'line': b'creating camera.egg-info\n'}
+[5.569226] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[5.569667] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[5.570037] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[5.570594] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[5.576744] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[5.578110] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[5.634702] (-) TimerEvent: {}
+[5.639418] (camera) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_camera_egg\n'}
+[5.699776] (controller) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.734853] (-) TimerEvent: {}
+[5.742190] (controller) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.758385] (camera) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_generator_c.dir/rosidl_generator_c/camera/msg/detail/object__functions.c.o\x1b[0m\n'}
+[5.799093] (camera) StdoutLine: {'line': b'[  9%] Built target camera__cpp\n'}
+[5.809105] (controller) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_controller\n'}
+[5.835023] (-) TimerEvent: {}
+[5.847956] (camera) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.895346] (camera) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.917204] (camera) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.935291] (-) TimerEvent: {}
+[6.023557] (camera) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libcamera__rosidl_generator_c.so\x1b[0m\n'}
+[6.035275] (-) TimerEvent: {}
+[6.135861] (-) TimerEvent: {}
+[6.236478] (-) TimerEvent: {}
+[6.290008] (camera) StdoutLine: {'line': b'[ 21%] Built target camera__rosidl_generator_c\n'}
+[6.336608] (-) TimerEvent: {}
+[6.388829] (camera) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.436742] (-) TimerEvent: {}
+[6.537386] (-) TimerEvent: {}
+[6.638002] (-) TimerEvent: {}
+[6.738597] (-) TimerEvent: {}
+[6.839223] (-) TimerEvent: {}
+[6.927762] (controller) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/controller__rosidl_generator_c.dir/rosidl_generator_c/controller/msg/detail/motion__functions.c.o\x1b[0m\n'}
+[6.939349] (-) TimerEvent: {}
+[7.046944] (-) TimerEvent: {}
+[7.162364] (-) TimerEvent: {}
+[7.212584] (controller) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libcontroller__rosidl_generator_c.so\x1b[0m\n'}
+[7.248377] (camera) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/camera/msg/object__type_support.cpp.o\x1b[0m\n'}
+[7.262496] (-) TimerEvent: {}
+[7.363016] (-) TimerEvent: {}
+[7.459689] (camera) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/camera/msg/detail/object__type_support.cpp.o\x1b[0m\n'}
+[7.463124] (-) TimerEvent: {}
+[7.465021] (controller) StdoutLine: {'line': b'[ 12%] Built target controller__rosidl_generator_c\n'}
+[7.533057] (controller) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.568560] (-) TimerEvent: {}
+[7.575055] (controller) StdoutLine: {'line': b'running egg_info\n'}
+[7.575382] (controller) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.577902] (controller) StdoutLine: {'line': b'creating controller.egg-info\n'}
+[7.578340] (controller) StdoutLine: {'line': b'writing controller.egg-info/PKG-INFO\n'}
+[7.578765] (controller) StdoutLine: {'line': b'writing dependency_links to controller.egg-info/dependency_links.txt\n'}
+[7.579877] (controller) StdoutLine: {'line': b'writing top-level names to controller.egg-info/top_level.txt\n'}
+[7.580112] (controller) StdoutLine: {'line': b"writing manifest file 'controller.egg-info/SOURCES.txt'\n"}
+[7.601329] (controller) StdoutLine: {'line': b"reading manifest file 'controller.egg-info/SOURCES.txt'\n"}
+[7.602731] (controller) StdoutLine: {'line': b"writing manifest file 'controller.egg-info/SOURCES.txt'\n"}
+[7.668699] (-) TimerEvent: {}
+[7.769363] (-) TimerEvent: {}
+[7.843032] (controller) StdoutLine: {'line': b'[ 18%] Built target ament_cmake_python_build_controller_egg\n'}
+[7.869512] (-) TimerEvent: {}
+[7.914307] (camera) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/camera/msg/detail/object__type_support_c.cpp.o\x1b[0m\n'}
+[7.960854] (controller) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.969629] (-) TimerEvent: {}
+[8.056619] (camera) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/camera/msg/detail/dds_fastrtps/object__type_support.cpp.o\x1b[0m\n'}
+[8.069763] (-) TimerEvent: {}
+[8.170402] (-) TimerEvent: {}
+[8.271091] (-) TimerEvent: {}
+[8.318795] (controller) StdoutLine: {'line': b'[ 21%] Built target controller__cpp\n'}
+[8.343285] (controller) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.371217] (-) TimerEvent: {}
+[8.471831] (-) TimerEvent: {}
+[8.572515] (-) TimerEvent: {}
+[8.673139] (-) TimerEvent: {}
+[8.773775] (-) TimerEvent: {}
+[8.874413] (-) TimerEvent: {}
+[8.975038] (-) TimerEvent: {}
+[9.075509] (-) TimerEvent: {}
+[9.136592] (camera) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.175650] (-) TimerEvent: {}
+[9.276194] (-) TimerEvent: {}
+[9.376715] (-) TimerEvent: {}
+[9.463036] (controller) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controller/msg/motion__type_support.cpp.o\x1b[0m\n'}
+[9.476846] (-) TimerEvent: {}
+[9.480416] (camera) StdoutLine: {'line': b'[ 39%] Built target camera__rosidl_typesupport_cpp\n'}
+[9.576989] (-) TimerEvent: {}
+[9.588459] (camera) StdoutLine: {'line': b'[ 42%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.677119] (-) TimerEvent: {}
+[9.777608] (-) TimerEvent: {}
+[9.878266] (-) TimerEvent: {}
+[9.968804] (controller) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controller/msg/detail/motion__type_support_c.cpp.o\x1b[0m\n'}
+[9.978414] (-) TimerEvent: {}
+[10.078958] (-) TimerEvent: {}
+[10.126785] (camera) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.179096] (-) TimerEvent: {}
+[10.279597] (-) TimerEvent: {}
+[10.374927] (controller) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controller/msg/detail/motion__type_support.c.o\x1b[0m\n'}
+[10.379738] (-) TimerEvent: {}
+[10.480405] (-) TimerEvent: {}
+[10.567473] (camera) StdoutLine: {'line': b'[ 45%] Built target camera__rosidl_typesupport_introspection_cpp\n'}
+[10.580532] (-) TimerEvent: {}
+[10.662012] (controller) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking C shared library libcontroller__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.680669] (-) TimerEvent: {}
+[10.681779] (controller) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/controller/msg/motion__type_support.cpp.o\x1b[0m\n'}
+[10.699038] (camera) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.776045] (camera) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.780797] (-) TimerEvent: {}
+[10.881408] (-) TimerEvent: {}
+[10.905220] (controller) StdoutLine: {'line': b'[ 39%] Built target controller__rosidl_typesupport_introspection_c\n'}
+[10.955017] (camera) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.981534] (-) TimerEvent: {}
+[11.019053] (controller) StdoutLine: {'line': b'[ 42%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.039608] (controller) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.081677] (-) TimerEvent: {}
+[11.182202] (-) TimerEvent: {}
+[11.282697] (-) TimerEvent: {}
+[11.383250] (-) TimerEvent: {}
+[11.415561] (controller) StdoutLine: {'line': b'[ 45%] Built target controller__rosidl_typesupport_c\n'}
+[11.483622] (-) TimerEvent: {}
+[11.501420] (controller) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[11.556080] (camera) StdoutLine: {'line': b'[ 54%] Built target camera__rosidl_typesupport_fastrtps_cpp\n'}
+[11.583747] (-) TimerEvent: {}
+[11.596887] (camera) StdoutLine: {'line': b'[ 54%] Built target camera__rosidl_typesupport_fastrtps_c\n'}
+[11.683871] (-) TimerEvent: {}
+[11.695290] (controller) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.779058] (camera) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[11.784014] (-) TimerEvent: {}
+[11.884712] (-) TimerEvent: {}
+[11.975864] (controller) StdoutLine: {'line': b'[ 51%] Built target controller__rosidl_typesupport_cpp\n'}
+[11.984839] (-) TimerEvent: {}
+[12.035492] (camera) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/camera__rosidl_typesupport_c.dir/rosidl_typesupport_c/camera/msg/object__type_support.cpp.o\x1b[0m\n'}
+[12.066274] (camera) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/camera/msg/detail/object__type_support.c.o\x1b[0m\n'}
+[12.084973] (-) TimerEvent: {}
+[12.162712] (controller) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/controller.cpp.o\x1b[0m\n'}
+[12.185124] (-) TimerEvent: {}
+[12.227497] (camera) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libcamera__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.285250] (-) TimerEvent: {}
+[12.307805] (camera) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libcamera__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.363494] (controller) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.385378] (-) TimerEvent: {}
+[12.409896] (camera) StdoutLine: {'line': b'[ 69%] Built target camera__rosidl_typesupport_introspection_c\n'}
+[12.485728] (-) TimerEvent: {}
+[12.568635] (camera) StdoutLine: {'line': b'[ 69%] Built target camera__rosidl_typesupport_c\n'}
+[12.586585] (-) TimerEvent: {}
+[12.678222] (camera) StdoutLine: {'line': b'[ 69%] Built target camera\n'}
+[12.686704] (-) TimerEvent: {}
+[12.700090] (controller) StdoutLine: {'line': b'[ 57%] Built target controller__rosidl_typesupport_fastrtps_c\n'}
+[12.723322] (controller) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controller/msg/detail/dds_fastrtps/motion__type_support.cpp.o\x1b[0m\n'}
+[12.788916] (camera) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.789295] (-) TimerEvent: {}
+[12.889862] (-) TimerEvent: {}
+[12.990493] (-) TimerEvent: {}
+[13.091333] (-) TimerEvent: {}
+[13.191822] (-) TimerEvent: {}
+[13.292297] (-) TimerEvent: {}
+[13.392940] (-) TimerEvent: {}
+[13.493563] (-) TimerEvent: {}
+[13.539264] (controller) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controller/msg/detail/motion__type_support.cpp.o\x1b[0m\n'}
+[13.593696] (-) TimerEvent: {}
+[13.694362] (-) TimerEvent: {}
+[13.795027] (-) TimerEvent: {}
+[13.895688] (-) TimerEvent: {}
+[13.996348] (-) TimerEvent: {}
+[14.097027] (-) TimerEvent: {}
+[14.197691] (-) TimerEvent: {}
+[14.298357] (-) TimerEvent: {}
+[14.323210] (controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[14.398517] (-) TimerEvent: {}
+[14.499109] (-) TimerEvent: {}
+[14.579219] (camera) StdoutLine: {'line': b'[ 72%] Built target camera__py\n'}
+[14.599271] (-) TimerEvent: {}
+[14.699851] (-) TimerEvent: {}
+[14.701751] (controller) StdoutLine: {'line': b'[ 66%] Built target controller__rosidl_typesupport_fastrtps_cpp\n'}
+[14.745220] (camera) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_generator_py.dir/rosidl_generator_py/camera/msg/_object_s.c.o\x1b[0m\n'}
+[14.799998] (-) TimerEvent: {}
+[14.900724] (-) TimerEvent: {}
+[15.001104] (controller) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[15.001472] (-) TimerEvent: {}
+[15.102038] (-) TimerEvent: {}
+[15.202695] (-) TimerEvent: {}
+[15.242958] (controller) StdoutLine: {'line': b'[ 69%] Built target controller__rosidl_typesupport_introspection_cpp\n'}
+[15.302061] (camera) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/libcamera__rosidl_generator_py.so\x1b[0m\n'}
+[15.302772] (-) TimerEvent: {}
+[15.304858] (controller) StdoutLine: {'line': b'[ 69%] Built target controller\n'}
+[15.378063] (controller) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[15.402948] (-) TimerEvent: {}
+[15.503699] (-) TimerEvent: {}
+[15.536148] (camera) StdoutLine: {'line': b'[ 78%] Built target camera__rosidl_generator_py\n'}
+[15.603840] (-) TimerEvent: {}
+[15.668009] (camera) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[15.695035] (camera) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[15.703980] (-) TimerEvent: {}
+[15.713336] (camera) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/camera__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.804114] (-) TimerEvent: {}
+[15.904767] (-) TimerEvent: {}
+[16.005414] (-) TimerEvent: {}
+[16.106064] (-) TimerEvent: {}
+[16.206717] (-) TimerEvent: {}
+[16.274390] (camera) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.306875] (-) TimerEvent: {}
+[16.324281] (camera) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.337781] (camera) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.407007] (-) TimerEvent: {}
+[16.485480] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_introspection_c__pyext\n'}
+[16.487029] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.490601] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_c__pyext\n'}
+[16.507141] (-) TimerEvent: {}
+[16.607779] (-) TimerEvent: {}
+[16.708271] (-) TimerEvent: {}
+[16.808775] (-) TimerEvent: {}
+[16.909277] (-) TimerEvent: {}
+[17.010917] (-) TimerEvent: {}
+[17.114938] (-) TimerEvent: {}
+[17.207684] (controller) StdoutLine: {'line': b'[ 72%] Built target controller__py\n'}
+[17.215078] (-) TimerEvent: {}
+[17.264190] (controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/controller__rosidl_generator_py.dir/rosidl_generator_py/controller/msg/_motion_s.c.o\x1b[0m\n'}
+[17.315217] (-) TimerEvent: {}
+[17.415858] (-) TimerEvent: {}
+[17.516507] (-) TimerEvent: {}
+[17.568081] (controller) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/controller/libcontroller__rosidl_generator_py.so\x1b[0m\n'}
+[17.616656] (-) TimerEvent: {}
+[17.674538] (controller) StdoutLine: {'line': b'[ 78%] Built target controller__rosidl_generator_py\n'}
+[17.716806] (-) TimerEvent: {}
+[17.786395] (controller) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/controller__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.799509] (controller) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/controller__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[17.807386] (controller) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/controller__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.816949] (-) TimerEvent: {}
+[17.917594] (-) TimerEvent: {}
+[18.026951] (-) TimerEvent: {}
+[18.130945] (-) TimerEvent: {}
+[18.210036] (controller) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.234946] (-) TimerEvent: {}
+[18.307387] (controller) StdoutLine: {'line': b'[ 90%] Built target controller__rosidl_typesupport_introspection_c__pyext\n'}
+[18.335092] (-) TimerEvent: {}
+[18.348442] (controller) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.389820] (controller) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.435237] (-) TimerEvent: {}
+[18.478516] (controller) StdoutLine: {'line': b'[ 96%] Built target controller__rosidl_typesupport_c__pyext\n'}
+[18.524896] (controller) StdoutLine: {'line': b'[ 96%] Built target controller__rosidl_typesupport_fastrtps_c__pyext\n'}
+[18.535374] (-) TimerEvent: {}
+[18.636026] (-) TimerEvent: {}
+[18.736742] (-) TimerEvent: {}
+[18.837433] (-) TimerEvent: {}
+[18.938163] (-) TimerEvent: {}
+[19.038926] (-) TimerEvent: {}
+[19.139481] (-) TimerEvent: {}
+[19.239991] (-) TimerEvent: {}
+[19.340537] (-) TimerEvent: {}
+[19.441102] (-) TimerEvent: {}
+[19.541665] (-) TimerEvent: {}
+[19.642371] (-) TimerEvent: {}
+[19.743093] (-) TimerEvent: {}
+[19.843797] (-) TimerEvent: {}
+[19.944464] (-) TimerEvent: {}
+[20.044988] (-) TimerEvent: {}
+[20.145525] (-) TimerEvent: {}
+[20.246232] (-) TimerEvent: {}
+[20.346773] (-) TimerEvent: {}
+[20.447287] (-) TimerEvent: {}
+[20.547761] (-) TimerEvent: {}
+[20.648246] (-) TimerEvent: {}
+[20.748755] (-) TimerEvent: {}
+[20.849250] (-) TimerEvent: {}
+[20.949738] (-) TimerEvent: {}
+[21.050245] (-) TimerEvent: {}
+[21.150773] (-) TimerEvent: {}
+[21.251292] (-) TimerEvent: {}
+[21.351767] (-) TimerEvent: {}
+[21.452255] (-) TimerEvent: {}
+[21.552765] (-) TimerEvent: {}
+[21.653259] (-) TimerEvent: {}
+[21.753797] (-) TimerEvent: {}
+[21.854293] (-) TimerEvent: {}
+[21.954797] (-) TimerEvent: {}
+[22.055325] (-) TimerEvent: {}
+[22.155815] (-) TimerEvent: {}
+[22.256299] (-) TimerEvent: {}
+[22.356840] (-) TimerEvent: {}
+[22.457515] (-) TimerEvent: {}
+[22.558182] (-) TimerEvent: {}
+[22.658727] (-) TimerEvent: {}
+[22.759338] (-) TimerEvent: {}
+[22.859896] (-) TimerEvent: {}
+[22.960462] (-) TimerEvent: {}
+[23.061027] (-) TimerEvent: {}
+[23.161572] (-) TimerEvent: {}
+[23.262948] (-) TimerEvent: {}
+[23.366959] (-) TimerEvent: {}
+[23.470959] (-) TimerEvent: {}
+[23.574962] (-) TimerEvent: {}
+[23.678946] (-) TimerEvent: {}
+[23.782964] (-) TimerEvent: {}
+[23.883534] (-) TimerEvent: {}
+[23.984286] (-) TimerEvent: {}
+[24.084831] (-) TimerEvent: {}
+[24.185436] (-) TimerEvent: {}
+[24.286004] (-) TimerEvent: {}
+[24.386578] (-) TimerEvent: {}
+[24.487277] (-) TimerEvent: {}
+[24.587945] (-) TimerEvent: {}
+[24.688657] (-) TimerEvent: {}
+[24.789298] (-) TimerEvent: {}
+[24.889945] (-) TimerEvent: {}
+[24.990630] (-) TimerEvent: {}
+[25.091482] (-) TimerEvent: {}
+[25.191989] (-) TimerEvent: {}
+[25.292693] (-) TimerEvent: {}
+[25.393352] (-) TimerEvent: {}
+[25.493993] (-) TimerEvent: {}
+[25.594689] (-) TimerEvent: {}
+[25.695238] (-) TimerEvent: {}
+[25.795738] (-) TimerEvent: {}
+[25.896268] (-) TimerEvent: {}
+[25.996748] (-) TimerEvent: {}
+[26.097263] (-) TimerEvent: {}
+[26.197819] (-) TimerEvent: {}
+[26.298344] (-) TimerEvent: {}
+[26.398953] (-) TimerEvent: {}
+[26.499558] (-) TimerEvent: {}
+[26.600153] (-) TimerEvent: {}
+[26.700826] (-) TimerEvent: {}
+[26.801906] (-) TimerEvent: {}
+[26.902637] (-) TimerEvent: {}
+[27.003233] (-) TimerEvent: {}
+[27.106963] (-) TimerEvent: {}
+[27.207996] (-) TimerEvent: {}
+[27.308567] (-) TimerEvent: {}
+[27.409107] (-) TimerEvent: {}
+[27.509652] (-) TimerEvent: {}
+[27.610177] (-) TimerEvent: {}
+[27.710712] (-) TimerEvent: {}
+[27.811280] (-) TimerEvent: {}
+[27.911816] (-) TimerEvent: {}
+[28.012364] (-) TimerEvent: {}
+[28.112900] (-) TimerEvent: {}
+[28.213488] (-) TimerEvent: {}
+[28.314206] (-) TimerEvent: {}
+[28.414769] (-) TimerEvent: {}
+[28.515371] (-) TimerEvent: {}
+[28.615928] (-) TimerEvent: {}
+[28.716471] (-) TimerEvent: {}
+[28.817010] (-) TimerEvent: {}
+[28.917656] (-) TimerEvent: {}
+[29.018616] (-) TimerEvent: {}
+[29.119154] (-) TimerEvent: {}
+[29.219690] (-) TimerEvent: {}
+[29.320201] (-) TimerEvent: {}
+[29.347682] (camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[29.420353] (-) TimerEvent: {}
+[29.520885] (-) TimerEvent: {}
+[29.621432] (-) TimerEvent: {}
+[29.721988] (-) TimerEvent: {}
+[29.822518] (-) TimerEvent: {}
+[29.923102] (-) TimerEvent: {}
+[30.024067] (-) TimerEvent: {}
+[30.066229] (camera) StdoutLine: {'line': b'[100%] Built target node\n'}
+[30.099288] (camera) CommandEnded: {'returncode': 0}
+[30.124248] (-) TimerEvent: {}
+[30.216075] (camera) JobProgress: {'identifier': 'camera', 'progress': 'install'}
+[30.224397] (-) TimerEvent: {}
+[30.231910] (camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/Documents'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1310'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b08933e6_99d4_4fbe_952e_3e2a9bf847e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NHHSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble')]), 'shell': False}
+[30.246275] (camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.246704] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/rosidl_interfaces/camera\n'}
+[30.247198] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[30.247508] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[30.247804] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[30.248000] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.h\n'}
+[30.248181] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.h\n'}
+[30.248423] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.h\n'}
+[30.248697] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.c\n'}
+[30.248874] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.h\n'}
+[30.249146] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_generator_c__visibility_control.h\n'}
+[30.249395] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.sh\n'}
+[30.249629] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.dsv\n'}
+[30.249927] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_c.so\n'}
+[30.250405] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_c.so" to ""\n'}
+[30.250746] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[30.251037] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[30.251266] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[30.251541] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_c.h\n'}
+[30.251732] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[30.251914] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_c.so\n'}
+[30.254284] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[30.254626] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[30.254842] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[30.255125] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.hpp\n'}
+[30.255304] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[30.255478] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.hpp\n'}
+[30.255649] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__builder.hpp\n'}
+[30.255814] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__traits.hpp\n'}
+[30.255974] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[30.256133] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[30.256292] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[30.256451] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[30.256638] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/dds_fastrtps\n'}
+[30.256801] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[30.257080] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so\n'}
+[30.257396] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[30.257581] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[30.257839] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[30.258081] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[30.258245] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.c\n'}
+[30.258422] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_c.h\n'}
+[30.258657] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[30.258984] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_c.so\n'}
+[30.259290] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_c.so" to ""\n'}
+[30.259493] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_c.so\n'}
+[30.259717] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_c.so" to ""\n'}
+[30.259972] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera\n'}
+[30.260149] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg\n'}
+[30.260316] (camera) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail\n'}
+[30.260485] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[30.260813] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.cpp\n'}
+[30.260985] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_cpp.so\n'}
+[30.261150] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[30.261317] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_cpp.so\n'}
+[30.261619] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_cpp.so" to ""\n'}
+[30.261812] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.sh\n'}
+[30.262032] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.dsv\n'}
+[30.262278] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info\n'}
+[30.263243] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[30.264015] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[30.264741] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[30.265022] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[30.265321] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera\n'}
+[30.265510] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[30.265759] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.266013] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.266285] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/libcamera__rosidl_generator_py.so\n'}
+[30.266523] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[30.266748] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg\n'}
+[30.267056] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object_s.c\n'}
+[30.267242] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object.py\n'}
+[30.267441] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/__init__.py\n'}
+[30.267662] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/__init__.py\n'}
+[30.267901] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.268152] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_c.c\n'}
+[30.324517] (-) TimerEvent: {}
+[30.328380] (camera) StdoutLine: {'line': b"Listing '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera'...\n"}
+[30.328801] (camera) StdoutLine: {'line': b"Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/__init__.py'...\n"}
+[30.329009] (camera) StdoutLine: {'line': b"Listing '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg'...\n"}
+[30.329196] (camera) StdoutLine: {'line': b"Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/__init__.py'...\n"}
+[30.329368] (camera) StdoutLine: {'line': b"Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object.py'...\n"}
+[30.336311] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.337014] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[30.337473] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.338203] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[30.338653] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.339423] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[30.341273] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_py.so\n'}
+[30.345306] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_py.so" to ""\n'}
+[30.350026] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.idl\n'}
+[30.350222] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.msg\n'}
+[30.350385] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node\n'}
+[30.350744] (camera) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node" to ""\n'}
+[30.351313] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/package_run_dependencies/camera\n'}
+[30.351501] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/parent_prefix_path/camera\n'}
+[30.351658] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.sh\n'}
+[30.351816] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.dsv\n'}
+[30.351972] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.sh\n'}
+[30.352122] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.dsv\n'}
+[30.352416] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.bash\n'}
+[30.352567] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.sh\n'}
+[30.352793] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.zsh\n'}
+[30.353082] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.dsv\n'}
+[30.353348] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.dsv\n'}
+[30.353586] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/packages/camera\n'}
+[30.353757] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake\n'}
+[30.353910] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport-noconfig.cmake\n'}
+[30.355840] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[30.356181] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[30.356441] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake\n'}
+[30.356706] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[30.356892] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[30.357144] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake\n'}
+[30.357409] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[30.357795] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake\n'}
+[30.358147] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[30.358511] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[30.358885] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[30.359276] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake\n'}
+[30.359625] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[30.360004] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake\n'}
+[30.360372] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport-noconfig.cmake\n'}
+[30.361417] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake-extras.cmake\n'}
+[30.362002] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.362318] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.362552] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.362811] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[30.363047] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.363294] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[30.368034] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig.cmake\n'}
+[30.368234] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig-version.cmake\n'}
+[30.368509] (camera) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.xml\n'}
+[30.375665] (camera) CommandEnded: {'returncode': 0}
+[30.426053] (-) TimerEvent: {}
+[30.529869] (-) TimerEvent: {}
+[30.630364] (-) TimerEvent: {}
+[30.737402] (-) TimerEvent: {}
+[30.839129] (-) TimerEvent: {}
+[30.941932] (-) TimerEvent: {}
+[31.042541] (-) TimerEvent: {}
+[31.067003] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[31.142692] (-) TimerEvent: {}
+[31.243171] (-) TimerEvent: {}
+[31.343642] (-) TimerEvent: {}
+[31.444112] (-) TimerEvent: {}
+[31.544581] (-) TimerEvent: {}
+[31.645102] (-) TimerEvent: {}
+[31.745548] (-) TimerEvent: {}
+[31.845997] (-) TimerEvent: {}
+[31.946484] (-) TimerEvent: {}
+[32.047016] (-) TimerEvent: {}
+[32.147513] (-) TimerEvent: {}
+[32.248042] (-) TimerEvent: {}
+[32.348556] (-) TimerEvent: {}
+[32.449074] (-) TimerEvent: {}
+[32.549508] (-) TimerEvent: {}
+[32.649961] (-) TimerEvent: {}
+[32.750410] (-) TimerEvent: {}
+[32.850874] (-) TimerEvent: {}
+[32.951268] (-) TimerEvent: {}
+[33.051776] (-) TimerEvent: {}
+[33.152298] (-) TimerEvent: {}
+[33.252840] (-) TimerEvent: {}
+[33.353368] (-) TimerEvent: {}
+[33.454071] (-) TimerEvent: {}
+[33.554510] (-) TimerEvent: {}
+[33.655123] (-) TimerEvent: {}
+[33.755713] (-) TimerEvent: {}
+[33.856246] (-) TimerEvent: {}
+[33.956805] (-) TimerEvent: {}
+[34.057383] (-) TimerEvent: {}
+[34.157900] (-) TimerEvent: {}
+[34.258464] (-) TimerEvent: {}
+[34.326946] (controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[34.358714] (-) TimerEvent: {}
+[34.459228] (-) TimerEvent: {}
+[34.559677] (-) TimerEvent: {}
+[34.660129] (-) TimerEvent: {}
+[34.760787] (-) TimerEvent: {}
+[34.861414] (-) TimerEvent: {}
+[34.961940] (-) TimerEvent: {}
+[35.062425] (-) TimerEvent: {}
+[35.162944] (-) TimerEvent: {}
+[35.263333] (-) TimerEvent: {}
+[35.345357] (controller) StdoutLine: {'line': b'[100%] Built target node\n'}
+[35.363463] (controller) CommandEnded: {'returncode': 0}
+[35.364071] (-) TimerEvent: {}
+[35.464050] (controller) JobProgress: {'identifier': 'controller', 'progress': 'install'}
+[35.464144] (-) TimerEvent: {}
+[35.465457] (controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe/Documents'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1310'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b08933e6_99d4_4fbe_952e_3e2a9bf847e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NHHSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/opt/ros/humble')]), 'shell': False}
+[35.478231] (controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.478610] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/rosidl_interfaces/controller\n'}
+[35.478902] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller\n'}
+[35.479281] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg\n'}
+[35.479660] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/motion.h\n'}
+[35.479789] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail\n'}
+[35.479986] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__type_support.h\n'}
+[35.480181] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__functions.c\n'}
+[35.480405] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__struct.h\n'}
+[35.480564] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__functions.h\n'}
+[35.480722] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_generator_c__visibility_control.h\n'}
+[35.482577] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/library_path.sh\n'}
+[35.482980] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/library_path.dsv\n'}
+[35.484885] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_c.so\n'}
+[35.485119] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_c.so" to ""\n'}
+[35.485314] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller\n'}
+[35.485490] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg\n'}
+[35.485663] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail\n'}
+[35.485858] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_fastrtps_c.h\n'}
+[35.486103] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[35.486286] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_c.so\n'}
+[35.486612] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[35.486807] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller\n'}
+[35.487025] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg\n'}
+[35.487203] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail\n'}
+[35.487379] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_introspection_c.h\n'}
+[35.487549] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__type_support.c\n'}
+[35.487725] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[35.487908] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_c.so\n'}
+[35.488320] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_c.so" to ""\n'}
+[35.488525] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_c.so\n'}
+[35.488708] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_c.so" to ""\n'}
+[35.488887] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller\n'}
+[35.489063] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg\n'}
+[35.489234] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail\n'}
+[35.489405] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__struct.hpp\n'}
+[35.489858] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__traits.hpp\n'}
+[35.490068] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__builder.hpp\n'}
+[35.490246] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/motion.hpp\n'}
+[35.490403] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller\n'}
+[35.490550] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg\n'}
+[35.490692] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail\n'}
+[35.490942] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/dds_fastrtps\n'}
+[35.501342] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[35.501726] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[35.501923] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_cpp.so\n'}
+[35.502100] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[35.502268] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller\n'}
+[35.502437] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg\n'}
+[35.502616] (controller) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail\n'}
+[35.502794] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__type_support.cpp\n'}
+[35.502991] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/include/controller/controller/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.503168] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_cpp.so\n'}
+[35.503342] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[35.503512] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_cpp.so\n'}
+[35.503686] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_typesupport_cpp.so" to ""\n'}
+[35.503891] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/pythonpath.sh\n'}
+[35.504064] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/pythonpath.dsv\n'}
+[35.504245] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info\n'}
+[35.504416] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[35.504589] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[35.504764] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[35.504947] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[35.505121] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller\n'}
+[35.505297] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/_controller_s.ep.rosidl_typesupport_c.c\n'}
+[35.505473] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.505651] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.505915] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/libcontroller__rosidl_generator_py.so\n'}
+[35.506097] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/_controller_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[35.506273] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/_controller_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[35.506450] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg\n'}
+[35.506626] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/_motion_s.c\n'}
+[35.506796] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/_motion.py\n'}
+[35.506996] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/__init__.py\n'}
+[35.507192] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/__init__.py\n'}
+[35.507363] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.564325] (-) TimerEvent: {}
+[35.581012] (controller) StdoutLine: {'line': b"Listing '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller'...\n"}
+[35.581405] (controller) StdoutLine: {'line': b"Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/__init__.py'...\n"}
+[35.581612] (controller) StdoutLine: {'line': b"Listing '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg'...\n"}
+[35.581800] (controller) StdoutLine: {'line': b"Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/__init__.py'...\n"}
+[35.582136] (controller) StdoutLine: {'line': b"Compiling '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/msg/_motion.py'...\n"}
+[35.590718] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.593989] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[35.594546] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.595120] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[35.595384] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.595584] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/local/lib/python3.10/dist-packages/controller/controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[35.595758] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_py.so\n'}
+[35.598621] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/libcontroller__rosidl_generator_py.so" to ""\n'}
+[35.598998] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/msg/Motion.idl\n'}
+[35.599214] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/msg/Motion.msg\n'}
+[35.599415] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/node\n'}
+[35.608524] (controller) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/node" to ""\n'}
+[35.609144] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/package_run_dependencies/controller\n'}
+[35.609456] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/parent_prefix_path/controller\n'}
+[35.610350] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.sh\n'}
+[35.610687] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.dsv\n'}
+[35.610890] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.sh\n'}
+[35.611058] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.dsv\n'}
+[35.611312] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.bash\n'}
+[35.611782] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.sh\n'}
+[35.612108] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.zsh\n'}
+[35.612382] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.dsv\n'}
+[35.612655] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.dsv\n'}
+[35.613036] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/packages/controller\n'}
+[35.613465] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_cExport.cmake\n'}
+[35.613791] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_cExport-noconfig.cmake\n'}
+[35.614160] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[35.614557] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[35.614953] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cExport.cmake\n'}
+[35.615301] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[35.615691] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cExport.cmake\n'}
+[35.616019] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[35.616364] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_cppExport.cmake\n'}
+[35.616738] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[35.617190] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[35.617564] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[35.617894] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[35.618232] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cppExport.cmake\n'}
+[35.618560] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controller__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[35.618955] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_pyExport.cmake\n'}
+[35.619282] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/export_controller__rosidl_generator_pyExport-noconfig.cmake\n'}
+[35.619600] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/rosidl_cmake-extras.cmake\n'}
+[35.619912] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[35.620233] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[35.620530] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[35.620831] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[35.621138] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[35.621431] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[35.621733] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig.cmake\n'}
+[35.621989] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig-version.cmake\n'}
+[35.622314] (controller) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.xml\n'}
+[35.629020] (controller) CommandEnded: {'returncode': 0}
+[35.664760] (-) TimerEvent: {}
+[35.765325] (-) TimerEvent: {}
+[35.866950] (-) TimerEvent: {}
+[35.967483] (-) TimerEvent: {}
+[36.068005] (-) TimerEvent: {}
+[36.168790] (-) TimerEvent: {}
+[36.193196] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[36.195257] (-) EventReactorShutdown: {}

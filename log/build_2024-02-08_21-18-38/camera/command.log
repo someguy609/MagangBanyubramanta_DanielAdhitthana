@@ -1,4 +1,0 @@
-Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
-Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
-Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera
-Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera

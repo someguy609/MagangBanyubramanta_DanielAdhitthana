@@ -1,8 +1,8 @@
-# Install script for directory: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera
+# Install script for directory: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera")
+  set(CMAKE_INSTALL_PREFIX "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,11 +43,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rosidl_interfaces" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rosidl_interfaces" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/camera")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_c/camera/" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_c/camera/" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -55,7 +55,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/library_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/library_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -65,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_generator_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_generator_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_c.so")
     file(RPATH_CHANGE
@@ -82,7 +82,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_fastrtps_c/camera/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_fastrtps_c/camera/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -92,12 +92,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_fastrtps_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_fastrtps_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_c.so"
-         OLD_RPATH "/opt/ros/humble/lib:/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_c.so")
@@ -109,11 +109,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_cpp/camera/" REGEX "/[^/]*\\.hpp$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_cpp/camera/" REGEX "/[^/]*\\.hpp$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_fastrtps_cpp/camera/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_fastrtps_cpp/camera/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -123,7 +123,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_fastrtps_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_fastrtps_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so")
     file(RPATH_CHANGE
@@ -140,7 +140,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_introspection_c/camera/" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_introspection_c/camera/" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -150,12 +150,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_introspection_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_introspection_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_c.so"
-         OLD_RPATH "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_c.so")
@@ -173,12 +173,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_c.so"
-         OLD_RPATH "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_c.so")
@@ -190,7 +190,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_introspection_cpp/camera/" REGEX "/[^/]*\\.hpp$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/camera/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_typesupport_introspection_cpp/camera/" REGEX "/[^/]*\\.hpp$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -200,7 +200,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_introspection_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_introspection_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_introspection_cpp.so")
     file(RPATH_CHANGE
@@ -223,7 +223,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/libcamera__rosidl_typesupport_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_typesupport_cpp.so")
     file(RPATH_CHANGE
@@ -240,26 +240,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/pythonpath.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/pythonpath.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_python/camera/camera.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_python/camera/camera.egg-info/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE DIRECTORY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE DIRECTORY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3.10" "-m" "compileall"
-        "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera"
+        "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera"
       )
 endif()
 
@@ -270,12 +270,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera:/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so")
@@ -293,12 +293,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera:/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so")
@@ -316,12 +316,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera:/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so")
@@ -339,12 +339,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_py.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/libcamera__rosidl_generator_py.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera/libcamera__rosidl_generator_py.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_py.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_py.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_py.so"
-         OLD_RPATH "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcamera__rosidl_generator_py.so")
@@ -356,11 +356,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/msg" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_adapter/camera/msg/Object.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/msg" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_adapter/camera/msg/Object.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/msg" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/msg/Object.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/msg" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera/msg/Object.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -370,12 +370,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera/node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/camera" TYPE EXECUTABLE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/camera" TYPE EXECUTABLE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera/node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera/node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera/node"
-         OLD_RPATH "/opt/ros/humble/lib:/usr/local/lib:/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera:"
+         OLD_RPATH "/opt/ros/humble/lib:/usr/local/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera/node")
@@ -384,11 +384,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/camera")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/camera")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -396,7 +396,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -404,38 +404,38 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/packages/camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_index/share/ament_index/resource_index/packages/camera")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -444,9 +444,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -454,7 +454,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -463,9 +463,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -473,7 +473,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -482,14 +482,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -498,9 +498,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -508,7 +508,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -517,9 +517,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -527,7 +527,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -536,9 +536,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -546,7 +546,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -555,9 +555,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -565,7 +565,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/camera__rosidl_typesupport_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -574,9 +574,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/camera__rosidl_typesupport_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -584,7 +584,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake"
-         "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake")
+         "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/camera/cmake/export_camera__rosidl_generator_pyExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -593,54 +593,54 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_pyExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/Export/share/camera/cmake/export_camera__rosidl_generator_pyExport-noconfig.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_cmake/rosidl_cmake-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_cmake/rosidl_cmake-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera/cmake" TYPE FILE FILES
-    "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_core/cameraConfig.cmake"
-    "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_core/cameraConfig-version.cmake"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_core/cameraConfig.cmake"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_core/cameraConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/camera__py/cmake_install.cmake")
+  include("/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/camera__py/cmake_install.cmake")
 
 endif()
 
@@ -652,5 +652,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

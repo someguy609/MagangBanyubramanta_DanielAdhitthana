@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
 
 # Utility rule file for camera__cpp.
 
@@ -87,8 +87,8 @@ rosidl_generator_cpp/camera/msg/object.hpp: /opt/ros/humble/share/rosidl_generat
 rosidl_generator_cpp/camera/msg/object.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/camera/msg/object.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/camera/msg/object.hpp: rosidl_adapter/camera/msg/Object.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/camera/msg/detail/object__builder.hpp: rosidl_generator_cpp/camera/msg/object.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/camera/msg/detail/object__builder.hpp
@@ -116,6 +116,6 @@ CMakeFiles/camera__cpp.dir/clean:
 .PHONY : CMakeFiles/camera__cpp.dir/clean
 
 CMakeFiles/camera__cpp.dir/depend:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/camera__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/camera__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/camera__cpp.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
 
 # Utility rule file for ament_cmake_python_copy_camera.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_camera.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_camera.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_camera:
-	/usr/bin/cmake -E copy_directory /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_python/camera/camera
+	/usr/bin/cmake -E copy_directory /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_python/camera/camera
 
 ament_cmake_python_copy_camera: CMakeFiles/ament_cmake_python_copy_camera
 ament_cmake_python_copy_camera: CMakeFiles/ament_cmake_python_copy_camera.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_camera.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_camera.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_camera.dir/depend:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/ament_cmake_python_copy_camera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/ament_cmake_python_copy_camera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_camera.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
 
 # Utility rule file for camera_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/camera_uninstall.dir/compiler_depend.make
 include CMakeFiles/camera_uninstall.dir/progress.make
 
 CMakeFiles/camera_uninstall:
-	/usr/bin/cmake -P /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 camera_uninstall: CMakeFiles/camera_uninstall
 camera_uninstall: CMakeFiles/camera_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/camera_uninstall.dir/clean:
 .PHONY : CMakeFiles/camera_uninstall.dir/clean
 
 CMakeFiles/camera_uninstall.dir/depend:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/camera_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles/camera_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/camera_uninstall.dir/depend
 

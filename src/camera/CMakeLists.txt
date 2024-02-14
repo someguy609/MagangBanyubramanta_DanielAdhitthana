@@ -17,14 +17,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 ament_export_dependencies(rosidl_default_runtime)
 
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-
 add_executable(
   node
   src/node.cpp
 )
-ament_target_dependencies(node rclcpp)
-target_link_libraries( node ${OpenCV_LIBS} )
+ament_target_dependencies(node rclcpp OpenCV)
 
 install(TARGETS
   node

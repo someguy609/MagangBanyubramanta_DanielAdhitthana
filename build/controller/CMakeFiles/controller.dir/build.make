@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller
 
 # Utility rule file for controller.
 
@@ -66,7 +66,7 @@ include CMakeFiles/controller.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/controller.dir/progress.make
 
-CMakeFiles/controller: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller/msg/Motion.msg
+CMakeFiles/controller: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller/msg/Motion.msg
 
 controller: CMakeFiles/controller
 controller: CMakeFiles/controller.dir/build.make
@@ -81,6 +81,6 @@ CMakeFiles/controller.dir/clean:
 .PHONY : CMakeFiles/controller.dir/clean
 
 CMakeFiles/controller.dir/depend:
-	cd /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/controller.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/CMakeFiles/controller.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/controller.dir/depend
 

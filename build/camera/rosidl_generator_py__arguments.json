@@ -1,9 +1,9 @@
 {
   "package_name": "camera",
-  "output_dir": "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera",
+  "output_dir": "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_generator_py/camera",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_adapter/camera:msg/Object.idl"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_adapter/camera:msg/Object.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +19,6 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_adapter/camera/msg/Object.idl"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/rosidl_adapter/camera/msg/Object.idl"
   ]
 }

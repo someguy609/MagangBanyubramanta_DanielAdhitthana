@@ -1,0 +1,128 @@
+[0.000000] (-) TimerEvent: {}
+[0.003598] (-) JobUnselected: {'identifier': 'controller'}
+[0.003941] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.004543] (camera) JobStarted: {'identifier': 'camera'}
+[0.056591] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.058571] (camera) JobProgress: {'identifier': 'camera', 'progress': 'build'}
+[0.059432] (camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('GIT_ASKPASS', '/home/donjoe/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('TERM_PROGRAM_VERSION', '1.86.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-fc032004-5848-47fa-84a2-9f67cb560757.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/donjoe/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/donjoe/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('NAME', 'LAPTOP-GBMF4AJI'), ('WSL_INTEROP', '/run/WSL/388_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/donjoe/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Rojo:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Go/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/ASUS/.cargo/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ASUS/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/ASUS/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Users/ASUS/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ASUS/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/xampp/php:/mnt/c/Users/ASUS/AppData/Local/ComposerSetup/bin:/mnt/c/Users/ASUS/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Users/ASUS/AppData/Roaming/npm:/mnt/c/Users/ASUS/go/bin:/mnt/c/MinGW/msys/1.0/bin:/mnt/c/Program Files/PostgreSQL/16/bin:/mnt/c/opencv/build/x64/vc16/bin:/mnt/c/Users/ASUS/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c090c3ac8e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100277] (-) TimerEvent: {}
+[0.200723] (-) TimerEvent: {}
+[0.301145] (-) TimerEvent: {}
+[0.357742] (camera) StdoutLine: {'line': b'[  3%] Built target camera__cpp\n'}
+[0.364550] (camera) StdoutLine: {'line': b'[ 12%] Built target camera__rosidl_generator_c\n'}
+[0.377697] (camera) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_camera\n'}
+[0.383941] (camera) StdoutLine: {'line': b'[ 21%] Built target camera__rosidl_typesupport_cpp\n'}
+[0.386451] (camera) StdoutLine: {'line': b'[ 30%] Built target camera__rosidl_typesupport_fastrtps_cpp\n'}
+[0.389761] (camera) StdoutLine: {'line': b'[ 39%] Built target camera__rosidl_typesupport_introspection_cpp\n'}
+[0.401332] (-) TimerEvent: {}
+[0.404783] (camera) StdoutLine: {'line': b'[ 48%] Built target camera__rosidl_typesupport_fastrtps_c\n'}
+[0.409268] (camera) StdoutLine: {'line': b'[ 57%] Built target camera__rosidl_typesupport_introspection_c\n'}
+[0.416517] (camera) StdoutLine: {'line': b'[ 66%] Built target camera__rosidl_typesupport_c\n'}
+[0.421791] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node\x1b[0m\n'}
+[0.439600] (camera) StdoutLine: {'line': b'[ 66%] Built target camera\n'}
+[0.447538] (camera) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[0.466722] (camera) StdoutLine: {'line': b'[ 72%] Built target camera__py\n'}
+[0.487056] (camera) StdoutLine: {'line': b'[ 78%] Built target camera__rosidl_generator_py\n'}
+[0.501503] (-) TimerEvent: {}
+[0.512456] (camera) StdoutLine: {'line': b'[ 84%] Built target camera__rosidl_typesupport_introspection_c__pyext\n'}
+[0.513307] (camera) StdoutLine: {'line': b'[ 90%] Built target camera__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.535623] (camera) StdoutLine: {'line': b'[ 96%] Built target camera__rosidl_typesupport_c__pyext\n'}
+[0.601634] (-) TimerEvent: {}
+[0.702191] (-) TimerEvent: {}
+[0.708580] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[0.711196] (camera) StdoutLine: {'line': b'writing camera.egg-info/PKG-INFO\n'}
+[0.711488] (camera) StdoutLine: {'line': b'writing dependency_links to camera.egg-info/dependency_links.txt\n'}
+[0.714742] (camera) StdoutLine: {'line': b'writing top-level names to camera.egg-info/top_level.txt\n'}
+[0.733734] (camera) StdoutLine: {'line': b"reading manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[0.735200] (camera) StdoutLine: {'line': b"writing manifest file 'camera.egg-info/SOURCES.txt'\n"}
+[0.783220] (camera) StdoutLine: {'line': b'[ 96%] Built target ament_cmake_python_build_camera_egg\n'}
+[0.802333] (-) TimerEvent: {}
+[0.902747] (-) TimerEvent: {}
+[1.003143] (-) TimerEvent: {}
+[1.103539] (-) TimerEvent: {}
+[1.203970] (-) TimerEvent: {}
+[1.304419] (-) TimerEvent: {}
+[1.404912] (-) TimerEvent: {}
+[1.505805] (-) TimerEvent: {}
+[1.606278] (-) TimerEvent: {}
+[1.706813] (-) TimerEvent: {}
+[1.807292] (-) TimerEvent: {}
+[1.907770] (-) TimerEvent: {}
+[2.008284] (-) TimerEvent: {}
+[2.108858] (-) TimerEvent: {}
+[2.209339] (-) TimerEvent: {}
+[2.309797] (-) TimerEvent: {}
+[2.410274] (-) TimerEvent: {}
+[2.510802] (-) TimerEvent: {}
+[2.611274] (-) TimerEvent: {}
+[2.711764] (-) TimerEvent: {}
+[2.812205] (-) TimerEvent: {}
+[2.912639] (-) TimerEvent: {}
+[3.013108] (-) TimerEvent: {}
+[3.113643] (-) TimerEvent: {}
+[3.214156] (-) TimerEvent: {}
+[3.314638] (-) TimerEvent: {}
+[3.415129] (-) TimerEvent: {}
+[3.515590] (-) TimerEvent: {}
+[3.616007] (-) TimerEvent: {}
+[3.716444] (-) TimerEvent: {}
+[3.816897] (-) TimerEvent: {}
+[3.917350] (-) TimerEvent: {}
+[4.017824] (-) TimerEvent: {}
+[4.118391] (-) TimerEvent: {}
+[4.219013] (-) TimerEvent: {}
+[4.319527] (-) TimerEvent: {}
+[4.420012] (-) TimerEvent: {}
+[4.520475] (-) TimerEvent: {}
+[4.533947] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Camera::topic_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.534383] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:80:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Moments::Moments(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.534464] (camera) StderrLine: {'line': b'   80 |         cv::Moments red_moments = cv::Moments(red\x1b[01;31m\x1b[K)\x1b[m\x1b[K,\n'}
+[4.534516] (camera) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.535896] (camera) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.536054] (camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.536104] (camera) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:9\x1b[m\x1b[K:\n'}
+[4.536153] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:965:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Moments::Moments(double, double, double, double, double, double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.536203] (camera) StderrLine: {'line': b'  965 |     \x1b[01;36m\x1b[KMoments\x1b[m\x1b[K(double m00, double m10, double m01, double m20, double m11,\n'}
+[4.536283] (camera) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.537102] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:965:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 10 arguments, 1 provided\n'}
+[4.537249] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:963:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Moments::Moments()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.537316] (camera) StderrLine: {'line': b'  963 |     \x1b[01;36m\x1b[KMoments\x1b[m\x1b[K();\n'}
+[4.537393] (camera) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.537468] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:963:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[4.537541] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr cv::Moments::Moments(const cv::Moments&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.537623] (camera) StderrLine: {'line': b'  959 | class CV_EXPORTS_W_MAP \x1b[01;36m\x1b[KMoments\x1b[m\x1b[K\n'}
+[4.537697] (camera) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.537838] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Moments&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.537927] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr cv::Moments::Moments(cv::Moments&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.538007] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::Moments&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.550822] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:86:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyellow_moments\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kred_moments\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.551103] (camera) StderrLine: {'line': b'   86 |         message.yellow = \x1b[01;31m\x1b[Kyellow_moments\x1b[m\x1b[K.m00 > min_area;\n'}
+[4.551193] (camera) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.551430] (camera) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kred_moments\x1b[m\x1b[K\n'}
+[4.560391] (camera) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:87:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kblue_moments\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kred_moments\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.560676] (camera) StderrLine: {'line': b'   87 |         message.blue = \x1b[01;31m\x1b[Kblue_moments\x1b[m\x1b[K.m00 > min_area;\n'}
+[4.560759] (camera) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.560826] (camera) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kred_moments\x1b[m\x1b[K\n'}
+[4.620607] (-) TimerEvent: {}
+[4.721044] (-) TimerEvent: {}
+[4.821556] (-) TimerEvent: {}
+[4.921965] (-) TimerEvent: {}
+[5.022412] (-) TimerEvent: {}
+[5.122833] (-) TimerEvent: {}
+[5.223328] (-) TimerEvent: {}
+[5.323810] (-) TimerEvent: {}
+[5.424319] (-) TimerEvent: {}
+[5.524893] (-) TimerEvent: {}
+[5.625383] (-) TimerEvent: {}
+[5.725921] (-) TimerEvent: {}
+[5.826385] (-) TimerEvent: {}
+[5.926896] (-) TimerEvent: {}
+[6.027335] (-) TimerEvent: {}
+[6.127845] (-) TimerEvent: {}
+[6.142943] (camera) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1\n'}
+[6.143429] (camera) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/node.dir/all] Error 2\n'}
+[6.143620] (camera) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.146963] (camera) CommandEnded: {'returncode': 2}
+[6.228423] (-) TimerEvent: {}
+[6.268640] (camera) JobEnded: {'identifier': 'camera', 'rc': 2}
+[6.279555] (-) EventReactorShutdown: {}

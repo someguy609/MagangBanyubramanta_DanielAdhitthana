@@ -5,5 +5,5 @@
 - [x] Base Node
 - [x] Detection
 - [x] Testing
-- [ ] Fix values
-- [ ] Fine tune detection
+- [x] Fix values
+- [x] Fine tune detection

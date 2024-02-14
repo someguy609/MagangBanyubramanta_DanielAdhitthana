@@ -1,0 +1,58 @@
+[0.056s] Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[0.353s] [  3%] Built target camera__cpp
+[0.360s] [ 12%] Built target camera__rosidl_generator_c
+[0.373s] [ 12%] Built target ament_cmake_python_copy_camera
+[0.380s] [ 21%] Built target camera__rosidl_typesupport_cpp
+[0.382s] [ 30%] Built target camera__rosidl_typesupport_fastrtps_cpp
+[0.385s] [ 39%] Built target camera__rosidl_typesupport_introspection_cpp
+[0.400s] [ 48%] Built target camera__rosidl_typesupport_fastrtps_c
+[0.405s] [ 57%] Built target camera__rosidl_typesupport_introspection_c
+[0.412s] [ 66%] Built target camera__rosidl_typesupport_c
+[0.417s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[0.435s] [ 66%] Built target camera
+[0.443s] [ 69%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[0.462s] [ 72%] Built target camera__py
+[0.483s] [ 78%] Built target camera__rosidl_generator_py
+[0.508s] [ 84%] Built target camera__rosidl_typesupport_introspection_c__pyext
+[0.509s] [ 90%] Built target camera__rosidl_typesupport_fastrtps_c__pyext
+[0.531s] [ 96%] Built target camera__rosidl_typesupport_c__pyext
+[0.704s] running egg_info
+[0.707s] writing camera.egg-info/PKG-INFO
+[0.707s] writing dependency_links to camera.egg-info/dependency_links.txt
+[0.710s] writing top-level names to camera.egg-info/top_level.txt
+[0.729s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[0.731s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[0.779s] [ 96%] Built target ament_cmake_python_build_camera_egg
+[4.530s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:[m[K In member function ‘[01m[Kvoid Camera::topic_callback()[m[K’:
+[4.530s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:80:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Moments::Moments(cv::Mat&)[m[K’
+[4.530s]    80 |         cv::Moments red_moments = cv::Moments(red[01;31m[K)[m[K,
+[4.530s]       |                                                  [01;31m[K^[m[K
+[4.531s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.532s]                  from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.532s]                  from [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:9[m[K:
+[4.532s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:965:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Moments::Moments(double, double, double, double, double, double, double, double, double, double)[m[K’
+[4.532s]   965 |     [01;36m[KMoments[m[K(double m00, double m10, double m01, double m20, double m11,
+[4.532s]       |     [01;36m[K^~~~~~~[m[K
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:965:5:[m[K [01;36m[Knote: [m[K  candidate expects 10 arguments, 1 provided
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:963:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Moments::Moments()[m[K’
+[4.533s]   963 |     [01;36m[KMoments[m[K();
+[4.533s]       |     [01;36m[K^~~~~~~[m[K
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:963:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr cv::Moments::Moments(const cv::Moments&)[m[K’
+[4.533s]   959 | class CV_EXPORTS_W_MAP [01;36m[KMoments[m[K
+[4.533s]       |                        [01;36m[K^~~~~~~[m[K
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat[m[K’ to ‘[01m[Kconst cv::Moments&[m[K’
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr cv::Moments::Moments(cv::Moments&&)[m[K’
+[4.533s] [01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:959:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Mat[m[K’ to ‘[01m[Kcv::Moments&&[m[K’
+[4.546s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:86:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kyellow_moments[m[K’ was not declared in this scope; did you mean ‘[01m[Kred_moments[m[K’?
+[4.547s]    86 |         message.yellow = [01;31m[Kyellow_moments[m[K.m00 > min_area;
+[4.547s]       |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.547s]       |                          [32m[Kred_moments[m[K
+[4.556s] [01m[K/home/donjoe/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:87:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kblue_moments[m[K’ was not declared in this scope; did you mean ‘[01m[Kred_moments[m[K’?
+[4.556s]    87 |         message.blue = [01;31m[Kblue_moments[m[K.m00 > min_area;
+[4.556s]       |                        [01;31m[K^~~~~~~~~~~~[m[K
+[4.556s]       |                        [32m[Kred_moments[m[K
+[6.139s] gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1
+[6.139s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/node.dir/all] Error 2
+[6.139s] gmake: *** [Makefile:146: all] Error 2
+[6.144s] Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4

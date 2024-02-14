@@ -1,0 +1,148 @@
+[0.153s] Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[0.869s] [  3%] Built target camera__cpp
+[0.878s] [ 12%] Built target camera__rosidl_generator_c
+[0.890s] [ 12%] Built target ament_cmake_python_copy_camera
+[0.911s] [ 21%] Built target camera__rosidl_typesupport_cpp
+[0.914s] [ 30%] Built target camera__rosidl_typesupport_fastrtps_cpp
+[0.917s] [ 39%] Built target camera__rosidl_typesupport_introspection_cpp
+[0.933s] [ 48%] Built target camera__rosidl_typesupport_fastrtps_c
+[0.949s] [ 57%] Built target camera__rosidl_typesupport_introspection_c
+[0.965s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[0.966s] [ 66%] Built target camera__rosidl_typesupport_c
+[0.992s] [ 66%] Built target camera
+[0.998s] [ 69%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[1.040s] [ 72%] Built target camera__py
+[1.081s] [ 78%] Built target camera__rosidl_generator_py
+[1.150s] [ 84%] Built target camera__rosidl_typesupport_fastrtps_c__pyext
+[1.159s] [ 90%] Built target camera__rosidl_typesupport_introspection_c__pyext
+[1.198s] [ 96%] Built target camera__rosidl_typesupport_c__pyext
+[1.358s] running egg_info
+[1.359s] writing camera.egg-info/PKG-INFO
+[1.359s] writing dependency_links to camera.egg-info/dependency_links.txt
+[1.360s] writing top-level names to camera.egg-info/top_level.txt
+[1.368s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[1.368s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[1.411s] [ 96%] Built target ament_cmake_python_build_camera_egg
+[14.003s] [100%] [32m[1mLinking CXX executable node[0m
+[15.839s] [100%] Built target node
+[15.901s] Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[16.013s] Invoking command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera
+[16.034s] -- Install configuration: ""
+[16.038s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/rosidl_interfaces/camera
+[16.039s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[16.041s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[16.041s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.h
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.h
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.c
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__functions.h
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.h
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_generator_c__visibility_control.h
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.sh
+[16.042s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/library_path.dsv
+[16.046s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_c.so
+[16.047s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[16.047s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[16.048s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.048s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[16.048s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[16.048s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_c.so
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/object.hpp
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__struct.hpp
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__traits.hpp
+[16.049s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__builder.hpp
+[16.051s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[16.051s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[16.052s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.052s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[16.052s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[16.052s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/dds_fastrtps
+[16.053s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_fastrtps_cpp.so
+[16.053s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[16.053s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[16.057s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_c.h
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.c
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_c.so
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_c.so
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera
+[16.058s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__type_support.cpp
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/include/camera/camera/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_introspection_cpp.so
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_typesupport_cpp.so
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.sh
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/pythonpath.dsv
+[16.059s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info
+[16.059s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/top_level.txt
+[16.060s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/PKG-INFO
+[16.064s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/SOURCES.txt
+[16.066s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera-0.0.0-py3.10.egg-info/dependency_links.txt
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object.py
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/_object_s.c
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg/__init__.py
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_c.c
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.067s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.068s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/_camera_s.ep.rosidl_typesupport_introspection_c.c
+[16.068s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.068s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/libcamera__rosidl_generator_py.so
+[16.068s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/__init__.py
+[16.158s] Listing '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera'...
+[16.158s] Listing '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/msg'...
+[16.175s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[16.175s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[16.175s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/local/lib/python3.10/dist-packages/camera/camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[16.176s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/libcamera__rosidl_generator_py.so
+[16.177s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.idl
+[16.177s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/msg/Object.msg
+[16.183s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node
+[16.189s] -- Set runtime path of "/home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node" to ""
+[16.190s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/package_run_dependencies/camera
+[16.191s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/parent_prefix_path/camera
+[16.191s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.sh
+[16.191s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.dsv
+[16.191s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.sh
+[16.192s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.dsv
+[16.192s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.bash
+[16.192s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.sh
+[16.192s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.zsh
+[16.193s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.dsv
+[16.193s] -- Installing: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.dsv
+[16.198s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/packages/camera
+[16.199s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport.cmake
+[16.200s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cExport-noconfig.cmake
+[16.201s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport.cmake
+[16.201s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[16.202s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_cppExport.cmake
+[16.204s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.204s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[16.204s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport.cmake
+[16.204s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[16.206s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport.cmake
+[16.206s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cExport-noconfig.cmake
+[16.206s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport.cmake
+[16.206s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[16.207s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport.cmake
+[16.207s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/camera__rosidl_typesupport_cppExport-noconfig.cmake
+[16.208s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport.cmake
+[16.208s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/export_camera__rosidl_generator_pyExport-noconfig.cmake
+[16.208s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake-extras.cmake
+[16.209s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.209s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_libraries-extras.cmake
+[16.209s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_targets-extras.cmake
+[16.210s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.210s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.210s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.210s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig.cmake
+[16.210s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig-version.cmake
+[16.210s] -- Up-to-date: /home/donjoe/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.xml
+[16.224s] Invoked command in '/home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/MagangBanyubramanta_DanielAdhitthana/build/camera

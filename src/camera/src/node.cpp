@@ -9,13 +9,6 @@
 #include "opencv2/opencv.hpp"
 #include "camera/msg/object.hpp"
 
-#define RED 0
-#define YELLOW 30
-#define BLUE 120
-#define HUE_THRESHOLD 20
-#define MIN_SATURATION 50
-#define MIN_VALUE 50
-
 #define DEBUG
 
 using namespace std::chrono_literals;
@@ -29,6 +22,17 @@ public:
         timer_ = this->create_wall_timer(500ms, std::bind(&Camera::topic_callback, this));
         publisher_ = this->create_publisher<camera::msg::Object>("detected_object", 10);
         cap_ = cv::VideoCapture(0);
+
+#ifdef DEBUG
+        cv::namedWindow("values");
+        cv::createTrackbar("hue thresh", "values", &hue_thresh, 90);
+        cv::createTrackbar("min sat", "values", &min_sat, 255);
+        cv::createTrackbar("min val", "values", &min_val, 255);
+        cv::createTrackbar("min area", "values", &min_area, 10000);
+        cv::createTrackbar("red hue", "values", &red_hue, 179);
+        cv::createTrackbar("yellow hue", "values", &yellow_hue, 179);
+        cv::createTrackbar("blue hue", "values", &blue_hue, 179);
+#endif
 
         if (!cap_.isOpened())
             RCLCPP_ERROR(this->get_logger(), "Failed to open video capture");
@@ -55,16 +59,14 @@ private:
         cv::imshow("frame", frame);
 #endif
 
-        // denoising ???
+        cv::Mat denoised_frame;
+        cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
 
-        // cv::Mat opening,
-        //     opening_kernel = cv::getStructuringElement(cv::MORPH_RECT,
-        //                                                cv::Size(5, 5),
-        //                                                cv::Point(2, 2));
-        // cv::morphologyEx(frame, opening, cv::MORPH_OPEN);
+        cv::morphologyEx(frame, denoised_frame, cv::MORPH_OPEN, kernel);
+        cv::morphologyEx(denoised_frame, denoised_frame, cv::MORPH_CLOSE, kernel);
 
         cv::Mat hsv_frame;
-        cv::cvtColor(frame, hsv_frame, cv::COLOR_BGR2HSV);
+        cv::cvtColor(denoised_frame, hsv_frame, cv::COLOR_BGR2HSV);
 
         if (hsv_frame.empty())
         {
@@ -77,14 +79,18 @@ private:
 #endif
 
         cv::Mat red, yellow, blue;
-        cv::inRange(hsv_frame, cv::Scalar(RED - HUE_THRESHOLD, MIN_SATURATION, MIN_VALUE), cv::Scalar(RED + HUE_THRESHOLD, 255, 255), red);
-        cv::inRange(hsv_frame, cv::Scalar(YELLOW - HUE_THRESHOLD, MIN_SATURATION, MIN_VALUE), cv::Scalar(YELLOW + HUE_THRESHOLD, 255, 255), yellow);
-        cv::inRange(hsv_frame, cv::Scalar(BLUE - HUE_THRESHOLD, MIN_SATURATION, MIN_VALUE), cv::Scalar(BLUE + HUE_THRESHOLD, 255, 255), blue);
+        cv::inRange(hsv_frame, cv::Scalar(red_hue - hue_thresh, min_sat, min_val), cv::Scalar(red_hue + hue_thresh, 255, 255), red);
+        cv::inRange(hsv_frame, cv::Scalar(yellow_hue - hue_thresh, min_sat, min_val), cv::Scalar(yellow_hue + hue_thresh, 255, 255), yellow);
+        cv::inRange(hsv_frame, cv::Scalar(blue_hue - hue_thresh, min_sat, min_val), cv::Scalar(blue_hue + hue_thresh, 255, 255), blue);
+
+        cv::Moments red_moments = cv::moments(red),
+                    yellow_moments = cv::moments(yellow),
+                    blue_moments = cv::moments(blue);
 
         auto message = camera::msg::Object();
-        message.red = cv::countNonZero(red) > 0;
-        message.yellow = cv::countNonZero(yellow) > 0;
-        message.blue = cv::countNonZero(blue) > 0;
+        message.red = red_moments.m00 > min_area;
+        message.yellow = yellow_moments.m00 > min_area;
+        message.blue = blue_moments.m00 > min_area;
 
         publisher_->publish(message);
     }
@@ -92,6 +98,8 @@ private:
     rclcpp::Publisher<camera::msg::Object>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
     cv::VideoCapture cap_;
+    int red_hue = 0, yellow_hue = 30, blue_hue = 120,
+        hue_thresh = 50, min_sat = 50, min_val = 50, min_area = 100;
 };
 
 int main(int argc, char **argv)

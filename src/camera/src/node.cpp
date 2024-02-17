@@ -10,6 +10,7 @@
 #include "interfaces/msg/object.hpp"
 
 #define DEBUG
+#define SAYANG_RAM
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -23,16 +24,16 @@ public:
         publisher_ = this->create_publisher<interfaces::msg::Object>("detected_object", 10);
         cap_ = cv::VideoCapture(0);
 
-// #ifdef DEBUG
-//         cv::namedWindow("values");
-//         cv::createTrackbar("hue thresh", "values", &hue_thresh, 90);
-//         cv::createTrackbar("min sat", "values", &min_sat, 255);
-//         cv::createTrackbar("min val", "values", &min_val, 255);
-//         cv::createTrackbar("min area", "values", &min_area, 10000);
-//         cv::createTrackbar("red hue", "values", &red_hue, 179);
-//         cv::createTrackbar("yellow hue", "values", &yellow_hue, 179);
-//         cv::createTrackbar("blue hue", "values", &blue_hue, 179);
-// #endif
+#ifdef DEBUG
+        cv::namedWindow("values");
+        cv::createTrackbar("hue thresh", "values", &hue_thresh, 90);
+        cv::createTrackbar("min sat", "values", &min_sat, 255);
+        cv::createTrackbar("min val", "values", &min_val, 255);
+        cv::createTrackbar("min area", "values", &min_area, 10000);
+        cv::createTrackbar("red hue", "values", &red_hue, 179);
+        cv::createTrackbar("yellow hue", "values", &yellow_hue, 179);
+        cv::createTrackbar("blue hue", "values", &blue_hue, 179);
+#endif
 
         if (!cap_.isOpened())
             RCLCPP_ERROR(this->get_logger(), "Failed to open video capture");
@@ -62,9 +63,9 @@ private:
             return;
         }
 
-#ifdef DEBUG
-        cv::imshow("frame", frame);
-#endif
+// #ifdef DEBUG
+//         cv::imshow("frame", frame);
+// #endif
 
         cv::Mat hsv_frame;
         cv::cvtColor(frame, hsv_frame, cv::COLOR_BGR2HSV);
@@ -75,9 +76,9 @@ private:
             return;
         }
 
-#ifdef DEBUG
-        cv::imshow("hsv_frame", hsv_frame);
-#endif
+// #ifdef DEBUG
+//         cv::imshow("hsv_frame", hsv_frame);
+// #endif
 
         cv::Mat red, yellow, blue;
         cv::inRange(hsv_frame, cv::Scalar(red_hue - hue_thresh, min_sat, min_val), cv::Scalar(red_hue + hue_thresh, 255, 255), red);
@@ -104,6 +105,11 @@ private:
         message.blue = blue_moments.m00 > min_area;
 
         publisher_->publish(message);
+#ifdef SAYANG_RAM
+		cv::waitKey(0);
+#else
+		cv::waitKey(1);
+#endif
     }
 
     rclcpp::Publisher<interfaces::msg::Object>::SharedPtr publisher_;

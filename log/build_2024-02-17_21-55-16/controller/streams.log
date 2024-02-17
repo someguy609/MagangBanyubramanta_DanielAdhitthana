@@ -1,0 +1,49 @@
+[0.336s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4
+[0.436s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.049s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.176s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.192s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.204s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.243s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.301s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.504s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.505s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.932s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.564s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.033s] -- Found interfaces: 0.0.0 (/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/share/interfaces/cmake)
+[3.077s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.265s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.268s] -- Configured cppcheck include dirs: 
+[3.269s] -- Configured cppcheck exclude dirs and/or files: 
+[3.271s] -- Added test 'lint_cmake' to check CMake code style
+[3.272s] -- Added test 'uncrustify' to check C / C++ code style
+[3.274s] -- Configured uncrustify additional arguments: 
+[3.274s] -- Added test 'xmllint' to check XML markup files
+[3.277s] -- Configuring done
+[3.340s] -- Generating done
+[3.347s] -- Build files have been written to: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller
+[3.422s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[3.473s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/controller.cpp.o[0m
+[24.128s] [100%] [32m[1mLinking CXX executable node[0m
+[24.997s] [100%] Built target node
+[25.019s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller -- -j4 -l4
+[25.101s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller
+[25.115s] -- Install configuration: ""
+[25.117s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/node
+[25.124s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib/controller/node" to ""
+[25.124s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+[25.125s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+[25.126s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.sh
+[25.126s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/ament_prefix_path.dsv
+[25.126s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.sh
+[25.126s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/environment/path.dsv
+[25.126s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.bash
+[25.127s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.sh
+[25.127s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.zsh
+[25.127s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/local_setup.dsv
+[25.127s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.dsv
+[25.128s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/ament_index/resource_index/packages/controller
+[25.128s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig.cmake
+[25.130s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/cmake/controllerConfig-version.cmake
+[25.130s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/share/controller/package.xml
+[25.144s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller

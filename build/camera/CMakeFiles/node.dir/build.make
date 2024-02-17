@@ -93,6 +93,12 @@ node_EXTERNAL_OBJECTS =
 node: CMakeFiles/node.dir/src/node.cpp.o
 node: CMakeFiles/node.dir/build.make
 node: /opt/ros/humble/lib/librclcpp.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
 node: /usr/local/lib/libopencv_gapi.so.4.9.0
 node: /usr/local/lib/libopencv_highgui.so.4.9.0
 node: /usr/local/lib/libopencv_ml.so.4.9.0
@@ -101,7 +107,6 @@ node: /usr/local/lib/libopencv_photo.so.4.9.0
 node: /usr/local/lib/libopencv_stitching.so.4.9.0
 node: /usr/local/lib/libopencv_video.so.4.9.0
 node: /usr/local/lib/libopencv_videoio.so.4.9.0
-node: libcamera__rosidl_typesupport_cpp.so
 node: /opt/ros/humble/lib/liblibstatistics_collector.so
 node: /opt/ros/humble/lib/librcl.so
 node: /opt/ros/humble/lib/librmw_implementation.so
@@ -128,18 +133,12 @@ node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_c.so
 node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
-node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
-node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-node: /opt/ros/humble/lib/librmw.so
-node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
-node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
-node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
@@ -148,8 +147,21 @@ node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 node: /opt/ros/humble/lib/libtracetools.so
+node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
+node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+node: /opt/ros/humble/lib/librmw.so
+node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
+node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+node: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+node: /opt/ros/humble/lib/librosidl_typesupport_c.so
+node: /opt/ros/humble/lib/librcpputils.so
+node: /opt/ros/humble/lib/librosidl_runtime_c.so
+node: /opt/ros/humble/lib/librcutils.so
+node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 node: /usr/local/lib/libopencv_imgcodecs.so.4.9.0
 node: /usr/local/lib/libopencv_dnn.so.4.9.0
 node: /usr/local/lib/libopencv_calib3d.so.4.9.0
@@ -157,11 +169,6 @@ node: /usr/local/lib/libopencv_features2d.so.4.9.0
 node: /usr/local/lib/libopencv_flann.so.4.9.0
 node: /usr/local/lib/libopencv_imgproc.so.4.9.0
 node: /usr/local/lib/libopencv_core.so.4.9.0
-node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-node: /opt/ros/humble/lib/librosidl_typesupport_c.so
-node: /opt/ros/humble/lib/librcpputils.so
-node: /opt/ros/humble/lib/librosidl_runtime_c.so
-node: /opt/ros/humble/lib/librcutils.so
 node: CMakeFiles/node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/node.dir/link.txt --verbose=$(VERBOSE)

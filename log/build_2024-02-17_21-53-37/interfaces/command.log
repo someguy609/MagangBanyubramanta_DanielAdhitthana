@@ -1,0 +1,1 @@
+Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces

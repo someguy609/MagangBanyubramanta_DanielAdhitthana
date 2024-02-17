@@ -9,28 +9,17 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(OpenCV REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Object.msg"
-)
-
-ament_export_dependencies(rosidl_default_runtime)
+find_package(interfaces REQUIRED)
 
 add_executable(
   node
   src/node.cpp
 )
-ament_target_dependencies(node rclcpp OpenCV)
+ament_target_dependencies(node rclcpp OpenCV interfaces)
 
 install(TARGETS
   node
   DESTINATION lib/${PROJECT_NAME})
-
-rosidl_get_typesupport_target(cpp_typesupport_target
-  ${PROJECT_NAME} rosidl_typesupport_cpp)
-
-target_link_libraries(node "${cpp_typesupport_target}")
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

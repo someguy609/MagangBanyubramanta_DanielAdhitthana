@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interfaces/msg/Object.msg
+// generated code does not contain a copyright notice
+
+
+module interfaces {
+  module msg {
+    module Object_Constants {
+      const uint8 RED = 0;
+      const uint8 YELLOW = 1;
+      const uint8 BLUE = 2;
+    };
+    struct Object {
+      uint8 color;
+
+      int32 x;
+
+      int32 y;
+
+      float angle;
+    };
+  };
+};

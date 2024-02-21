@@ -3,6 +3,7 @@
   "output_dir": "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_generator_c/interfaces",
   "template_dir": "/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_adapter/interfaces:msg/Motion.idl",
     "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_adapter/interfaces:msg/Object.idl"
   ],
   "target_dependencies": [
@@ -19,6 +20,7 @@
     "/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_adapter/interfaces/msg/Motion.idl",
     "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_adapter/interfaces/msg/Object.idl"
   ]
 }

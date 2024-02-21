@@ -34,10 +34,6 @@ _colcon_prefix_chain_sh_source_script() {
 COLCON_CURRENT_PREFIX="/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
-# setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/home/donjoe/Documents/matlabb/custom/matlab_msg_gen/glnxa64/install"
-_colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
-
 
 # source this prefix
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script

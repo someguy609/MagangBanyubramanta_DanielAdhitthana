@@ -170,7 +170,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interfaces/msg" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_adapter/interfaces/msg/Motion.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interfaces/msg" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/build/interfaces/rosidl_adapter/interfaces/msg/Object.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interfaces/msg" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/matlab/custom/matlab_msg_gen/glnxa64/src/interfaces/msg/Motion.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

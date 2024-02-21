@@ -35,6 +35,7 @@ set (CMAKE_BUILD_WITH_INSTALL_RPATH true)
 set (CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 set (CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 set(msg_files
+  "msg/Motion.msg"
   "msg/Object.msg"
 )
 set(srv_files
@@ -51,6 +52,7 @@ link_directories("/usr/local/MATLAB/R2023b/extern/bin/glnxa64")
 add_library(
     interfaces_matlab 
     SHARED
+    src/interfaces_Motion_message.cpp
     src/interfaces_Object_message.cpp
 )
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -112,4 +114,4 @@ add_custom_command(
 				   )				   
 endforeach(file_i)
 ament_package()
-# Generated on Wed Feb 21 17:40:50 2024
+# Generated on Wed Feb 21 20:15:10 2024

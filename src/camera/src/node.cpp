@@ -8,7 +8,7 @@
 #include "opencv2/opencv.hpp"
 #include "interfaces/msg/object.hpp"
 
-#define DEBUG
+// #define DEBUG
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;

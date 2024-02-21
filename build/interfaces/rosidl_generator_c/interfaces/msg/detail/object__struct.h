@@ -17,12 +17,36 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'RED'.
+enum
+{
+  interfaces__msg__Object__RED = 0
+};
+
+/// Constant 'YELLOW'.
+enum
+{
+  interfaces__msg__Object__YELLOW = 1
+};
+
+/// Constant 'BLUE'.
+enum
+{
+  interfaces__msg__Object__BLUE = 2
+};
+
 /// Struct defined in msg/Object in the package interfaces.
+/**
+  * int32 red
+  * int32 yellow
+  * int32 blue
+ */
 typedef struct interfaces__msg__Object
 {
-  int32_t red;
-  int32_t yellow;
-  int32_t blue;
+  uint8_t color;
+  int32_t x;
+  int32_t y;
+  float angle;
 } interfaces__msg__Object;
 
 // Struct for a sequence of interfaces__msg__Object.

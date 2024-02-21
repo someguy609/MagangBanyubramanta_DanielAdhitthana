@@ -25,24 +25,31 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: red
+  // member: color
   {
-    out << "red: ";
-    rosidl_generator_traits::value_to_yaml(msg.red, out);
+    out << "color: ";
+    rosidl_generator_traits::value_to_yaml(msg.color, out);
     out << ", ";
   }
 
-  // member: yellow
+  // member: x
   {
-    out << "yellow: ";
-    rosidl_generator_traits::value_to_yaml(msg.yellow, out);
+    out << "x: ";
+    rosidl_generator_traits::value_to_yaml(msg.x, out);
     out << ", ";
   }
 
-  // member: blue
+  // member: y
   {
-    out << "blue: ";
-    rosidl_generator_traits::value_to_yaml(msg.blue, out);
+    out << "y: ";
+    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << ", ";
+  }
+
+  // member: angle
+  {
+    out << "angle: ";
+    rosidl_generator_traits::value_to_yaml(msg.angle, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,33 +58,43 @@ inline void to_block_style_yaml(
   const Object & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: red
+  // member: color
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "red: ";
-    rosidl_generator_traits::value_to_yaml(msg.red, out);
+    out << "color: ";
+    rosidl_generator_traits::value_to_yaml(msg.color, out);
     out << "\n";
   }
 
-  // member: yellow
+  // member: x
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "yellow: ";
-    rosidl_generator_traits::value_to_yaml(msg.yellow, out);
+    out << "x: ";
+    rosidl_generator_traits::value_to_yaml(msg.x, out);
     out << "\n";
   }
 
-  // member: blue
+  // member: y
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "blue: ";
-    rosidl_generator_traits::value_to_yaml(msg.blue, out);
+    out << "y: ";
+    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << "\n";
+  }
+
+  // member: angle
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "angle: ";
+    rosidl_generator_traits::value_to_yaml(msg.angle, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

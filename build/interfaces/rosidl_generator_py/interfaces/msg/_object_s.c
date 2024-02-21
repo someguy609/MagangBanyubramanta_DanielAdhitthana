@@ -50,31 +50,40 @@ bool interfaces__msg__object__convert_from_py(PyObject * _pymsg, void * _ros_mes
     assert(strncmp("interfaces.msg._object.Object", full_classname_dest, 29) == 0);
   }
   interfaces__msg__Object * ros_message = _ros_message;
-  {  // red
-    PyObject * field = PyObject_GetAttrString(_pymsg, "red");
+  {  // color
+    PyObject * field = PyObject_GetAttrString(_pymsg, "color");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->red = (int32_t)PyLong_AsLong(field);
+    ros_message->color = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
-  {  // yellow
-    PyObject * field = PyObject_GetAttrString(_pymsg, "yellow");
+  {  // x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->yellow = (int32_t)PyLong_AsLong(field);
+    ros_message->x = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
-  {  // blue
-    PyObject * field = PyObject_GetAttrString(_pymsg, "blue");
+  {  // y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->blue = (int32_t)PyLong_AsLong(field);
+    ros_message->y = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // angle
+    PyObject * field = PyObject_GetAttrString(_pymsg, "angle");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->angle = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -99,33 +108,44 @@ PyObject * interfaces__msg__object__convert_to_py(void * raw_ros_message)
     }
   }
   interfaces__msg__Object * ros_message = (interfaces__msg__Object *)raw_ros_message;
-  {  // red
+  {  // color
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->red);
+    field = PyLong_FromUnsignedLong(ros_message->color);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "red", field);
+      int rc = PyObject_SetAttrString(_pymessage, "color", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // yellow
+  {  // x
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->yellow);
+    field = PyLong_FromLong(ros_message->x);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "yellow", field);
+      int rc = PyObject_SetAttrString(_pymessage, "x", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // blue
+  {  // y
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->blue);
+    field = PyLong_FromLong(ros_message->y);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "blue", field);
+      int rc = PyObject_SetAttrString(_pymessage, "y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // angle
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->angle);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "angle", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

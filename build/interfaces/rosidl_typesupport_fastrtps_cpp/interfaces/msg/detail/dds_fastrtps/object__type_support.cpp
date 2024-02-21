@@ -32,12 +32,14 @@ cdr_serialize(
   const interfaces::msg::Object & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: red
-  cdr << ros_message.red;
-  // Member: yellow
-  cdr << ros_message.yellow;
-  // Member: blue
-  cdr << ros_message.blue;
+  // Member: color
+  cdr << ros_message.color;
+  // Member: x
+  cdr << ros_message.x;
+  // Member: y
+  cdr << ros_message.y;
+  // Member: angle
+  cdr << ros_message.angle;
   return true;
 }
 
@@ -47,14 +49,17 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   interfaces::msg::Object & ros_message)
 {
-  // Member: red
-  cdr >> ros_message.red;
+  // Member: color
+  cdr >> ros_message.color;
 
-  // Member: yellow
-  cdr >> ros_message.yellow;
+  // Member: x
+  cdr >> ros_message.x;
 
-  // Member: blue
-  cdr >> ros_message.blue;
+  // Member: y
+  cdr >> ros_message.y;
+
+  // Member: angle
+  cdr >> ros_message.angle;
 
   return true;
 }
@@ -72,21 +77,27 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: red
+  // Member: color
   {
-    size_t item_size = sizeof(ros_message.red);
+    size_t item_size = sizeof(ros_message.color);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: yellow
+  // Member: x
   {
-    size_t item_size = sizeof(ros_message.yellow);
+    size_t item_size = sizeof(ros_message.x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: blue
+  // Member: y
   {
-    size_t item_size = sizeof(ros_message.blue);
+    size_t item_size = sizeof(ros_message.y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: angle
+  {
+    size_t item_size = sizeof(ros_message.angle);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -114,7 +125,15 @@ max_serialized_size_Object(
   is_plain = true;
 
 
-  // Member: red
+  // Member: color
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: x
   {
     size_t array_size = 1;
 
@@ -123,7 +142,7 @@ max_serialized_size_Object(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: yellow
+  // Member: y
   {
     size_t array_size = 1;
 
@@ -132,7 +151,7 @@ max_serialized_size_Object(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: blue
+  // Member: angle
   {
     size_t array_size = 1;
 
@@ -149,7 +168,7 @@ max_serialized_size_Object(
     using DataType = interfaces::msg::Object;
     is_plain =
       (
-      offsetof(DataType, blue) +
+      offsetof(DataType, angle) +
       last_member_size
       ) == ret_val;
   }

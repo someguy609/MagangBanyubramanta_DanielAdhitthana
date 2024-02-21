@@ -5,12 +5,23 @@
 
 module interfaces {
   module msg {
+    module Object_Constants {
+      const uint8 RED = 0;
+      const uint8 YELLOW = 1;
+      const uint8 BLUE = 2;
+    };
+    @verbatim (language="comment", text=
+      "int32 red" "\n"
+      "int32 yellow" "\n"
+      "int32 blue")
     struct Object {
-      int32 red;
+      uint8 color;
 
-      int32 yellow;
+      int32 x;
 
-      int32 blue;
+      int32 y;
+
+      float angle;
     };
   };
 };

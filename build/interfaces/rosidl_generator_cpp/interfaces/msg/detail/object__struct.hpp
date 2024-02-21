@@ -38,9 +38,10 @@ struct Object_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->red = 0l;
-      this->yellow = 0l;
-      this->blue = 0l;
+      this->color = 0;
+      this->x = 0l;
+      this->y = 0l;
+      this->angle = 0.0f;
     }
   }
 
@@ -50,44 +51,60 @@ struct Object_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->red = 0l;
-      this->yellow = 0l;
-      this->blue = 0l;
+      this->color = 0;
+      this->x = 0l;
+      this->y = 0l;
+      this->angle = 0.0f;
     }
   }
 
   // field types and members
-  using _red_type =
+  using _color_type =
+    uint8_t;
+  _color_type color;
+  using _x_type =
     int32_t;
-  _red_type red;
-  using _yellow_type =
+  _x_type x;
+  using _y_type =
     int32_t;
-  _yellow_type yellow;
-  using _blue_type =
-    int32_t;
-  _blue_type blue;
+  _y_type y;
+  using _angle_type =
+    float;
+  _angle_type angle;
 
   // setters for named parameter idiom
-  Type & set__red(
-    const int32_t & _arg)
+  Type & set__color(
+    const uint8_t & _arg)
   {
-    this->red = _arg;
+    this->color = _arg;
     return *this;
   }
-  Type & set__yellow(
+  Type & set__x(
     const int32_t & _arg)
   {
-    this->yellow = _arg;
+    this->x = _arg;
     return *this;
   }
-  Type & set__blue(
+  Type & set__y(
     const int32_t & _arg)
   {
-    this->blue = _arg;
+    this->y = _arg;
+    return *this;
+  }
+  Type & set__angle(
+    const float & _arg)
+  {
+    this->angle = _arg;
     return *this;
   }
 
   // constant declarations
+  static constexpr uint8_t RED =
+    0u;
+  static constexpr uint8_t YELLOW =
+    1u;
+  static constexpr uint8_t BLUE =
+    2u;
 
   // pointer types
   using RawPtr =
@@ -129,13 +146,16 @@ struct Object_
   // comparison operators
   bool operator==(const Object_ & other) const
   {
-    if (this->red != other.red) {
+    if (this->color != other.color) {
       return false;
     }
-    if (this->yellow != other.yellow) {
+    if (this->x != other.x) {
       return false;
     }
-    if (this->blue != other.blue) {
+    if (this->y != other.y) {
+      return false;
+    }
+    if (this->angle != other.angle) {
       return false;
     }
     return true;
@@ -151,6 +171,21 @@ using Object =
   interfaces::msg::Object_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t Object_<ContainerAllocator>::RED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t Object_<ContainerAllocator>::YELLOW;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t Object_<ContainerAllocator>::BLUE;
+#endif  // __cplusplus < 201703L
 
 }  // namespace msg
 

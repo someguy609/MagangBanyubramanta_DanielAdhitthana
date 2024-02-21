@@ -17,9 +17,10 @@ interfaces__msg__Object__init(interfaces__msg__Object * msg)
   if (!msg) {
     return false;
   }
-  // red
-  // yellow
-  // blue
+  // color
+  // x
+  // y
+  // angle
   return true;
 }
 
@@ -29,9 +30,10 @@ interfaces__msg__Object__fini(interfaces__msg__Object * msg)
   if (!msg) {
     return;
   }
-  // red
-  // yellow
-  // blue
+  // color
+  // x
+  // y
+  // angle
 }
 
 bool
@@ -40,16 +42,20 @@ interfaces__msg__Object__are_equal(const interfaces__msg__Object * lhs, const in
   if (!lhs || !rhs) {
     return false;
   }
-  // red
-  if (lhs->red != rhs->red) {
+  // color
+  if (lhs->color != rhs->color) {
     return false;
   }
-  // yellow
-  if (lhs->yellow != rhs->yellow) {
+  // x
+  if (lhs->x != rhs->x) {
     return false;
   }
-  // blue
-  if (lhs->blue != rhs->blue) {
+  // y
+  if (lhs->y != rhs->y) {
+    return false;
+  }
+  // angle
+  if (lhs->angle != rhs->angle) {
     return false;
   }
   return true;
@@ -63,12 +69,14 @@ interfaces__msg__Object__copy(
   if (!input || !output) {
     return false;
   }
-  // red
-  output->red = input->red;
-  // yellow
-  output->yellow = input->yellow;
-  // blue
-  output->blue = input->blue;
+  // color
+  output->color = input->color;
+  // x
+  output->x = input->x;
+  // y
+  output->y = input->y;
+  // angle
+  output->angle = input->angle;
   return true;
 }
 

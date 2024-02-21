@@ -7,4 +7,4 @@
 - [x] Testing
 - [x] Fix values
 - [x] Fine tune detection
-- [ ] Fine tune detection again
+- [x] Fine tune detection again

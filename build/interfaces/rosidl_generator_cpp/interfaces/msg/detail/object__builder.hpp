@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Object_blue
+class Init_Object_angle
 {
 public:
-  explicit Init_Object_blue(::interfaces::msg::Object & msg)
+  explicit Init_Object_angle(::interfaces::msg::Object & msg)
   : msg_(msg)
   {}
-  ::interfaces::msg::Object blue(::interfaces::msg::Object::_blue_type arg)
+  ::interfaces::msg::Object angle(::interfaces::msg::Object::_angle_type arg)
   {
-    msg_.blue = std::move(arg);
+    msg_.angle = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,32 +37,48 @@ private:
   ::interfaces::msg::Object msg_;
 };
 
-class Init_Object_yellow
+class Init_Object_y
 {
 public:
-  explicit Init_Object_yellow(::interfaces::msg::Object & msg)
+  explicit Init_Object_y(::interfaces::msg::Object & msg)
   : msg_(msg)
   {}
-  Init_Object_blue yellow(::interfaces::msg::Object::_yellow_type arg)
+  Init_Object_angle y(::interfaces::msg::Object::_y_type arg)
   {
-    msg_.yellow = std::move(arg);
-    return Init_Object_blue(msg_);
+    msg_.y = std::move(arg);
+    return Init_Object_angle(msg_);
   }
 
 private:
   ::interfaces::msg::Object msg_;
 };
 
-class Init_Object_red
+class Init_Object_x
 {
 public:
-  Init_Object_red()
+  explicit Init_Object_x(::interfaces::msg::Object & msg)
+  : msg_(msg)
+  {}
+  Init_Object_y x(::interfaces::msg::Object::_x_type arg)
+  {
+    msg_.x = std::move(arg);
+    return Init_Object_y(msg_);
+  }
+
+private:
+  ::interfaces::msg::Object msg_;
+};
+
+class Init_Object_color
+{
+public:
+  Init_Object_color()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Object_yellow red(::interfaces::msg::Object::_red_type arg)
+  Init_Object_x color(::interfaces::msg::Object::_color_type arg)
   {
-    msg_.red = std::move(arg);
-    return Init_Object_yellow(msg_);
+    msg_.color = std::move(arg);
+    return Init_Object_x(msg_);
   }
 
 private:
@@ -80,7 +96,7 @@ template<>
 inline
 auto build<::interfaces::msg::Object>()
 {
-  return interfaces::msg::builder::Init_Object_red();
+  return interfaces::msg::builder::Init_Object_color();
 }
 
 }  // namespace interfaces

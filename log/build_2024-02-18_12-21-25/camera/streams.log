@@ -1,0 +1,25 @@
+[0.156s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[0.288s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[11.528s] [100%] [32m[1mLinking CXX executable node[0m
+[12.478s] [100%] Built target node
+[12.500s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[12.560s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
+[12.574s] -- Install configuration: ""
+[12.575s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node
+[12.578s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib/camera/node" to ""
+[12.578s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/package_run_dependencies/camera
+[12.578s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/parent_prefix_path/camera
+[12.579s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.sh
+[12.579s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/ament_prefix_path.dsv
+[12.579s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.sh
+[12.579s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/environment/path.dsv
+[12.580s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.bash
+[12.580s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.sh
+[12.580s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.zsh
+[12.580s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/local_setup.dsv
+[12.581s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.dsv
+[12.581s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/ament_index/resource_index/packages/camera
+[12.581s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig.cmake
+[12.581s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/cmake/cameraConfig-version.cmake
+[12.581s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/share/camera/package.xml
+[12.584s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera

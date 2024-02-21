@@ -49,19 +49,24 @@ static bool _Object__cdr_serialize(
     return false;
   }
   const _Object__ros_msg_type * ros_message = static_cast<const _Object__ros_msg_type *>(untyped_ros_message);
-  // Field name: red
+  // Field name: color
   {
-    cdr << ros_message->red;
+    cdr << ros_message->color;
   }
 
-  // Field name: yellow
+  // Field name: x
   {
-    cdr << ros_message->yellow;
+    cdr << ros_message->x;
   }
 
-  // Field name: blue
+  // Field name: y
   {
-    cdr << ros_message->blue;
+    cdr << ros_message->y;
+  }
+
+  // Field name: angle
+  {
+    cdr << ros_message->angle;
   }
 
   return true;
@@ -76,19 +81,24 @@ static bool _Object__cdr_deserialize(
     return false;
   }
   _Object__ros_msg_type * ros_message = static_cast<_Object__ros_msg_type *>(untyped_ros_message);
-  // Field name: red
+  // Field name: color
   {
-    cdr >> ros_message->red;
+    cdr >> ros_message->color;
   }
 
-  // Field name: yellow
+  // Field name: x
   {
-    cdr >> ros_message->yellow;
+    cdr >> ros_message->x;
   }
 
-  // Field name: blue
+  // Field name: y
   {
-    cdr >> ros_message->blue;
+    cdr >> ros_message->y;
+  }
+
+  // Field name: angle
+  {
+    cdr >> ros_message->angle;
   }
 
   return true;
@@ -108,21 +118,27 @@ size_t get_serialized_size_interfaces__msg__Object(
   (void)padding;
   (void)wchar_size;
 
-  // field.name red
+  // field.name color
   {
-    size_t item_size = sizeof(ros_message->red);
+    size_t item_size = sizeof(ros_message->color);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name yellow
+  // field.name x
   {
-    size_t item_size = sizeof(ros_message->yellow);
+    size_t item_size = sizeof(ros_message->x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name blue
+  // field.name y
   {
-    size_t item_size = sizeof(ros_message->blue);
+    size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name angle
+  {
+    size_t item_size = sizeof(ros_message->angle);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -155,7 +171,14 @@ size_t max_serialized_size_interfaces__msg__Object(
   full_bounded = true;
   is_plain = true;
 
-  // member: red
+  // member: color
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: x
   {
     size_t array_size = 1;
 
@@ -163,7 +186,7 @@ size_t max_serialized_size_interfaces__msg__Object(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: yellow
+  // member: y
   {
     size_t array_size = 1;
 
@@ -171,7 +194,7 @@ size_t max_serialized_size_interfaces__msg__Object(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: blue
+  // member: angle
   {
     size_t array_size = 1;
 
@@ -188,7 +211,7 @@ size_t max_serialized_size_interfaces__msg__Object(
     using DataType = interfaces__msg__Object;
     is_plain =
       (
-      offsetof(DataType, blue) +
+      offsetof(DataType, angle) +
       last_member_size
       ) == ret_val;
   }

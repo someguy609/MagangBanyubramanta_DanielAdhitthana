@@ -14,11 +14,6 @@ using std::placeholders::_1;
 
 #define INPUT_WIDTH 640
 #define INPUT_HEIGHT 640
-#define DIMENSIONS 85
-#define ROWS 25200
-#define SCORE_THRESH 0.2
-#define CONF_THRESH 0.1
-#define NMS_THRESH 0.4
 #define DEBUG
 
 struct Detection
@@ -43,6 +38,13 @@ public:
 		}
 
 		net_ = cv::dnn::readNet("src/yolo/src/best.onnx");
+
+#ifdef DEBUG
+		cv::namedWindow("values");
+		cv::createTrackbar("score", "values", &score_thresh, 100);
+		cv::createTrackbar("conf", "values", &conf_thresh, 100);
+		cv::createTrackbar("nms", "values", &nms_thresh, 100);
+#endif
 	}
 
 	~YOLO()
@@ -54,7 +56,10 @@ public:
 private:
 	void preprocess(cv::Mat &frame)
 	{
+		x_fact = frame.cols / INPUT_WIDTH,
+		y_fact = frame.rows / INPUT_HEIGHT;
 
+		// cv::fastNlMeansDenoisingColor(frame, frame);
 		cv::resize(frame, frame, cv::Size(INPUT_WIDTH, INPUT_HEIGHT));
 
 		cv::Mat blob;
@@ -64,48 +69,47 @@ private:
 
 	void postprocess(cv::Mat &frame)
 	{
-		std::vector<cv::Mat> detections;
-		net_.forward(detections, net_.getUnconnectedOutLayersNames());
+		std::vector<cv::Mat> results;
+		net_.forward(results, net_.getUnconnectedOutLayersNames());
 
-		// float x_fact = frame.cols / INPUT_WIDTH,
-		// 	  y_fact = frame.rows / INPUT_HEIGHT;
-		std::vector<float> confidences, x, y, w, h;
+		std::vector<float> confidences;
 		std::vector<cv::Rect> boxes;
+		std::vector<Detection> detections;
 
-		cv::Mat results = detections[0];
+		cv::Mat data = results[0];
 
-		for (int i = 0; i < results.size[1]; i++)
+		for (int i = 0; i < data.size[1]; i++)
 		{
-			float *detection = results.ptr<float>(0, i);
+			float *detection = data.ptr<float>(0, i);
 			float conf = detection[4];
 
-			if (conf < CONF_THRESH)
+			if (conf < conf_thresh / 100.)
 				continue;
 
 			float *class_scores = detection + 5;
-			cv::Mat scores(1, results.size[2] - 5, CV_32FC1, class_scores);
+			cv::Mat scores(1, data.size[2] - 5, CV_32FC1, class_scores);
 			cv::Point class_id;
 			double max_score;
 			cv::minMaxLoc(scores, 0, &max_score, 0, &class_id);
 
-			if (max_score < SCORE_THRESH)
+			if (max_score < score_thresh / 100.)
 				continue;
 
-			float x_ = detection[0],
-				  y_ = detection[1],
-				  w_ = detection[2],
-				  h_ = detection[3];
+			Detection d;
+			d.cls = class_id.x;
+			d.conf = conf;
+			d.x = detection[0] * x_fact,
+			d.y = detection[1] * y_fact,
+			d.w = detection[2] * x_fact,
+			d.h = detection[3] * y_fact;
 
+			detections.push_back(d);
 			confidences.push_back(conf);
-			x.push_back(x_);
-			y.push_back(y_);
-			w.push_back(w_);
-			h.push_back(h_);
-			boxes.push_back(cv::Rect(x_ - (w_ / 2.), y_ - (h_ / 2.), w_, h_));
+			boxes.push_back(cv::Rect(d.x - (d.w / 2.), d.y - (d.h / 2.), d.w, d.h));
 		}
 
 		std::vector<int> indices;
-		cv::dnn::NMSBoxes(boxes, confidences, SCORE_THRESH, NMS_THRESH, indices);
+		cv::dnn::NMSBoxes(boxes, confidences, score_thresh / 100., nms_thresh / 100., indices);
 
 #ifdef DEBUG
 		RCLCPP_INFO(this->get_logger(), "Detected %ld objects", indices.size());
@@ -116,15 +120,25 @@ private:
 			int idx = indices[i];
 			auto message = interfaces::msg::Gate();
 
-			message.x = x[idx];
-			message.y = y[idx];
-			message.w = w[idx];
-			message.h = h[idx];
+			message.x = detections[idx].x;
+			message.y = detections[idx].y;
+			message.w = detections[idx].w;
+			message.h = detections[idx].h;
 
 			publisher_->publish(message);
 
 #ifdef DEBUG
+			// std::string label = std::format("%s %.1f", class_names[detections[idx].cls], detections[idx].conf);
+			// std::string label = fmt::format("{} {:.2f}", class_names[detections[idx].cls], detections[idx].conf);
+			std::string label = class_names[detections[idx].cls];
+
+			cv::Point2i top_left = boxes[idx].tl();
+			int base_line;
+			cv::Size label_size = cv::getTextSize(label, cv::FONT_HERSHEY_SIMPLEX, 0.5, 1, &base_line);
+
 			cv::rectangle(frame, boxes[idx], cv::Scalar(0, 0, 255));
+			cv::rectangle(frame, top_left, cv::Point(label_size.width, top_left.y + base_line), cv::Scalar(0, 0, 255), -1);
+			cv::putText(frame, label, top_left, cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 255));
 #endif
 		}
 	}
@@ -153,6 +167,8 @@ private:
 	rclcpp::Publisher<interfaces::msg::Gate>::SharedPtr publisher_;
 	cv::VideoCapture cap_;
 	cv::dnn::Net net_;
+	int score_thresh = 20, conf_thresh = 40, nms_thresh = 40;
+	float x_fact, y_fact;
 	const std::vector<std::string> class_names = {"mouse"};
 };
 

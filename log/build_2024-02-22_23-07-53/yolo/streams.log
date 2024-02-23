@@ -1,0 +1,21 @@
+[0.193s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[0.296s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[0.352s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[8.331s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:[m[K In member function ‘[01m[Kvoid YOLO::detect(cv::Mat&)[m[K’:
+[8.331s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:60:27:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Ksize_t cv::Mat::elemSize1() const[m[K’
+[8.331s]    60 |                 [01;31m[Kstd::cout << results.elemSize1[m[K() << std::endl;
+[8.332s]       |                 [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[8.332s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3795[m[K,
+[8.332s]                  from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:58[m[K,
+[8.332s]                  from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[8.333s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:8[m[K:
+[8.333s] [01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:675:8:[m[K [01;36m[Knote: [m[Kdeclared here
+[8.333s]   675 | size_t [01;36m[KMat[m[K::elemSize1() const
+[8.333s]       |        [01;36m[K^~~[m[K
+[8.347s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:110:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.347s]   110 |                 for (int i = 0, j = indices[i]; [01;35m[Ki < indices.size()[m[K; j = indices[++i])
+[8.347s]       |                                                 [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[12.551s] gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1
+[12.551s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node.dir/all] Error 2
+[12.551s] gmake: *** [Makefile:146: all] Error 2
+[12.557s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '2': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4

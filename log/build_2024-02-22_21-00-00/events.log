@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000933] (-) JobUnselected: {'identifier': 'camera'}
+[0.001134] (-) JobUnselected: {'identifier': 'controller'}
+[0.001216] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.001270] (-) JobUnselected: {'identifier': 'yolo'}
+[0.001813] (-) EventReactorShutdown: {}

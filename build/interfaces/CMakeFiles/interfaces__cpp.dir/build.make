@@ -74,6 +74,10 @@ CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/object.hpp
 CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/object__builder.hpp
 CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/object__struct.hpp
 CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/object__traits.hpp
+CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/gate.hpp
+CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/gate__builder.hpp
+CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/gate__struct.hpp
+CMakeFiles/interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/gate__traits.hpp
 
 rosidl_generator_cpp/interfaces/msg/motion.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/interfaces/msg/motion.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/interfaces/msg/motion.hpp: /opt/ros/humble/share/rosidl_gen
 rosidl_generator_cpp/interfaces/msg/motion.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/interfaces/msg/motion.hpp: rosidl_adapter/interfaces/msg/Motion.idl
 rosidl_generator_cpp/interfaces/msg/motion.hpp: rosidl_adapter/interfaces/msg/Object.idl
+rosidl_generator_cpp/interfaces/msg/motion.hpp: rosidl_adapter/interfaces/msg/Gate.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_generator_cpp__arguments.json
 
@@ -116,13 +121,29 @@ rosidl_generator_cpp/interfaces/msg/detail/object__struct.hpp: rosidl_generator_
 rosidl_generator_cpp/interfaces/msg/detail/object__traits.hpp: rosidl_generator_cpp/interfaces/msg/motion.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interfaces/msg/detail/object__traits.hpp
 
+rosidl_generator_cpp/interfaces/msg/gate.hpp: rosidl_generator_cpp/interfaces/msg/motion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interfaces/msg/gate.hpp
+
+rosidl_generator_cpp/interfaces/msg/detail/gate__builder.hpp: rosidl_generator_cpp/interfaces/msg/motion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interfaces/msg/detail/gate__builder.hpp
+
+rosidl_generator_cpp/interfaces/msg/detail/gate__struct.hpp: rosidl_generator_cpp/interfaces/msg/motion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interfaces/msg/detail/gate__struct.hpp
+
+rosidl_generator_cpp/interfaces/msg/detail/gate__traits.hpp: rosidl_generator_cpp/interfaces/msg/motion.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/interfaces/msg/detail/gate__traits.hpp
+
 interfaces__cpp: CMakeFiles/interfaces__cpp
+interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/gate__builder.hpp
+interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/gate__struct.hpp
+interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/gate__traits.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/motion__builder.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/motion__struct.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/motion__traits.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/object__builder.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/object__struct.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/detail/object__traits.hpp
+interfaces__cpp: rosidl_generator_cpp/interfaces/msg/gate.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/motion.hpp
 interfaces__cpp: rosidl_generator_cpp/interfaces/msg/object.hpp
 interfaces__cpp: CMakeFiles/interfaces__cpp.dir/build.make

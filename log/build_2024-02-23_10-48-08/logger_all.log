@@ -1,0 +1,555 @@
+[2.958s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'yolo']
+[2.959s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['yolo'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1a0fa08f70>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1a0fa08af0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1a0fa08af0>>)
+[3.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.120s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana'
+[3.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['ignore', 'ignore_ament_install']
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'ignore'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'ignore_ament_install'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['colcon_pkg']
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'colcon_pkg'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['colcon_meta']
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'colcon_meta'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['ros']
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'ros'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['cmake', 'python']
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'cmake'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'python'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extensions ['python_setup_py']
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab) by extension 'python_setup_py'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extensions ['ignore', 'ignore_ament_install']
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'ignore'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'ignore_ament_install'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extensions ['colcon_pkg']
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'colcon_pkg'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extensions ['colcon_meta']
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'colcon_meta'
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extensions ['ros']
+[3.155s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'ros'
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extensions ['cmake', 'python']
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'cmake'
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'python'
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extensions ['python_setup_py']
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns) by extension 'python_setup_py'
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extensions ['ignore', 'ignore_ament_install']
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'ignore'
+[3.156s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'ignore_ament_install'
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extensions ['colcon_pkg']
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'colcon_pkg'
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extensions ['colcon_meta']
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'colcon_meta'
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extensions ['ros']
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'ros'
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extensions ['cmake', 'python']
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'cmake'
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'python'
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extensions ['python_setup_py']
+[3.157s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2) by extension 'python_setup_py'
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extensions ['ignore', 'ignore_ament_install']
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'ignore'
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'ignore_ament_install'
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extensions ['colcon_pkg']
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'colcon_pkg'
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extensions ['colcon_meta']
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'colcon_meta'
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extensions ['ros']
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'ros'
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extensions ['cmake', 'python']
+[3.158s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'cmake'
+[3.159s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'python'
+[3.159s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extensions ['python_setup_py']
+[3.159s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg) by extension 'python_setup_py'
+[3.159s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.159s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'ignore'
+[3.159s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'ignore_ament_install'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extensions ['colcon_pkg']
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'colcon_pkg'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extensions ['colcon_meta']
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'colcon_meta'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extensions ['ros']
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'ros'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extensions ['cmake', 'python']
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'cmake'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'python'
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extensions ['python_setup_py']
+[3.160s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+busToMsg/+interfaces) by extension 'python_setup_py'
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extensions ['ignore', 'ignore_ament_install']
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'ignore'
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'ignore_ament_install'
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extensions ['colcon_pkg']
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'colcon_pkg'
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extensions ['colcon_meta']
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'colcon_meta'
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extensions ['ros']
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'ros'
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extensions ['cmake', 'python']
+[3.161s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'cmake'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'python'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extensions ['python_setup_py']
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus) by extension 'python_setup_py'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'ignore'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'ignore_ament_install'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extensions ['colcon_pkg']
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'colcon_pkg'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extensions ['colcon_meta']
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'colcon_meta'
+[3.162s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extensions ['ros']
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'ros'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extensions ['cmake', 'python']
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'cmake'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'python'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extensions ['python_setup_py']
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/+bus_conv_fcns/+ros2/+msgToBus/+interfaces) by extension 'python_setup_py'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extensions ['ignore', 'ignore_ament_install']
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'ignore'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'ignore_ament_install'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extensions ['colcon_pkg']
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'colcon_pkg'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extensions ['colcon_meta']
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'colcon_meta'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extensions ['ros']
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'ros'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extensions ['cmake', 'python']
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'cmake'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'python'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extensions ['python_setup_py']
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom) by extension 'python_setup_py'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'ignore'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'ignore_ament_install'
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extensions ['colcon_pkg']
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'colcon_pkg'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extensions ['colcon_meta']
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'colcon_meta'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extensions ['ros']
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'ros'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extensions ['cmake', 'python']
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'cmake'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'python'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extensions ['python_setup_py']
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces) by extension 'python_setup_py'
+[3.165s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extensions ['ignore', 'ignore_ament_install']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'ignore'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'ignore_ament_install'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extensions ['colcon_pkg']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'colcon_pkg'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extensions ['colcon_meta']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'colcon_meta'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extensions ['ros']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'ros'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extensions ['cmake', 'python']
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'cmake'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'python'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extensions ['python_setup_py']
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/interfaces/msg) by extension 'python_setup_py'
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/matlab_msg_gen) by extensions ['ignore', 'ignore_ament_install']
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/matlab_msg_gen) by extension 'ignore'
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/custom/matlab_msg_gen) ignored
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extensions ['ignore', 'ignore_ament_install']
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'ignore'
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'ignore_ament_install'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extensions ['colcon_pkg']
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'colcon_pkg'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extensions ['colcon_meta']
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'colcon_meta'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extensions ['ros']
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'ros'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extensions ['cmake', 'python']
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'cmake'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'python'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extensions ['python_setup_py']
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj) by extension 'python_setup_py'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extensions ['ignore', 'ignore_ament_install']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'ignore'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'ignore_ament_install'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extensions ['colcon_pkg']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'colcon_pkg'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extensions ['colcon_meta']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'colcon_meta'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extensions ['ros']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'ros'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extensions ['cmake', 'python']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'cmake'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'python'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extensions ['python_setup_py']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_jitprj) by extension 'python_setup_py'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extensions ['ignore', 'ignore_ament_install']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'ignore'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'ignore_ament_install'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extensions ['colcon_pkg']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'colcon_pkg'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extensions ['colcon_meta']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'colcon_meta'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extensions ['ros']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'ros'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extensions ['cmake', 'python']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'cmake'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'python'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extensions ['python_setup_py']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj) by extension 'python_setup_py'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extensions ['ignore', 'ignore_ament_install']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'ignore'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'ignore_ament_install'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extensions ['colcon_pkg']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'colcon_pkg'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extensions ['colcon_meta']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'colcon_meta'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extensions ['ros']
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'ros'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extensions ['cmake', 'python']
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'cmake'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'python'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extensions ['python_setup_py']
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport) by extension 'python_setup_py'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extensions ['ignore', 'ignore_ament_install']
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'ignore'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'ignore_ament_install'
+[3.172s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extensions ['colcon_pkg']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'colcon_pkg'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extensions ['colcon_meta']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'colcon_meta'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extensions ['ros']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'ros'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extensions ['cmake', 'python']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'cmake'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'python'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extensions ['python_setup_py']
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/s881rqxAgeOp6s2tFfG9OoD) by extension 'python_setup_py'
+[3.173s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extensions ['ignore', 'ignore_ament_install']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'ignore'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'ignore_ament_install'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extensions ['colcon_pkg']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'colcon_pkg'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extensions ['colcon_meta']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'colcon_meta'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extensions ['ros']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'ros'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extensions ['cmake', 'python']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'cmake'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'python'
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extensions ['python_setup_py']
+[3.174s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sFapP3YcaBS6dtB7MJGzGpE) by extension 'python_setup_py'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extensions ['ignore', 'ignore_ament_install']
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'ignore'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'ignore_ament_install'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extensions ['colcon_pkg']
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'colcon_pkg'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extensions ['colcon_meta']
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'colcon_meta'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extensions ['ros']
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'ros'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extensions ['cmake', 'python']
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'cmake'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'python'
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extensions ['python_setup_py']
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/sTfkDIGt9NcJQoyuP99hI4B) by extension 'python_setup_py'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extensions ['ignore', 'ignore_ament_install']
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'ignore'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'ignore_ament_install'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extensions ['colcon_pkg']
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'colcon_pkg'
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extensions ['colcon_meta']
+[3.177s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'colcon_meta'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extensions ['ros']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'ros'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extensions ['cmake', 'python']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'cmake'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'python'
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extensions ['python_setup_py']
+[3.178s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/EMLReport/slyDQOC2mqxD6eAmbTuCZUH) by extension 'python_setup_py'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extensions ['ignore', 'ignore_ament_install']
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'ignore'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'ignore_ament_install'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extensions ['colcon_pkg']
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'colcon_pkg'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extensions ['colcon_meta']
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'colcon_meta'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extensions ['ros']
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'ros'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extensions ['cmake', 'python']
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'cmake'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'python'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extensions ['python_setup_py']
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager) by extension 'python_setup_py'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extensions ['ignore', 'ignore_ament_install']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'ignore'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'ignore_ament_install'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extensions ['colcon_pkg']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'colcon_pkg'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extensions ['colcon_meta']
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'colcon_meta'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extensions ['ros']
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'ros'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extensions ['cmake', 'python']
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'cmake'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'python'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extensions ['python_setup_py']
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self) by extension 'python_setup_py'
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extensions ['ignore', 'ignore_ament_install']
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'ignore'
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'ignore_ament_install'
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extensions ['colcon_pkg']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'colcon_pkg'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extensions ['colcon_meta']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'colcon_meta'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extensions ['ros']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'ros'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extensions ['cmake', 'python']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'cmake'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'python'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extensions ['python_setup_py']
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun) by extension 'python_setup_py'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extensions ['ignore', 'ignore_ament_install']
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'ignore'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'ignore_ament_install'
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extensions ['colcon_pkg']
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'colcon_pkg'
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extensions ['colcon_meta']
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'colcon_meta'
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extensions ['ros']
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'ros'
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extensions ['cmake', 'python']
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'cmake'
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'python'
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extensions ['python_setup_py']
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/mission_manager/_self/sfun/info) by extension 'python_setup_py'
+[3.187s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extensions ['ignore', 'ignore_ament_install']
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'ignore'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'ignore_ament_install'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extensions ['colcon_pkg']
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'colcon_pkg'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extensions ['colcon_meta']
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'colcon_meta'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extensions ['ros']
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'ros'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extensions ['cmake', 'python']
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'cmake'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'python'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extensions ['python_setup_py']
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/_sfprj/precompile) by extension 'python_setup_py'
+[3.189s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extensions ['ignore', 'ignore_ament_install']
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'ignore'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'ignore_ament_install'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extensions ['colcon_pkg']
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'colcon_pkg'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extensions ['colcon_meta']
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'colcon_meta'
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extensions ['ros']
+[3.190s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'ros'
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extensions ['cmake', 'python']
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'cmake'
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'python'
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extensions ['python_setup_py']
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim) by extension 'python_setup_py'
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extensions ['ignore', 'ignore_ament_install']
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'ignore'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'ignore_ament_install'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extensions ['colcon_pkg']
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'colcon_pkg'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extensions ['colcon_meta']
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'colcon_meta'
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extensions ['ros']
+[3.192s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'ros'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extensions ['cmake', 'python']
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'cmake'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'python'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extensions ['python_setup_py']
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache) by extension 'python_setup_py'
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extensions ['ignore', 'ignore_ament_install']
+[3.193s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'ignore'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'ignore_ament_install'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extensions ['colcon_pkg']
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'colcon_pkg'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extensions ['colcon_meta']
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'colcon_meta'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extensions ['ros']
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'ros'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extensions ['cmake', 'python']
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'cmake'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'python'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extensions ['python_setup_py']
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager) by extension 'python_setup_py'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extensions ['ignore', 'ignore_ament_install']
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'ignore'
+[3.195s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'ignore_ament_install'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extensions ['colcon_pkg']
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'colcon_pkg'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extensions ['colcon_meta']
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'colcon_meta'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extensions ['ros']
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'ros'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extensions ['cmake', 'python']
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'cmake'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'python'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extensions ['python_setup_py']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(matlab/slprj/sim/varcache/mission_manager/tmwinternal) by extension 'python_setup_py'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[3.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_cmake' and name 'camera'
+[3.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[3.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[3.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[3.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[3.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[3.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[3.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[3.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[3.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[3.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_cmake' and name 'controller'
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore'
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore_ament_install'
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_pkg']
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_pkg'
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_meta']
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_meta'
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ros']
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ros'
+[3.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extensions ['ignore', 'ignore_ament_install']
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extension 'ignore'
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extension 'ignore_ament_install'
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extensions ['colcon_pkg']
+[3.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extension 'colcon_pkg'
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extensions ['colcon_meta']
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extension 'colcon_meta'
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extensions ['ros']
+[3.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo) by extension 'ros'
+[3.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo' with type 'ros.ament_cmake' and name 'yolo'
+[3.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.414s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'controller' in 'src/controller'
+[3.414s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'interfaces' in 'src/interfaces'
+[3.414s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'camera' in 'src/camera'
+[3.505s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.505s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.615s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install
+[3.664s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 302 installed packages in /opt/ros/humble
+[3.667s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.858s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_args' from command line to 'None'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_target' from command line to 'None'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_clean_cache' from command line to 'False'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_clean_first' from command line to 'False'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_force_configure' from command line to 'False'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'ament_cmake_args' from command line to 'None'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'catkin_cmake_args' from command line to 'None'
+[3.859s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.859s] DEBUG:colcon.colcon_core.verb:Building package 'yolo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo', 'merge_install': False, 'path': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo', 'symlink_install': False, 'test_result_base': None}
+[3.885s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.911s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.911s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo' with build type 'ament_cmake'
+[3.911s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo'
+[3.962s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.962s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.962s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[17.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '0': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[17.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo
+[17.376s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo)
+[17.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '0': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo
+[17.417s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo' for CMake module files
+[17.419s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo' for CMake config files
+[17.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo', 'cmake_prefix_path')
+[17.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/hook/cmake_prefix_path.ps1'
+[17.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/hook/cmake_prefix_path.dsv'
+[17.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/hook/cmake_prefix_path.sh'
+[17.466s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib'
+[17.466s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/bin'
+[17.467s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/pkgconfig/yolo.pc'
+[17.467s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/python3.10/site-packages'
+[17.468s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/bin'
+[17.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.ps1'
+[17.507s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.dsv'
+[17.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.sh'
+[17.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.bash'
+[17.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.zsh'
+[17.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/colcon-core/packages/yolo)
+[17.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo)
+[17.609s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo' for CMake module files
+[17.610s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo' for CMake config files
+[17.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo', 'cmake_prefix_path')
+[17.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/hook/cmake_prefix_path.ps1'
+[17.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/hook/cmake_prefix_path.dsv'
+[17.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/hook/cmake_prefix_path.sh'
+[17.645s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib'
+[17.645s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/bin'
+[17.645s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/pkgconfig/yolo.pc'
+[17.646s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/python3.10/site-packages'
+[17.646s] Level 1:colcon.colcon_core.environment:checking '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/bin'
+[17.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.ps1'
+[17.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.dsv'
+[17.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.sh'
+[17.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.bash'
+[17.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.zsh'
+[17.699s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/colcon-core/packages/yolo)
+[17.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[17.702s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.765s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.766s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.766s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.794s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.843s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/local_setup.ps1'
+[17.846s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/_local_setup_util_ps1.py'
+[17.852s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/setup.ps1'
+[17.901s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/local_setup.sh'
+[17.904s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/_local_setup_util_sh.py'
+[17.905s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/setup.sh'
+[17.950s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/local_setup.bash'
+[17.952s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/setup.bash'
+[17.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/local_setup.zsh'
+[17.983s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/setup.zsh'

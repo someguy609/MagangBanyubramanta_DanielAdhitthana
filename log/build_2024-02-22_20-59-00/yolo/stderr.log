@@ -1,0 +1,7 @@
+[01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kinterfaces/msg/gate.hpp: No such file or directory
+    8 | #include [01;31m[K"interfaces/msg/gate.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

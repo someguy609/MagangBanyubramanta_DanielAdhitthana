@@ -2,6 +2,7 @@
   "package_name": "interfaces",
   "non_idl_tuples": [
     "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces:msg/Motion.msg",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces:msg/Object.msg"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces:msg/Object.msg",
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces:msg/Gate.msg"
   ]
 }

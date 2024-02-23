@@ -1,0 +1,33 @@
+[0.164s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': AMENT_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[0.291s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[0.339s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[7.696s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:[m[K In member function ‘[01m[Kvoid YOLO::postprocess(cv::Mat&)[m[K’:
+[7.696s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:70:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_fact[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.696s]    70 |                 float [01;35m[Kx_fact[m[K = frame.cols / INPUT_WIDTH,
+[7.697s]       |                       [01;35m[K^~~~~~[m[K
+[7.697s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:71:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_fact[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.697s]    71 |                           [01;35m[Ky_fact[m[K = frame.rows / INPUT_HEIGHT;
+[7.697s]       |                           [01;35m[K^~~~~~[m[K
+[12.963s] [100%] [32m[1mLinking CXX executable node[0m
+[13.808s] [100%] Built target node
+[13.831s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '0': AMENT_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[13.893s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': AMENT_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo
+[13.909s] -- Install configuration: ""
+[13.910s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node
+[13.913s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node" to ""
+[13.913s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/package_run_dependencies/yolo
+[13.913s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/parent_prefix_path/yolo
+[13.914s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.sh
+[13.914s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.dsv
+[13.915s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.sh
+[13.915s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.dsv
+[13.915s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.bash
+[13.915s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.sh
+[13.915s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.zsh
+[13.915s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.dsv
+[13.915s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.dsv
+[13.917s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/packages/yolo
+[13.917s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig.cmake
+[13.917s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig-version.cmake
+[13.917s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.xml
+[13.920s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '0': AMENT_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo

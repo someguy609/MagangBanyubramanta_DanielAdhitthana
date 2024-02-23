@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000319] (-) JobUnselected: {'identifier': 'camera'}
+[0.002019] (-) JobUnselected: {'identifier': 'controller'}
+[0.002476] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.002764] (yolo) JobQueued: {'identifier': 'yolo', 'dependencies': OrderedDict([('interfaces', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces')])}
+[0.003121] (yolo) JobStarted: {'identifier': 'yolo'}
+[0.099152] (-) TimerEvent: {}
+[0.170975] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'cmake'}
+[0.172191] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'build'}
+[0.173426] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('GIO_MODULE_DIR', '/home/donjoe/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/donjoe/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '888'), ('SYSTEMD_EXEC_PID', '1088'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7885'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('JOURNAL_STREAM', '8:29050'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/donjoe/.local/bin:/opt/ros/humble/bin:/home/donjoe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1068,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1068'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', '26f8979823a949c381dca7f7f43e3b97'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NZ5PJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d59981c0b2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/donjoe/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/donjoe/snap/code/152/.local/share:/home/donjoe/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble')]), 'shell': False}
+[0.199289] (-) TimerEvent: {}
+[0.262194] (yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node\x1b[0m\n'}
+[0.299436] (-) TimerEvent: {}
+[0.302047] (yolo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[0.399547] (-) TimerEvent: {}
+[0.500001] (-) TimerEvent: {}
+[0.600458] (-) TimerEvent: {}
+[0.701167] (-) TimerEvent: {}
+[0.801668] (-) TimerEvent: {}
+[0.902167] (-) TimerEvent: {}
+[1.002698] (-) TimerEvent: {}
+[1.103227] (-) TimerEvent: {}
+[1.203730] (-) TimerEvent: {}
+[1.304261] (-) TimerEvent: {}
+[1.404801] (-) TimerEvent: {}
+[1.505367] (-) TimerEvent: {}
+[1.605910] (-) TimerEvent: {}
+[1.706442] (-) TimerEvent: {}
+[1.806989] (-) TimerEvent: {}
+[1.907554] (-) TimerEvent: {}
+[2.008081] (-) TimerEvent: {}
+[2.108614] (-) TimerEvent: {}
+[2.209196] (-) TimerEvent: {}
+[2.309731] (-) TimerEvent: {}
+[2.410266] (-) TimerEvent: {}
+[2.510817] (-) TimerEvent: {}
+[2.611384] (-) TimerEvent: {}
+[2.711849] (-) TimerEvent: {}
+[2.812308] (-) TimerEvent: {}
+[2.912795] (-) TimerEvent: {}
+[3.013325] (-) TimerEvent: {}
+[3.114085] (-) TimerEvent: {}
+[3.214581] (-) TimerEvent: {}
+[3.315154] (-) TimerEvent: {}
+[3.415763] (-) TimerEvent: {}
+[3.516286] (-) TimerEvent: {}
+[3.616826] (-) TimerEvent: {}
+[3.717381] (-) TimerEvent: {}
+[3.817948] (-) TimerEvent: {}
+[3.918496] (-) TimerEvent: {}
+[4.019000] (-) TimerEvent: {}
+[4.119431] (-) TimerEvent: {}
+[4.219861] (-) TimerEvent: {}
+[4.320272] (-) TimerEvent: {}
+[4.420718] (-) TimerEvent: {}
+[4.521174] (-) TimerEvent: {}
+[4.621719] (-) TimerEvent: {}
+[4.722251] (-) TimerEvent: {}
+[4.822670] (-) TimerEvent: {}
+[4.923169] (-) TimerEvent: {}
+[5.023690] (-) TimerEvent: {}
+[5.124151] (-) TimerEvent: {}
+[5.224662] (-) TimerEvent: {}
+[5.325123] (-) TimerEvent: {}
+[5.425645] (-) TimerEvent: {}
+[5.526126] (-) TimerEvent: {}
+[5.626621] (-) TimerEvent: {}
+[5.727164] (-) TimerEvent: {}
+[5.827666] (-) TimerEvent: {}
+[5.928144] (-) TimerEvent: {}
+[6.028628] (-) TimerEvent: {}
+[6.129147] (-) TimerEvent: {}
+[6.229712] (-) TimerEvent: {}
+[6.330200] (-) TimerEvent: {}
+[6.400230] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid YOLO::postprocess(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.401915] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:77:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator[]\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.402200] (yolo) StderrLine: {'line': b'   77 |                 std::cout << results\x1b[01;31m\x1b[K[\x1b[m\x1b[K0] << std::endl;\n'}
+[6.402417] (yolo) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.402625] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:78:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator[]\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.402842] (yolo) StderrLine: {'line': b'   78 |                 std::cout << results\x1b[01;31m\x1b[K[\x1b[m\x1b[K1] << std::endl;\n'}
+[6.403046] (yolo) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.403280] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:79:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator[]\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.403500] (yolo) StderrLine: {'line': b'   79 |                 std::cout << results\x1b[01;31m\x1b[K[\x1b[m\x1b[K2] << std::endl;\n'}
+[6.403704] (yolo) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.412884] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.413171] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.413301] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.413434] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.413546] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.413653] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.413764] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.413872] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.413997] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.414264] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.414372] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.414475] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:8\x1b[m\x1b[K:\n'}
+[6.414580] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:119:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.414704] (yolo) StderrLine: {'line': b'  119 |                 RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Detected %d objects"\x1b[m\x1b[K, \x1b[32m\x1b[Kindices.size()\x1b[m\x1b[K);\n'}
+[6.414809] (yolo) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.414913] (yolo) StderrLine: {'line': b'      |                                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[6.415014] (yolo) StderrLine: {'line': b'      |                                                                                    \x1b[32m\x1b[Kstd::vector<int>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[6.415118] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:119:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[6.415289] (yolo) StderrLine: {'line': b'  119 |                 RCLCPP_INFO(this->get_logger(), "Detected \x1b[01;36m\x1b[K%d\x1b[m\x1b[K objects", indices.size());\n'}
+[6.415453] (yolo) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[6.415620] (yolo) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[6.415789] (yolo) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[6.415964] (yolo) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[6.416126] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:122:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.416320] (yolo) StderrLine: {'line': b'  122 |                 for (int i = 0; \x1b[01;35m\x1b[Ki < indices.size()\x1b[m\x1b[K; i++)\n'}
+[6.416473] (yolo) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.416643] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:69:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_fact\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.416831] (yolo) StderrLine: {'line': b'   69 |                 float \x1b[01;35m\x1b[Kx_fact\x1b[m\x1b[K = frame.cols / INPUT_WIDTH,\n'}
+[6.416999] (yolo) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.417160] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:70:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky_fact\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.417334] (yolo) StderrLine: {'line': b'   70 |                           \x1b[01;35m\x1b[Ky_fact\x1b[m\x1b[K = frame.rows / INPUT_HEIGHT;\n'}
+[6.417501] (yolo) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.430397] (-) TimerEvent: {}
+[6.530897] (-) TimerEvent: {}
+[6.632644] (-) TimerEvent: {}
+[6.733126] (-) TimerEvent: {}
+[6.833541] (-) TimerEvent: {}
+[6.933948] (-) TimerEvent: {}
+[7.034365] (-) TimerEvent: {}
+[7.134812] (-) TimerEvent: {}
+[7.235278] (-) TimerEvent: {}
+[7.335702] (-) TimerEvent: {}
+[7.436157] (-) TimerEvent: {}
+[7.536661] (-) TimerEvent: {}
+[7.637108] (-) TimerEvent: {}
+[7.737593] (-) TimerEvent: {}
+[7.838111] (-) TimerEvent: {}
+[7.938612] (-) TimerEvent: {}
+[8.039225] (-) TimerEvent: {}
+[8.139709] (-) TimerEvent: {}
+[8.240168] (-) TimerEvent: {}
+[8.340718] (-) TimerEvent: {}
+[8.441316] (-) TimerEvent: {}
+[8.541854] (-) TimerEvent: {}
+[8.642405] (-) TimerEvent: {}
+[8.743000] (-) TimerEvent: {}
+[8.843574] (-) TimerEvent: {}
+[8.944073] (-) TimerEvent: {}
+[9.044535] (-) TimerEvent: {}
+[9.145087] (-) TimerEvent: {}
+[9.245613] (-) TimerEvent: {}
+[9.346188] (-) TimerEvent: {}
+[9.446701] (-) TimerEvent: {}
+[9.547308] (-) TimerEvent: {}
+[9.647809] (-) TimerEvent: {}
+[9.741898] (yolo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1\n'}
+[9.742222] (yolo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node.dir/all] Error 2\n'}
+[9.742565] (yolo) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.745457] (yolo) CommandEnded: {'returncode': 2}
+[9.747979] (-) TimerEvent: {}
+[9.848367] (-) TimerEvent: {}
+[9.931931] (yolo) JobEnded: {'identifier': 'yolo', 'rc': 2}
+[9.943023] (-) EventReactorShutdown: {}

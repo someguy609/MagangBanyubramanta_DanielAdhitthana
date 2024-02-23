@@ -1,3 +1,5 @@
+msg/Gate.idl
+msg/Gate.msg
 msg/Motion.idl
 msg/Motion.msg
 msg/Object.idl

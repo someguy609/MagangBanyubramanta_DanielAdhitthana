@@ -68,6 +68,7 @@ include CMakeFiles/interfaces.dir/progress.make
 
 CMakeFiles/interfaces: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces/msg/Motion.msg
 CMakeFiles/interfaces: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces/msg/Object.msg
+CMakeFiles/interfaces: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces/msg/Gate.msg
 
 interfaces: CMakeFiles/interfaces
 interfaces: CMakeFiles/interfaces.dir/build.make

@@ -1,0 +1,35 @@
+[0.156s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera': AMENT_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4
+[0.312s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.228s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.390s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.478s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.484s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.499s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.529s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.565s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.707s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.713s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.000s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.331s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[2.611s] -- Found interfaces: 0.0.0 (/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/share/interfaces/cmake)
+[2.654s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.799s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.799s] -- Configured cppcheck include dirs: 
+[2.799s] -- Configured cppcheck exclude dirs and/or files: 
+[2.801s] -- Added test 'lint_cmake' to check CMake code style
+[2.803s] -- Added test 'uncrustify' to check C / C++ code style
+[2.803s] -- Configured uncrustify additional arguments: 
+[2.804s] -- Added test 'xmllint' to check XML markup files
+[2.808s] -- Configuring done
+[2.845s] -- Generating done
+[2.848s] -- Build files have been written to: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera
+[2.893s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[2.932s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[3.620s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/camera/src/node.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.hpp: No such file or directory
+[3.620s]     9 | #include [01;31m[K"image_transport/image_transport.hpp"[m[K
+[3.621s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.621s] compilation terminated.
+[3.636s] gmake[2]: *** [CMakeFiles/node.dir/build.make:76: CMakeFiles/node.dir/src/node.cpp.o] Error 1
+[3.636s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node.dir/all] Error 2
+[3.642s] gmake: *** [Makefile:146: all] Error 2
+[3.643s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera' returned '2': AMENT_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/camera -- -j4 -l4

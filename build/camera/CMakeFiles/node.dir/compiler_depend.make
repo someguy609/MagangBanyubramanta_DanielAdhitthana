@@ -665,8 +665,19 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /usr/local/include/opencv4/opencv2/opencv.hpp \
-  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
+  /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
+  /usr/local/include/opencv4/opencv2/core/core.hpp \
   /usr/local/include/opencv4/opencv2/core.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
   /usr/local/include/opencv4/opencv2/core/version.hpp \
@@ -678,6 +689,7 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
   /usr/local/include/opencv4/opencv2/core/base.hpp \
+  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/include/c++/11/climits \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -711,6 +723,14 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
   /usr/local/include/opencv4/opencv2/core/optim.hpp \
   /usr/local/include/opencv4/opencv2/core/ovx.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp \
+  /usr/local/include/opencv4/opencv2/imgproc.hpp \
+  /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
+  /usr/local/include/opencv4/opencv2/imgproc/types_c.h \
+  /usr/local/include/opencv4/opencv2/core/core_c.h \
+  /usr/local/include/opencv4/opencv2/core/types_c.h \
+  /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h \
+  /usr/local/include/opencv4/opencv2/opencv.hpp \
   /usr/local/include/opencv4/opencv2/calib3d.hpp \
   /usr/local/include/opencv4/opencv2/features2d.hpp \
   /usr/local/include/opencv4/opencv2/flann/miniflann.hpp \
@@ -760,8 +780,6 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
   /usr/local/include/opencv4/opencv2/highgui.hpp \
   /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
   /usr/local/include/opencv4/opencv2/videoio.hpp \
-  /usr/local/include/opencv4/opencv2/imgproc.hpp \
-  /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
   /usr/local/include/opencv4/opencv2/ml.hpp \
   /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp \
   /usr/local/include/opencv4/opencv2/objdetect.hpp \
@@ -800,6 +818,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
   /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/include/interfaces/interfaces/msg/object.hpp \
   /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/include/interfaces/interfaces/msg/detail/object__struct.hpp \
   /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/include/interfaces/interfaces/msg/detail/object__builder.hpp \
@@ -808,6 +828,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/include/interfaces/interfaces/msg/detail/object__traits.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
+
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp:
@@ -815,8 +837,6 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp:
 
 /usr/local/include/opencv4/opencv2/video/background_segm.hpp:
 
@@ -851,8 +871,6 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp:
 
 /usr/local/include/opencv4/opencv2/objdetect.hpp:
-
-/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
 /usr/local/include/opencv4/opencv2/imgcodecs.hpp:
 
@@ -912,6 +930,10 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp:
 
+/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h:
+
+/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
+
 /usr/local/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/local/include/opencv4/opencv2/core/optim.hpp:
@@ -952,6 +974,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /usr/include/c++/11/climits:
 
+/usr/local/include/opencv4/opencv2/opencv_modules.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
@@ -962,7 +986,23 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /usr/local/include/opencv4/opencv2/core.hpp:
 
-/usr/local/include/opencv4/opencv2/opencv_modules.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:
+
+/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -1046,6 +1086,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
@@ -1087,6 +1129,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
 /usr/local/include/opencv4/opencv2/core/traits.hpp:
+
+/usr/local/include/opencv4/opencv2/core/core.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
@@ -1206,6 +1250,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
+/usr/local/include/opencv4/opencv2/core/types_c.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
@@ -1263,6 +1309,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
 /usr/include/c++/11/bits/localefwd.h:
+
+/usr/local/include/opencv4/opencv2/imgproc/types_c.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
@@ -1732,6 +1780,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /usr/include/c++/11/bits/invoke.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp:
+
 /usr/local/include/opencv4/opencv2/objdetect/face.hpp:
 
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
@@ -1950,6 +2000,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
+/usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp:
+
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
@@ -2013,6 +2065,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
+
+/usr/local/include/opencv4/opencv2/core/core_c.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
 
@@ -2087,6 +2141,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /opt/ros/humble/include/rcl/rcl/service.h:
 
 /opt/ros/humble/include/rcl/rcl/subscription.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:
 
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
@@ -2169,6 +2225,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
 
@@ -2387,6 +2445,8 @@ CMakeFiles/node.dir/src/node.cpp.o: /home/donjoe/Documents/MagangBanyubramanta_D
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 

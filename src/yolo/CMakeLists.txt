@@ -8,6 +8,8 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(interfaces REQUIRED)
 
@@ -15,7 +17,7 @@ add_executable(
   node
   src/node.cpp
 )
-ament_target_dependencies(node rclcpp OpenCV interfaces)
+ament_target_dependencies(node rclcpp cv_bridge sensor_msgs OpenCV interfaces)
 
 install(TARGETS
   node

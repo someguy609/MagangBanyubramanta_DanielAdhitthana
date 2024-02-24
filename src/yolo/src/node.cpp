@@ -6,6 +6,8 @@
 #include <vector>
 
 #include "rclcpp/rclcpp.hpp"
+#include "cv_bridge/cv_bridge.h"
+#include "sensor_msgs/msg/image.hpp"
 #include "opencv2/opencv.hpp"
 #include "interfaces/msg/gate.hpp"
 
@@ -27,15 +29,16 @@ class YOLO : public rclcpp::Node
 public:
 	YOLO() : Node("YOLO")
 	{
-		timer_ = this->create_wall_timer(100ms, std::bind(&YOLO::timer_callback, this));
+		// timer_ = this->create_wall_timer(100ms, std::bind(&YOLO::timer_callback, this));
 		publisher_ = this->create_publisher<interfaces::msg::Gate>("detected_object", 10);
-		cap_ = cv::VideoCapture(0);
+		cap_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>("capture", 10, std::bind(&YOLO::timer_callback, this, _1));
+		// cap_ = cv::VideoCapture(0);
 
-		if (!cap_.isOpened())
-		{
-			RCLCPP_ERROR(this->get_logger(), "Failed to open camera");
-			return;
-		}
+		// if (!cap_.isOpened())
+		// {
+		// 	RCLCPP_ERROR(this->get_logger(), "Failed to open camera");
+		// 	return;
+		// }
 
 		net_ = cv::dnn::readNet("src/yolo/src/best.onnx");
 
@@ -49,7 +52,7 @@ public:
 
 	~YOLO()
 	{
-		cap_.release();
+		// cap_.release();
 		cv::destroyAllWindows();
 	}
 
@@ -143,11 +146,32 @@ private:
 		}
 	}
 
-	void timer_callback()
-	{
-		cv::Mat frame;
+	// 	void timer_callback()
+	// 	{
+	// 		cv::Mat frame;
 
-		if (!cap_.read(frame))
+	// 		if (!cap_.read(frame))
+	// 		{
+	// 			RCLCPP_ERROR(this->get_logger(), "Failed to read frame");
+	// 			return;
+	// 		}
+
+	// 		preprocess(frame);
+	// 		postprocess(frame);
+
+	// #ifdef DEBUG
+	// 		cv::imshow("frame", frame);
+	// #endif
+
+	// 		cv::waitKey(1);
+	// 	}
+
+	void timer_callback(const sensor_msgs::msg::Image &sensor_img)
+	{
+		cv_bridge::CvImagePtr cv_img = cv_bridge::toCvCopy(sensor_img);
+		cv::Mat frame = cv_img->image;
+
+		if (frame.empty())
 		{
 			RCLCPP_ERROR(this->get_logger(), "Failed to read frame");
 			return;
@@ -159,13 +183,12 @@ private:
 #ifdef DEBUG
 		cv::imshow("frame", frame);
 #endif
-
-		cv::waitKey(1);
 	}
 
 	rclcpp::TimerBase::SharedPtr timer_;
 	rclcpp::Publisher<interfaces::msg::Gate>::SharedPtr publisher_;
-	cv::VideoCapture cap_;
+	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr cap_subscriber_;
+	// cv::VideoCapture cap_;
 	cv::dnn::Net net_;
 	int score_thresh = 20, conf_thresh = 40, nms_thresh = 40;
 	float x_fact, y_fact;

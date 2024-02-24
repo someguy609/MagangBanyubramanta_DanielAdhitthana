@@ -5,7 +5,11 @@
 #include <vector>
 
 #include "rclcpp/rclcpp.hpp"
+#include "cv_bridge/cv_bridge.h"
+// #include "image_transport/image_transport.hpp"
 #include "opencv2/opencv.hpp"
+#include "std_msgs/msg/header.hpp"
+#include "sensor_msgs/msg/image.hpp"
 #include "interfaces/msg/object.hpp"
 
 // #define DEBUG
@@ -19,7 +23,8 @@ public:
     Camera() : Node("camera")
     {
         timer_ = this->create_wall_timer(10ms, std::bind(&Camera::timer_callback, this));
-        publisher_ = this->create_publisher<interfaces::msg::Object>("detected_object", 10);
+        object_publisher_ = this->create_publisher<interfaces::msg::Object>("detected_object", 10);
+        img_publisher_ = this->create_publisher<sensor_msgs::msg::Image>("capture", 10);
         cap_ = cv::VideoCapture(0);
 
 #ifdef DEBUG
@@ -44,6 +49,18 @@ public:
     }
 
 private:
+    void publish_img(const cv::Mat &frame)
+    {
+        auto message = cv_bridge::CvImage();
+        message.header = std_msgs::msg::Header();
+        message.header.frame_id = std::to_string(frame_id);
+        message.header.stamp = now();
+        message.encoding = "bgr8";
+        message.image = frame;
+
+        img_publisher_->publish(*message.toImageMsg());
+    }
+
     void morph(cv::Mat &frame)
     {
         cv::morphologyEx(frame, frame, cv::MORPH_OPEN, kernel);
@@ -61,7 +78,7 @@ private:
         message.y = moment.m01 / moment.m00 - cap_.get(cv::CAP_PROP_FRAME_HEIGHT) / 2;
         message.angle = 2 * float(message.x) / float(cap_.get(cv::CAP_PROP_FRAME_WIDTH));
 
-        publisher_->publish(message);
+        object_publisher_->publish(message);
     }
 
     void timer_callback()
@@ -73,6 +90,8 @@ private:
             RCLCPP_ERROR(this->get_logger(), "Failed to read frame");
             return;
         }
+
+        publish_img(frame);
 
         cv::Mat hsv_frame;
         cv::cvtColor(frame, hsv_frame, cv::COLOR_BGR2HSV);
@@ -112,12 +131,15 @@ private:
         cv::waitKey(1);
     }
 
-    rclcpp::Publisher<interfaces::msg::Object>::SharedPtr publisher_;
+    rclcpp::Publisher<interfaces::msg::Object>::SharedPtr object_publisher_;
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr img_publisher_;
+    // image_transport::Publisher img_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
     cv::VideoCapture cap_;
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
     int red_hue = 0, yellow_hue = 30, blue_hue = 120,
         hue_thresh = 10, min_sat = 150, min_val = 50, min_area = 10000;
+    unsigned long long int frame_id;
 };
 
 int main(int argc, char **argv)

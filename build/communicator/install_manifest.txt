@@ -1,0 +1,16 @@
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/lib/communicator/node
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/ament_index/resource_index/package_run_dependencies/communicator
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/ament_index/resource_index/parent_prefix_path/communicator
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/environment/ament_prefix_path.sh
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/environment/ament_prefix_path.dsv
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/environment/path.sh
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/environment/path.dsv
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/local_setup.bash
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/local_setup.sh
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/local_setup.zsh
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/local_setup.dsv
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/package.dsv
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/ament_index/resource_index/packages/communicator
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/cmake/communicatorConfig.cmake
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/cmake/communicatorConfig-version.cmake
+/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator/share/communicator/package.xml

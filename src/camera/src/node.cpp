@@ -6,7 +6,6 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "cv_bridge/cv_bridge.h"
-// #include "image_transport/image_transport.hpp"
 #include "opencv2/opencv.hpp"
 #include "std_msgs/msg/header.hpp"
 #include "sensor_msgs/msg/image.hpp"
@@ -53,7 +52,7 @@ private:
     {
         auto message = cv_bridge::CvImage();
         message.header = std_msgs::msg::Header();
-        message.header.frame_id = std::to_string(frame_id);
+        message.header.frame_id = std::to_string(frame_id++);
         message.header.stamp = now();
         message.encoding = "bgr8";
         message.image = frame;
@@ -133,13 +132,12 @@ private:
 
     rclcpp::Publisher<interfaces::msg::Object>::SharedPtr object_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr img_publisher_;
-    // image_transport::Publisher img_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
     cv::VideoCapture cap_;
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
     int red_hue = 0, yellow_hue = 30, blue_hue = 120,
         hue_thresh = 10, min_sat = 150, min_val = 50, min_area = 10000;
-    unsigned long long int frame_id;
+    unsigned long long int frame_id = 0;
 };
 
 int main(int argc, char **argv)

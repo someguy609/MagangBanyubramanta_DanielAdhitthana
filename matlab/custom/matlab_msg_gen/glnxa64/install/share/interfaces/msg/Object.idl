@@ -10,6 +10,10 @@ module interfaces {
       const uint8 YELLOW = 1;
       const uint8 BLUE = 2;
     };
+    @verbatim (language="comment", text=
+      "int32 red" "\n"
+      "int32 yellow" "\n"
+      "int32 blue")
     struct Object {
       uint8 color;
 
@@ -17,7 +21,7 @@ module interfaces {
 
       int32 y;
 
-      float angle;
+      int32 angle;
     };
   };
 };

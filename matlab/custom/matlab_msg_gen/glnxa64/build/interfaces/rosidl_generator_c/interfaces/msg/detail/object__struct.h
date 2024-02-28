@@ -36,12 +36,17 @@ enum
 };
 
 /// Struct defined in msg/Object in the package interfaces.
+/**
+  * int32 red
+  * int32 yellow
+  * int32 blue
+ */
 typedef struct interfaces__msg__Object
 {
   uint8_t color;
   int32_t x;
   int32_t y;
-  float angle;
+  int32_t angle;
 } interfaces__msg__Object;
 
 // Struct for a sequence of interfaces__msg__Object.

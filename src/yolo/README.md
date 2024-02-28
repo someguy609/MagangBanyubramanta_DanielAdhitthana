@@ -7,4 +7,4 @@
 - [ ] Change model to gate detector
 - [ ] Fine tune detection
 - [x] Clean code
-- [ ] Command line parser ?
+- [ ] Change model backend

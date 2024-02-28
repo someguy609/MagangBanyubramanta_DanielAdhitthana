@@ -29,16 +29,8 @@ class YOLO : public rclcpp::Node
 public:
 	YOLO() : Node("YOLO")
 	{
-		// timer_ = this->create_wall_timer(100ms, std::bind(&YOLO::timer_callback, this));
 		publisher_ = this->create_publisher<interfaces::msg::Gate>("detected_object", 10);
-		cap_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>("capture", 10, std::bind(&YOLO::timer_callback, this, _1));
-		// cap_ = cv::VideoCapture(0);
-
-		// if (!cap_.isOpened())
-		// {
-		// 	RCLCPP_ERROR(this->get_logger(), "Failed to open camera");
-		// 	return;
-		// }
+		cap_ = this->create_subscription<sensor_msgs::msg::Image>("capture", 10, std::bind(&YOLO::topic_callback, this, _1));
 
 		net_ = cv::dnn::readNet("src/yolo/src/best.onnx");
 
@@ -52,17 +44,15 @@ public:
 
 	~YOLO()
 	{
-		// cap_.release();
 		cv::destroyAllWindows();
 	}
 
 private:
 	void preprocess(cv::Mat &frame)
 	{
-		x_fact = frame.cols / INPUT_WIDTH,
-		y_fact = frame.rows / INPUT_HEIGHT;
+		x_fact = float(frame.cols) / float(INPUT_WIDTH);
+		y_fact = float(frame.rows) / float(INPUT_HEIGHT);
 
-		// cv::fastNlMeansDenoisingColor(frame, frame);
 		cv::resize(frame, frame, cv::Size(INPUT_WIDTH, INPUT_HEIGHT));
 
 		cv::Mat blob;
@@ -131,8 +121,6 @@ private:
 			publisher_->publish(message);
 
 #ifdef DEBUG
-			// std::string label = std::format("%s %.1f", class_names[detections[idx].cls], detections[idx].conf);
-			// std::string label = fmt::format("{} {:.2f}", class_names[detections[idx].cls], detections[idx].conf);
 			std::string label = class_names[detections[idx].cls];
 
 			cv::Point2i top_left = boxes[idx].tl();
@@ -142,31 +130,12 @@ private:
 			cv::rectangle(frame, boxes[idx], cv::Scalar(0, 0, 255));
 			cv::rectangle(frame, top_left, cv::Point(label_size.width, top_left.y + base_line), cv::Scalar(0, 0, 255), -1);
 			cv::putText(frame, label, top_left, cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 255));
+			cv::resize(frame, frame, cv::Size(0, 0), x_fact, y_fact);
 #endif
 		}
 	}
 
-	// 	void timer_callback()
-	// 	{
-	// 		cv::Mat frame;
-
-	// 		if (!cap_.read(frame))
-	// 		{
-	// 			RCLCPP_ERROR(this->get_logger(), "Failed to read frame");
-	// 			return;
-	// 		}
-
-	// 		preprocess(frame);
-	// 		postprocess(frame);
-
-	// #ifdef DEBUG
-	// 		cv::imshow("frame", frame);
-	// #endif
-
-	// 		cv::waitKey(1);
-	// 	}
-
-	void timer_callback(const sensor_msgs::msg::Image &sensor_img)
+	void topic_callback(const sensor_msgs::msg::Image &sensor_img)
 	{
 		cv_bridge::CvImagePtr cv_img = cv_bridge::toCvCopy(sensor_img);
 		cv::Mat frame = cv_img->image;
@@ -182,13 +151,12 @@ private:
 
 #ifdef DEBUG
 		cv::imshow("frame", frame);
+		cv::waitKey(1);
 #endif
 	}
 
-	rclcpp::TimerBase::SharedPtr timer_;
 	rclcpp::Publisher<interfaces::msg::Gate>::SharedPtr publisher_;
-	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr cap_subscriber_;
-	// cv::VideoCapture cap_;
+	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr cap_;
 	cv::dnn::Net net_;
 	int score_thresh = 20, conf_thresh = 40, nms_thresh = 40;
 	float x_fact, y_fact;

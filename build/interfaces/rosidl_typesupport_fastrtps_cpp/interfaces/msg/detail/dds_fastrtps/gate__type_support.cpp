@@ -40,6 +40,8 @@ cdr_serialize(
   cdr << ros_message.w;
   // Member: h
   cdr << ros_message.h;
+  // Member: conf
+  cdr << ros_message.conf;
   return true;
 }
 
@@ -60,6 +62,9 @@ cdr_deserialize(
 
   // Member: h
   cdr >> ros_message.h;
+
+  // Member: conf
+  cdr >> ros_message.conf;
 
   return true;
 }
@@ -98,6 +103,12 @@ get_serialized_size(
   // Member: h
   {
     size_t item_size = sizeof(ros_message.h);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: conf
+  {
+    size_t item_size = sizeof(ros_message.conf);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -161,6 +172,15 @@ max_serialized_size_Gate(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: conf
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -169,7 +189,7 @@ max_serialized_size_Gate(
     using DataType = interfaces::msg::Gate;
     is_plain =
       (
-      offsetof(DataType, h) +
+      offsetof(DataType, conf) +
       last_member_size
       ) == ret_val;
   }

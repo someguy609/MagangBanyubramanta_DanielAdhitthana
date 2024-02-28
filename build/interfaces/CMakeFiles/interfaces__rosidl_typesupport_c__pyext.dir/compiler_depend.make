@@ -248,8 +248,13 @@ CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/inter
   rosidl_generator_c/interfaces/msg/detail/motion__functions.h \
   rosidl_generator_c/interfaces/msg/detail/object__type_support.h \
   rosidl_generator_c/interfaces/msg/detail/object__struct.h \
-  rosidl_generator_c/interfaces/msg/detail/object__functions.h
+  rosidl_generator_c/interfaces/msg/detail/object__functions.h \
+  rosidl_generator_c/interfaces/msg/detail/gate__type_support.h \
+  rosidl_generator_c/interfaces/msg/detail/gate__struct.h \
+  rosidl_generator_c/interfaces/msg/detail/gate__functions.h
 
+
+rosidl_generator_c/interfaces/msg/detail/gate__struct.h:
 
 rosidl_generator_c/interfaces/msg/detail/object__functions.h:
 
@@ -390,6 +395,8 @@ rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h:
 /usr/include/python3.10/fileobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+rosidl_generator_c/interfaces/msg/detail/gate__functions.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -540,6 +547,8 @@ rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c:
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+rosidl_generator_c/interfaces/msg/detail/gate__type_support.h:
 
 /usr/include/python3.10/pythread.h:
 

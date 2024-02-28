@@ -1,0 +1,293 @@
+[0.000000] (-) TimerEvent: {}
+[0.000329] (-) JobUnselected: {'identifier': 'camera'}
+[0.000411] (-) JobUnselected: {'identifier': 'communicator'}
+[0.000456] (-) JobUnselected: {'identifier': 'controller'}
+[0.000496] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.000546] (yolo) JobQueued: {'identifier': 'yolo', 'dependencies': OrderedDict([('interfaces', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces')])}
+[0.001464] (yolo) JobStarted: {'identifier': 'yolo'}
+[0.098812] (-) TimerEvent: {}
+[0.174171] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'cmake'}
+[0.176096] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'build'}
+[0.178962] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('_ble_util_fdlist_cloexit', '30:31:32:33:34:35:36:40'), ('GIO_MODULE_DIR', '/home/donjoe/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/donjoe/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '891'), ('SYSTEMD_EXEC_PID', '1073'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20450'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('JOURNAL_STREAM', '8:28796'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/donjoe/.local/bin:/opt/ros/humble/bin:/home/donjoe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1044,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1044'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', 'a3d41b98e81646d3962ea8f12c2c288c'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HELUJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d59981c0b2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/donjoe/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LINENO', '2'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('bleopt_connect_tty', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/donjoe/snap/code/152/.local/share:/home/donjoe/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('_ble_util_fdvars_export', ''), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[0.199720] (-) TimerEvent: {}
+[0.300301] (-) TimerEvent: {}
+[0.339255] (yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node\x1b[0m\n'}
+[0.400456] (-) TimerEvent: {}
+[0.415064] (yolo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[0.500621] (-) TimerEvent: {}
+[0.601185] (-) TimerEvent: {}
+[0.701723] (-) TimerEvent: {}
+[0.802298] (-) TimerEvent: {}
+[0.902826] (-) TimerEvent: {}
+[1.003375] (-) TimerEvent: {}
+[1.104013] (-) TimerEvent: {}
+[1.204594] (-) TimerEvent: {}
+[1.305172] (-) TimerEvent: {}
+[1.405772] (-) TimerEvent: {}
+[1.506283] (-) TimerEvent: {}
+[1.606717] (-) TimerEvent: {}
+[1.707196] (-) TimerEvent: {}
+[1.807792] (-) TimerEvent: {}
+[1.908304] (-) TimerEvent: {}
+[2.008824] (-) TimerEvent: {}
+[2.109307] (-) TimerEvent: {}
+[2.209786] (-) TimerEvent: {}
+[2.310261] (-) TimerEvent: {}
+[2.410741] (-) TimerEvent: {}
+[2.511288] (-) TimerEvent: {}
+[2.611895] (-) TimerEvent: {}
+[2.712359] (-) TimerEvent: {}
+[2.812837] (-) TimerEvent: {}
+[2.913376] (-) TimerEvent: {}
+[3.013882] (-) TimerEvent: {}
+[3.114476] (-) TimerEvent: {}
+[3.215004] (-) TimerEvent: {}
+[3.315715] (-) TimerEvent: {}
+[3.416246] (-) TimerEvent: {}
+[3.516735] (-) TimerEvent: {}
+[3.617199] (-) TimerEvent: {}
+[3.717654] (-) TimerEvent: {}
+[3.818127] (-) TimerEvent: {}
+[3.918632] (-) TimerEvent: {}
+[4.019256] (-) TimerEvent: {}
+[4.119816] (-) TimerEvent: {}
+[4.220329] (-) TimerEvent: {}
+[4.320773] (-) TimerEvent: {}
+[4.421223] (-) TimerEvent: {}
+[4.521656] (-) TimerEvent: {}
+[4.622130] (-) TimerEvent: {}
+[4.722672] (-) TimerEvent: {}
+[4.823149] (-) TimerEvent: {}
+[4.923565] (-) TimerEvent: {}
+[5.024144] (-) TimerEvent: {}
+[5.124643] (-) TimerEvent: {}
+[5.225121] (-) TimerEvent: {}
+[5.325600] (-) TimerEvent: {}
+[5.426155] (-) TimerEvent: {}
+[5.527474] (-) TimerEvent: {}
+[5.628015] (-) TimerEvent: {}
+[5.728607] (-) TimerEvent: {}
+[5.829079] (-) TimerEvent: {}
+[5.929514] (-) TimerEvent: {}
+[6.029938] (-) TimerEvent: {}
+[6.130416] (-) TimerEvent: {}
+[6.230833] (-) TimerEvent: {}
+[6.331329] (-) TimerEvent: {}
+[6.431768] (-) TimerEvent: {}
+[6.532205] (-) TimerEvent: {}
+[6.632612] (-) TimerEvent: {}
+[6.733034] (-) TimerEvent: {}
+[6.833462] (-) TimerEvent: {}
+[6.933892] (-) TimerEvent: {}
+[7.034310] (-) TimerEvent: {}
+[7.134801] (-) TimerEvent: {}
+[7.235225] (-) TimerEvent: {}
+[7.335690] (-) TimerEvent: {}
+[7.436247] (-) TimerEvent: {}
+[7.536669] (-) TimerEvent: {}
+[7.637096] (-) TimerEvent: {}
+[7.737525] (-) TimerEvent: {}
+[7.837949] (-) TimerEvent: {}
+[7.938471] (-) TimerEvent: {}
+[8.039007] (-) TimerEvent: {}
+[8.139523] (-) TimerEvent: {}
+[8.240063] (-) TimerEvent: {}
+[8.340607] (-) TimerEvent: {}
+[8.441063] (-) TimerEvent: {}
+[8.541606] (-) TimerEvent: {}
+[8.642188] (-) TimerEvent: {}
+[8.742843] (-) TimerEvent: {}
+[8.843344] (-) TimerEvent: {}
+[8.943860] (-) TimerEvent: {}
+[9.044302] (-) TimerEvent: {}
+[9.144825] (-) TimerEvent: {}
+[9.245327] (-) TimerEvent: {}
+[9.345838] (-) TimerEvent: {}
+[9.446411] (-) TimerEvent: {}
+[9.554171] (-) TimerEvent: {}
+[9.654796] (-) TimerEvent: {}
+[9.755378] (-) TimerEvent: {}
+[9.856521] (-) TimerEvent: {}
+[9.957117] (-) TimerEvent: {}
+[10.057640] (-) TimerEvent: {}
+[10.158093] (-) TimerEvent: {}
+[10.258686] (-) TimerEvent: {}
+[10.359261] (-) TimerEvent: {}
+[10.459866] (-) TimerEvent: {}
+[10.561349] (-) TimerEvent: {}
+[10.662241] (-) TimerEvent: {}
+[10.762863] (-) TimerEvent: {}
+[10.863489] (-) TimerEvent: {}
+[10.963992] (-) TimerEvent: {}
+[11.064501] (-) TimerEvent: {}
+[11.164938] (-) TimerEvent: {}
+[11.265724] (-) TimerEvent: {}
+[11.366289] (-) TimerEvent: {}
+[11.466803] (-) TimerEvent: {}
+[11.567400] (-) TimerEvent: {}
+[11.667997] (-) TimerEvent: {}
+[11.768642] (-) TimerEvent: {}
+[11.869323] (-) TimerEvent: {}
+[11.969884] (-) TimerEvent: {}
+[12.070442] (-) TimerEvent: {}
+[12.171050] (-) TimerEvent: {}
+[12.271638] (-) TimerEvent: {}
+[12.372395] (-) TimerEvent: {}
+[12.472779] (-) TimerEvent: {}
+[12.573203] (-) TimerEvent: {}
+[12.673619] (-) TimerEvent: {}
+[12.774032] (-) TimerEvent: {}
+[12.874444] (-) TimerEvent: {}
+[12.974870] (-) TimerEvent: {}
+[13.075288] (-) TimerEvent: {}
+[13.175701] (-) TimerEvent: {}
+[13.276149] (-) TimerEvent: {}
+[13.376638] (-) TimerEvent: {}
+[13.477127] (-) TimerEvent: {}
+[13.577554] (-) TimerEvent: {}
+[13.678058] (-) TimerEvent: {}
+[13.778594] (-) TimerEvent: {}
+[13.879115] (-) TimerEvent: {}
+[13.979593] (-) TimerEvent: {}
+[14.080061] (-) TimerEvent: {}
+[14.180571] (-) TimerEvent: {}
+[14.281051] (-) TimerEvent: {}
+[14.381555] (-) TimerEvent: {}
+[14.482222] (-) TimerEvent: {}
+[14.582704] (-) TimerEvent: {}
+[14.683223] (-) TimerEvent: {}
+[14.783838] (-) TimerEvent: {}
+[14.884564] (-) TimerEvent: {}
+[14.985464] (-) TimerEvent: {}
+[15.086055] (-) TimerEvent: {}
+[15.186725] (-) TimerEvent: {}
+[15.287404] (-) TimerEvent: {}
+[15.387964] (-) TimerEvent: {}
+[15.488567] (-) TimerEvent: {}
+[15.589095] (-) TimerEvent: {}
+[15.689627] (-) TimerEvent: {}
+[15.790335] (-) TimerEvent: {}
+[15.890939] (-) TimerEvent: {}
+[15.991454] (-) TimerEvent: {}
+[16.091973] (-) TimerEvent: {}
+[16.192479] (-) TimerEvent: {}
+[16.293167] (-) TimerEvent: {}
+[16.393687] (-) TimerEvent: {}
+[16.494199] (-) TimerEvent: {}
+[16.594709] (-) TimerEvent: {}
+[16.695182] (-) TimerEvent: {}
+[16.795695] (-) TimerEvent: {}
+[16.896222] (-) TimerEvent: {}
+[16.996721] (-) TimerEvent: {}
+[17.097177] (-) TimerEvent: {}
+[17.197609] (-) TimerEvent: {}
+[17.298054] (-) TimerEvent: {}
+[17.398563] (-) TimerEvent: {}
+[17.499078] (-) TimerEvent: {}
+[17.599609] (-) TimerEvent: {}
+[17.700229] (-) TimerEvent: {}
+[17.800756] (-) TimerEvent: {}
+[17.901291] (-) TimerEvent: {}
+[18.001820] (-) TimerEvent: {}
+[18.102333] (-) TimerEvent: {}
+[18.202851] (-) TimerEvent: {}
+[18.303350] (-) TimerEvent: {}
+[18.403889] (-) TimerEvent: {}
+[18.504446] (-) TimerEvent: {}
+[18.604967] (-) TimerEvent: {}
+[18.705482] (-) TimerEvent: {}
+[18.805996] (-) TimerEvent: {}
+[18.906492] (-) TimerEvent: {}
+[19.006966] (-) TimerEvent: {}
+[19.107426] (-) TimerEvent: {}
+[19.207880] (-) TimerEvent: {}
+[19.308682] (-) TimerEvent: {}
+[19.409192] (-) TimerEvent: {}
+[19.509688] (-) TimerEvent: {}
+[19.610109] (-) TimerEvent: {}
+[19.710541] (-) TimerEvent: {}
+[19.811030] (-) TimerEvent: {}
+[19.911558] (-) TimerEvent: {}
+[20.012139] (-) TimerEvent: {}
+[20.112617] (-) TimerEvent: {}
+[20.213113] (-) TimerEvent: {}
+[20.313566] (-) TimerEvent: {}
+[20.414023] (-) TimerEvent: {}
+[20.514415] (-) TimerEvent: {}
+[20.614962] (-) TimerEvent: {}
+[20.715346] (-) TimerEvent: {}
+[20.815798] (-) TimerEvent: {}
+[20.916255] (-) TimerEvent: {}
+[21.016681] (-) TimerEvent: {}
+[21.117080] (-) TimerEvent: {}
+[21.217480] (-) TimerEvent: {}
+[21.317928] (-) TimerEvent: {}
+[21.418412] (-) TimerEvent: {}
+[21.518934] (-) TimerEvent: {}
+[21.619316] (-) TimerEvent: {}
+[21.719683] (-) TimerEvent: {}
+[21.820099] (-) TimerEvent: {}
+[21.920520] (-) TimerEvent: {}
+[22.020939] (-) TimerEvent: {}
+[22.121378] (-) TimerEvent: {}
+[22.221891] (-) TimerEvent: {}
+[22.322553] (-) TimerEvent: {}
+[22.423091] (-) TimerEvent: {}
+[22.523615] (-) TimerEvent: {}
+[22.624060] (-) TimerEvent: {}
+[22.724526] (-) TimerEvent: {}
+[22.824992] (-) TimerEvent: {}
+[22.925418] (-) TimerEvent: {}
+[23.025950] (-) TimerEvent: {}
+[23.126510] (-) TimerEvent: {}
+[23.227074] (-) TimerEvent: {}
+[23.327668] (-) TimerEvent: {}
+[23.355005] (yolo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[23.427825] (-) TimerEvent: {}
+[23.528359] (-) TimerEvent: {}
+[23.628827] (-) TimerEvent: {}
+[23.729333] (-) TimerEvent: {}
+[23.829790] (-) TimerEvent: {}
+[23.851384] (yolo) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.409\n'}
+[23.854313] (yolo) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.409\n'}
+[23.931104] (-) TimerEvent: {}
+[24.031728] (-) TimerEvent: {}
+[24.132308] (-) TimerEvent: {}
+[24.232829] (-) TimerEvent: {}
+[24.333294] (-) TimerEvent: {}
+[24.433769] (-) TimerEvent: {}
+[24.534309] (-) TimerEvent: {}
+[24.634804] (-) TimerEvent: {}
+[24.735436] (-) TimerEvent: {}
+[24.836110] (-) TimerEvent: {}
+[24.936764] (-) TimerEvent: {}
+[25.010677] (yolo) StdoutLine: {'line': b'[100%] Built target node\n'}
+[25.031288] (yolo) CommandEnded: {'returncode': 0}
+[25.036904] (-) TimerEvent: {}
+[25.085679] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'install'}
+[25.101288] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('_ble_util_fdlist_cloexit', '30:31:32:33:34:35:36:40'), ('GIO_MODULE_DIR', '/home/donjoe/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/donjoe/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '891'), ('SYSTEMD_EXEC_PID', '1073'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20450'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('JOURNAL_STREAM', '8:28796'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/donjoe/.local/bin:/opt/ros/humble/bin:/home/donjoe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1044,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1044'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', 'a3d41b98e81646d3962ea8f12c2c288c'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HELUJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d59981c0b2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/donjoe/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LINENO', '2'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('bleopt_connect_tty', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/donjoe/snap/code/152/.local/share:/home/donjoe/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('_ble_util_fdvars_export', ''), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[25.116629] (yolo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.117150] (yolo) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node\n'}
+[25.127213] (yolo) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node" to ""\n'}
+[25.127632] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/package_run_dependencies/yolo\n'}
+[25.127895] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/parent_prefix_path/yolo\n'}
+[25.128123] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.sh\n'}
+[25.128334] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.dsv\n'}
+[25.128503] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.sh\n'}
+[25.128666] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.dsv\n'}
+[25.128839] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.bash\n'}
+[25.129173] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.sh\n'}
+[25.129428] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.zsh\n'}
+[25.129660] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.dsv\n'}
+[25.129876] (yolo) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.dsv\n'}
+[25.130110] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/packages/yolo\n'}
+[25.130373] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig.cmake\n'}
+[25.130564] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig-version.cmake\n'}
+[25.130724] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.xml\n'}
+[25.133121] (yolo) CommandEnded: {'returncode': 0}
+[25.137071] (-) TimerEvent: {}
+[25.238259] (-) TimerEvent: {}
+[25.338968] (-) TimerEvent: {}
+[25.442490] (-) TimerEvent: {}
+[25.447507] (yolo) JobEnded: {'identifier': 'yolo', 'rc': 0}
+[25.449597] (-) EventReactorShutdown: {}

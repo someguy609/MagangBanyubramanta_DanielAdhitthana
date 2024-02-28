@@ -21,6 +21,7 @@ interfaces__msg__Gate__init(interfaces__msg__Gate * msg)
   // y
   // w
   // h
+  // conf
   return true;
 }
 
@@ -34,6 +35,7 @@ interfaces__msg__Gate__fini(interfaces__msg__Gate * msg)
   // y
   // w
   // h
+  // conf
 }
 
 bool
@@ -58,6 +60,10 @@ interfaces__msg__Gate__are_equal(const interfaces__msg__Gate * lhs, const interf
   if (lhs->h != rhs->h) {
     return false;
   }
+  // conf
+  if (lhs->conf != rhs->conf) {
+    return false;
+  }
   return true;
 }
 
@@ -77,6 +83,8 @@ interfaces__msg__Gate__copy(
   output->w = input->w;
   // h
   output->h = input->h;
+  // conf
+  output->conf = input->conf;
   return true;
 }
 

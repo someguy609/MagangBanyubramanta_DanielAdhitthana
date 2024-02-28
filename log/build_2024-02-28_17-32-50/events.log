@@ -1,0 +1,396 @@
+[0.000000] (-) TimerEvent: {}
+[0.002253] (-) JobUnselected: {'identifier': 'camera'}
+[0.002402] (-) JobUnselected: {'identifier': 'communicator'}
+[0.002474] (-) JobUnselected: {'identifier': 'controller'}
+[0.002527] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.002590] (yolo) JobQueued: {'identifier': 'yolo', 'dependencies': OrderedDict([('interfaces', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces')])}
+[0.002665] (yolo) JobStarted: {'identifier': 'yolo'}
+[0.095690] (-) TimerEvent: {}
+[0.181156] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'cmake'}
+[0.183024] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'build'}
+[0.185414] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', '--', '-j4', '-l4'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('_ble_util_fdlist_cloexit', '30:31:32:33:34:35:36:37'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/intel/openvino_2023.3.0/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_2023.3.0'), ('SYSTEMD_EXEC_PID', '1368'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_2023.3.0/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/donjoe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2ed2e03e_e5cb_45fa_a18a_599c08201d3c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GLASJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.139'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ngraph_DIR', '/opt/intel/openvino_2023.3.0/runtime/cmake'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LINENO', '9'), ('InferenceEngine_DIR', '/opt/intel/openvino_2023.3.0/runtime/cmake'), ('bleopt_connect_tty', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('_ble_util_fdvars_export', ''), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:/opt/intel/openvino_2023.3.0/python:/opt/intel/openvino_2023.3.0/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('OpenVINO_DIR', '/opt/intel/openvino_2023.3.0/runtime/cmake'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble')]), 'shell': False}
+[0.197223] (-) TimerEvent: {}
+[0.297749] (-) TimerEvent: {}
+[0.337550] (yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node\x1b[0m\n'}
+[0.397915] (-) TimerEvent: {}
+[0.421048] (yolo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o\x1b[0m\n'}
+[0.498068] (-) TimerEvent: {}
+[0.598612] (-) TimerEvent: {}
+[0.699110] (-) TimerEvent: {}
+[0.799622] (-) TimerEvent: {}
+[0.901890] (-) TimerEvent: {}
+[1.002985] (-) TimerEvent: {}
+[1.103518] (-) TimerEvent: {}
+[1.203985] (-) TimerEvent: {}
+[1.304500] (-) TimerEvent: {}
+[1.405049] (-) TimerEvent: {}
+[1.505588] (-) TimerEvent: {}
+[1.606190] (-) TimerEvent: {}
+[1.706703] (-) TimerEvent: {}
+[1.807230] (-) TimerEvent: {}
+[1.907632] (-) TimerEvent: {}
+[2.008057] (-) TimerEvent: {}
+[2.108645] (-) TimerEvent: {}
+[2.209136] (-) TimerEvent: {}
+[2.309670] (-) TimerEvent: {}
+[2.410224] (-) TimerEvent: {}
+[2.510779] (-) TimerEvent: {}
+[2.611366] (-) TimerEvent: {}
+[2.712102] (-) TimerEvent: {}
+[2.812638] (-) TimerEvent: {}
+[2.913167] (-) TimerEvent: {}
+[3.013676] (-) TimerEvent: {}
+[3.114172] (-) TimerEvent: {}
+[3.214711] (-) TimerEvent: {}
+[3.315308] (-) TimerEvent: {}
+[3.415819] (-) TimerEvent: {}
+[3.516413] (-) TimerEvent: {}
+[3.616909] (-) TimerEvent: {}
+[3.717417] (-) TimerEvent: {}
+[3.817905] (-) TimerEvent: {}
+[3.918436] (-) TimerEvent: {}
+[4.018973] (-) TimerEvent: {}
+[4.119532] (-) TimerEvent: {}
+[4.220826] (-) TimerEvent: {}
+[4.321369] (-) TimerEvent: {}
+[4.422332] (-) TimerEvent: {}
+[4.522858] (-) TimerEvent: {}
+[4.623378] (-) TimerEvent: {}
+[4.723869] (-) TimerEvent: {}
+[4.824322] (-) TimerEvent: {}
+[4.924817] (-) TimerEvent: {}
+[5.025356] (-) TimerEvent: {}
+[5.125910] (-) TimerEvent: {}
+[5.226427] (-) TimerEvent: {}
+[5.326966] (-) TimerEvent: {}
+[5.427540] (-) TimerEvent: {}
+[5.528100] (-) TimerEvent: {}
+[5.628984] (-) TimerEvent: {}
+[5.729567] (-) TimerEvent: {}
+[5.830178] (-) TimerEvent: {}
+[5.930718] (-) TimerEvent: {}
+[6.031231] (-) TimerEvent: {}
+[6.131705] (-) TimerEvent: {}
+[6.232178] (-) TimerEvent: {}
+[6.332709] (-) TimerEvent: {}
+[6.433293] (-) TimerEvent: {}
+[6.533875] (-) TimerEvent: {}
+[6.634411] (-) TimerEvent: {}
+[6.734970] (-) TimerEvent: {}
+[6.835488] (-) TimerEvent: {}
+[6.935986] (-) TimerEvent: {}
+[7.036557] (-) TimerEvent: {}
+[7.137123] (-) TimerEvent: {}
+[7.237677] (-) TimerEvent: {}
+[7.338197] (-) TimerEvent: {}
+[7.421009] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:9\x1b[m\x1b[K,\n'}
+[7.421462] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.421850] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.422042] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/attribute_adapter.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void ov::ValueAccessor<void>::set_as_any(const ov::Any&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.422221] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/attribute_adapter.hpp:38:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.422407] (yolo) StderrLine: {'line': b'   38 |     virtual void set_as_any(\x1b[01;35m\x1b[Kconst ov::Any& x\x1b[m\x1b[K) {\n'}
+[7.422588] (yolo) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[7.438325] (-) TimerEvent: {}
+[7.538787] (-) TimerEvent: {}
+[7.639292] (-) TimerEvent: {}
+[7.683716] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/util/assign_base.hpp:7\x1b[m\x1b[K,\n'}
+[7.684142] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:7\x1b[m\x1b[K,\n'}
+[7.684345] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:20\x1b[m\x1b[K,\n'}
+[7.684526] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.684701] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.684875] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.685046] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.685220] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/sink.hpp:\x1b[m\x1b[K At global scope:\n'}
+[7.685392] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/sink.hpp:18:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.685574] (yolo) StderrLine: {'line': b'   18 |     OPENVINO_OP("Sink")\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.685878] (yolo) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.686052] (yolo) StderrLine: {'line': b'      |                        \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.686513] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:7\x1b[m\x1b[K,\n'}
+[7.686704] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:20\x1b[m\x1b[K,\n'}
+[7.686876] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.687048] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.687221] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.687409] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.687582] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/util/assign_base.hpp:15:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.687762] (yolo) StderrLine: {'line': b'   15 |     OPENVINO_OP("AssignBase", "util", ov::op::Sink)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.687949] (yolo) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.688132] (yolo) StderrLine: {'line': b'      |                                                    \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.688519] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:20\x1b[m\x1b[K,\n'}
+[7.688704] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.688876] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.689049] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.689220] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.689402] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:17:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.689671] (yolo) StderrLine: {'line': b'   17 |     OPENVINO_OP("Assign", "opset3", util::AssignBase)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.690058] (yolo) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.690251] (yolo) StderrLine: {'line': b'      |                                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.690433] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:45:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.690675] (yolo) StderrLine: {'line': b'   45 |     OPENVINO_OP("Assign", "opset6", util::AssignBase)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.690883] (yolo) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.691073] (yolo) StderrLine: {'line': b'      |                                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.737234] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:21\x1b[m\x1b[K,\n'}
+[7.738820] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.740453] (-) TimerEvent: {}
+[7.740972] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.742401] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.742660] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.742868] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/parameter.hpp:21:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.743088] (yolo) StderrLine: {'line': b'   21 |     OPENVINO_OP("Parameter", "opset1")\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.743393] (yolo) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.743613] (yolo) StderrLine: {'line': b'      |                                       \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.743949] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/read_value.hpp:7\x1b[m\x1b[K,\n'}
+[7.744141] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:22\x1b[m\x1b[K,\n'}
+[7.744331] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.744510] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.744693] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.745018] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.745238] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/util/read_value_base.hpp:15:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.745451] (yolo) StderrLine: {'line': b'   15 |     OPENVINO_OP("ReadValueBase", "util")\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.745639] (yolo) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.745857] (yolo) StderrLine: {'line': b'      |                                         \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.746046] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:22\x1b[m\x1b[K,\n'}
+[7.746247] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.746458] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.746896] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.747099] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.747296] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/read_value.hpp:18:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.747496] (yolo) StderrLine: {'line': b'   18 |     OPENVINO_OP("ReadValue", "opset3", util::ReadValueBase)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.747684] (yolo) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.747870] (yolo) StderrLine: {'line': b'      |                                                            \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.748060] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/read_value.hpp:48:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.748293] (yolo) StderrLine: {'line': b'   48 |     OPENVINO_OP("ReadValue", "opset6", util::ReadValueBase)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.748481] (yolo) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.748665] (yolo) StderrLine: {'line': b'      |                                                            \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.748862] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:23\x1b[m\x1b[K,\n'}
+[7.749056] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19\x1b[m\x1b[K,\n'}
+[7.749248] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21\x1b[m\x1b[K,\n'}
+[7.749435] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[7.749621] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[7.749844] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/result.hpp:18:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.750057] (yolo) StderrLine: {'line': b'   18 |     OPENVINO_OP("Result", "opset1")\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[7.750249] (yolo) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.750432] (yolo) StderrLine: {'line': b'      |                                    \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[7.840662] (-) TimerEvent: {}
+[7.941230] (-) TimerEvent: {}
+[8.036647] (yolo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/validation_util.hpp:9\x1b[m\x1b[K,\n'}
+[8.037081] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:37\x1b[m\x1b[K,\n'}
+[8.037309] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13\x1b[m\x1b[K,\n'}
+[8.037543] (yolo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13\x1b[m\x1b[K:\n'}
+[8.037742] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/intel/openvino_2023/runtime/include/openvino/op/constant.hpp:35:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.038088] (yolo) StderrLine: {'line': b'   35 |     OPENVINO_OP("Constant", "opset1")\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[8.038298] (yolo) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.038523] (yolo) StderrLine: {'line': b'      |                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[8.041348] (-) TimerEvent: {}
+[8.141898] (-) TimerEvent: {}
+[8.242483] (-) TimerEvent: {}
+[8.343022] (-) TimerEvent: {}
+[8.443570] (-) TimerEvent: {}
+[8.544109] (-) TimerEvent: {}
+[8.644598] (-) TimerEvent: {}
+[8.745140] (-) TimerEvent: {}
+[8.845714] (-) TimerEvent: {}
+[8.946830] (-) TimerEvent: {}
+[9.047548] (-) TimerEvent: {}
+[9.148159] (-) TimerEvent: {}
+[9.174064] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid YOLO::postprocess(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.174466] (yolo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:96:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<long unsigned int>, long unsigned int>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.174670] (yolo) StderrLine: {'line': b'   96 |                 for (int i = 0; i < output_shape[1] /*data.size[1]*/; i++)\n'}
+[9.248305] (-) TimerEvent: {}
+[9.348836] (-) TimerEvent: {}
+[9.449432] (-) TimerEvent: {}
+[9.549887] (-) TimerEvent: {}
+[9.650368] (-) TimerEvent: {}
+[9.750894] (-) TimerEvent: {}
+[9.851440] (-) TimerEvent: {}
+[9.951979] (-) TimerEvent: {}
+[10.052518] (-) TimerEvent: {}
+[10.153049] (-) TimerEvent: {}
+[10.253608] (-) TimerEvent: {}
+[10.354182] (-) TimerEvent: {}
+[10.454795] (-) TimerEvent: {}
+[10.555340] (-) TimerEvent: {}
+[10.655934] (-) TimerEvent: {}
+[10.756430] (-) TimerEvent: {}
+[10.856913] (-) TimerEvent: {}
+[10.957429] (-) TimerEvent: {}
+[11.057984] (-) TimerEvent: {}
+[11.158482] (-) TimerEvent: {}
+[11.259091] (-) TimerEvent: {}
+[11.359749] (-) TimerEvent: {}
+[11.460247] (-) TimerEvent: {}
+[11.560777] (-) TimerEvent: {}
+[11.661337] (-) TimerEvent: {}
+[11.761886] (-) TimerEvent: {}
+[11.862397] (-) TimerEvent: {}
+[11.962932] (-) TimerEvent: {}
+[12.063544] (-) TimerEvent: {}
+[12.164022] (-) TimerEvent: {}
+[12.264493] (-) TimerEvent: {}
+[12.365045] (-) TimerEvent: {}
+[12.465673] (-) TimerEvent: {}
+[12.566198] (-) TimerEvent: {}
+[12.666690] (-) TimerEvent: {}
+[12.767190] (-) TimerEvent: {}
+[12.867675] (-) TimerEvent: {}
+[12.968153] (-) TimerEvent: {}
+[13.071849] (-) TimerEvent: {}
+[13.172376] (-) TimerEvent: {}
+[13.272926] (-) TimerEvent: {}
+[13.373444] (-) TimerEvent: {}
+[13.474055] (-) TimerEvent: {}
+[13.574536] (-) TimerEvent: {}
+[13.674996] (-) TimerEvent: {}
+[13.775479] (-) TimerEvent: {}
+[13.876005] (-) TimerEvent: {}
+[13.976492] (-) TimerEvent: {}
+[14.078265] (-) TimerEvent: {}
+[14.178790] (-) TimerEvent: {}
+[14.279297] (-) TimerEvent: {}
+[14.379840] (-) TimerEvent: {}
+[14.480402] (-) TimerEvent: {}
+[14.580867] (-) TimerEvent: {}
+[14.681360] (-) TimerEvent: {}
+[14.781875] (-) TimerEvent: {}
+[14.882403] (-) TimerEvent: {}
+[14.982949] (-) TimerEvent: {}
+[15.083470] (-) TimerEvent: {}
+[15.184050] (-) TimerEvent: {}
+[15.284671] (-) TimerEvent: {}
+[15.385317] (-) TimerEvent: {}
+[15.485888] (-) TimerEvent: {}
+[15.586323] (-) TimerEvent: {}
+[15.686739] (-) TimerEvent: {}
+[15.787174] (-) TimerEvent: {}
+[15.887706] (-) TimerEvent: {}
+[15.988133] (-) TimerEvent: {}
+[16.088567] (-) TimerEvent: {}
+[16.189102] (-) TimerEvent: {}
+[16.289565] (-) TimerEvent: {}
+[16.390059] (-) TimerEvent: {}
+[16.490559] (-) TimerEvent: {}
+[16.591291] (-) TimerEvent: {}
+[16.691802] (-) TimerEvent: {}
+[16.792354] (-) TimerEvent: {}
+[16.892967] (-) TimerEvent: {}
+[16.993868] (-) TimerEvent: {}
+[17.094406] (-) TimerEvent: {}
+[17.194950] (-) TimerEvent: {}
+[17.295984] (-) TimerEvent: {}
+[17.397043] (-) TimerEvent: {}
+[17.497903] (-) TimerEvent: {}
+[17.598564] (-) TimerEvent: {}
+[17.699120] (-) TimerEvent: {}
+[17.799557] (-) TimerEvent: {}
+[17.900005] (-) TimerEvent: {}
+[18.000497] (-) TimerEvent: {}
+[18.101040] (-) TimerEvent: {}
+[18.201579] (-) TimerEvent: {}
+[18.302090] (-) TimerEvent: {}
+[18.402593] (-) TimerEvent: {}
+[18.503081] (-) TimerEvent: {}
+[18.603581] (-) TimerEvent: {}
+[18.704106] (-) TimerEvent: {}
+[18.804624] (-) TimerEvent: {}
+[18.905153] (-) TimerEvent: {}
+[19.005718] (-) TimerEvent: {}
+[19.106167] (-) TimerEvent: {}
+[19.206599] (-) TimerEvent: {}
+[19.307025] (-) TimerEvent: {}
+[19.407447] (-) TimerEvent: {}
+[19.507931] (-) TimerEvent: {}
+[19.608395] (-) TimerEvent: {}
+[19.708918] (-) TimerEvent: {}
+[19.809463] (-) TimerEvent: {}
+[19.910335] (-) TimerEvent: {}
+[20.010853] (-) TimerEvent: {}
+[20.111351] (-) TimerEvent: {}
+[20.211853] (-) TimerEvent: {}
+[20.312405] (-) TimerEvent: {}
+[20.413340] (-) TimerEvent: {}
+[20.513834] (-) TimerEvent: {}
+[20.614334] (-) TimerEvent: {}
+[20.714813] (-) TimerEvent: {}
+[20.815385] (-) TimerEvent: {}
+[20.915884] (-) TimerEvent: {}
+[21.016388] (-) TimerEvent: {}
+[21.116875] (-) TimerEvent: {}
+[21.217324] (-) TimerEvent: {}
+[21.317846] (-) TimerEvent: {}
+[21.418358] (-) TimerEvent: {}
+[21.519228] (-) TimerEvent: {}
+[21.619741] (-) TimerEvent: {}
+[21.720245] (-) TimerEvent: {}
+[21.820769] (-) TimerEvent: {}
+[21.921282] (-) TimerEvent: {}
+[22.021808] (-) TimerEvent: {}
+[22.122306] (-) TimerEvent: {}
+[22.222805] (-) TimerEvent: {}
+[22.323314] (-) TimerEvent: {}
+[22.423832] (-) TimerEvent: {}
+[22.524341] (-) TimerEvent: {}
+[22.624837] (-) TimerEvent: {}
+[22.725319] (-) TimerEvent: {}
+[22.825819] (-) TimerEvent: {}
+[22.926301] (-) TimerEvent: {}
+[23.026766] (-) TimerEvent: {}
+[23.127242] (-) TimerEvent: {}
+[23.227707] (-) TimerEvent: {}
+[23.328181] (-) TimerEvent: {}
+[23.428717] (-) TimerEvent: {}
+[23.529327] (-) TimerEvent: {}
+[23.629877] (-) TimerEvent: {}
+[23.730390] (-) TimerEvent: {}
+[23.830925] (-) TimerEvent: {}
+[23.885483] (yolo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[23.931038] (-) TimerEvent: {}
+[24.031611] (-) TimerEvent: {}
+[24.133220] (-) TimerEvent: {}
+[24.233835] (-) TimerEvent: {}
+[24.334403] (-) TimerEvent: {}
+[24.434940] (-) TimerEvent: {}
+[24.529821] (yolo) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.409\n'}
+[24.530345] (yolo) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.409\n'}
+[24.535078] (-) TimerEvent: {}
+[24.635579] (-) TimerEvent: {}
+[24.738701] (-) TimerEvent: {}
+[24.839221] (-) TimerEvent: {}
+[24.939863] (-) TimerEvent: {}
+[25.040375] (-) TimerEvent: {}
+[25.140862] (-) TimerEvent: {}
+[25.241367] (-) TimerEvent: {}
+[25.341910] (-) TimerEvent: {}
+[25.442475] (-) TimerEvent: {}
+[25.543051] (-) TimerEvent: {}
+[25.643616] (-) TimerEvent: {}
+[25.744225] (-) TimerEvent: {}
+[25.806498] (yolo) StdoutLine: {'line': b'[100%] Built target node\n'}
+[25.832762] (yolo) CommandEnded: {'returncode': 0}
+[25.844350] (-) TimerEvent: {}
+[25.898092] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'install'}
+[25.920446] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'], 'cwd': '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'donjoe'), ('_ble_util_fdlist_cloexit', '30:31:32:33:34:35:36:37'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/intel/openvino_2023.3.0/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/donjoe'), ('OLDPWD', '/home/donjoe'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('INTEL_OPENVINO_DIR', '/opt/intel/openvino_2023.3.0'), ('SYSTEMD_EXEC_PID', '1368'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'donjoe'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/intel/openvino_2023.3.0/runtime/lib/intel64/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'donjoe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/donjoe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:@/tmp/.ICE-unix/1033,unix/donjoe-VivoBook-ASUSLaptop-X513EA-K513EA:/tmp/.ICE-unix/1033'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2ed2e03e_e5cb_45fa_a18a_599c08201d3c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GLASJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.139'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ngraph_DIR', '/opt/intel/openvino_2023.3.0/runtime/cmake'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LINENO', '9'), ('InferenceEngine_DIR', '/opt/intel/openvino_2023.3.0/runtime/cmake'), ('bleopt_connect_tty', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('_ble_util_fdvars_export', ''), ('PYTHONPATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/local/lib/python3.10/dist-packages:/opt/intel/openvino_2023.3.0/python:/opt/intel/openvino_2023.3.0/python/python3:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('OpenVINO_DIR', '/opt/intel/openvino_2023.3.0/runtime/cmake'), ('CMAKE_PREFIX_PATH', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble')]), 'shell': False}
+[25.935842] (yolo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.939830] (yolo) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node\n'}
+[25.945996] (-) TimerEvent: {}
+[25.954136] (yolo) StdoutLine: {'line': b'-- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node" to ""\n'}
+[25.954477] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/package_run_dependencies/yolo\n'}
+[25.954644] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/parent_prefix_path/yolo\n'}
+[25.954798] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.sh\n'}
+[25.955064] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.dsv\n'}
+[25.955220] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.sh\n'}
+[25.955371] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.dsv\n'}
+[25.955520] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.bash\n'}
+[25.960342] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.sh\n'}
+[25.960656] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.zsh\n'}
+[25.960861] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.dsv\n'}
+[25.961053] (yolo) StdoutLine: {'line': b'-- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.dsv\n'}
+[25.961416] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/packages/yolo\n'}
+[25.961642] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig.cmake\n'}
+[25.966606] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig-version.cmake\n'}
+[25.967179] (yolo) StdoutLine: {'line': b'-- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.xml\n'}
+[25.967396] (yolo) CommandEnded: {'returncode': 0}
+[26.049049] (-) TimerEvent: {}
+[26.149529] (-) TimerEvent: {}
+[26.250006] (-) TimerEvent: {}
+[26.350824] (-) TimerEvent: {}
+[26.421051] (yolo) JobEnded: {'identifier': 'yolo', 'rc': 0}
+[26.422723] (-) EventReactorShutdown: {}

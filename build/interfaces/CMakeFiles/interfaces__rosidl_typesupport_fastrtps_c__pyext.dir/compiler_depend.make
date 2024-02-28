@@ -248,8 +248,13 @@ CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator
   rosidl_generator_c/interfaces/msg/detail/motion__functions.h \
   rosidl_generator_c/interfaces/msg/detail/object__type_support.h \
   rosidl_generator_c/interfaces/msg/detail/object__struct.h \
-  rosidl_generator_c/interfaces/msg/detail/object__functions.h
+  rosidl_generator_c/interfaces/msg/detail/object__functions.h \
+  rosidl_generator_c/interfaces/msg/detail/gate__type_support.h \
+  rosidl_generator_c/interfaces/msg/detail/gate__struct.h \
+  rosidl_generator_c/interfaces/msg/detail/gate__functions.h
 
+
+rosidl_generator_c/interfaces/msg/detail/gate__struct.h:
 
 rosidl_generator_c/interfaces/msg/detail/object__functions.h:
 
@@ -391,6 +396,8 @@ rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
+rosidl_generator_c/interfaces/msg/detail/gate__functions.h:
+
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
@@ -516,6 +523,8 @@ rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c:
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+rosidl_generator_c/interfaces/msg/detail/gate__type_support.h:
 
 /usr/include/python3.10/pythread.h:
 

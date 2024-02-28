@@ -7,8 +7,6 @@
 
 import builtins  # noqa: E402, I100
 
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -95,14 +93,14 @@ class Object(metaclass=Metaclass_Object):
         'color': 'uint8',
         'x': 'int32',
         'y': 'int32',
-        'angle': 'float',
+        'angle': 'int32',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -112,7 +110,7 @@ class Object(metaclass=Metaclass_Object):
         self.color = kwargs.get('color', int())
         self.x = kwargs.get('x', int())
         self.y = kwargs.get('y', int())
-        self.angle = kwargs.get('angle', float())
+        self.angle = kwargs.get('angle', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -212,8 +210,8 @@ class Object(metaclass=Metaclass_Object):
     def angle(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'angle' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'angle' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+                isinstance(value, int), \
+                "The 'angle' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'angle' field must be an integer in [-2147483648, 2147483647]"
         self._angle = value

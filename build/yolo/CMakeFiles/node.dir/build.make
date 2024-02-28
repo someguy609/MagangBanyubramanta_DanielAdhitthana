@@ -113,6 +113,7 @@ node: /usr/local/lib/libopencv_photo.so.4.9.0
 node: /usr/local/lib/libopencv_stitching.so.4.9.0
 node: /usr/local/lib/libopencv_video.so.4.9.0
 node: /usr/local/lib/libopencv_videoio.so.4.9.0
+node: /opt/intel/openvino_2023/runtime/lib/intel64/libopenvino.so
 node: /opt/ros/humble/lib/liblibstatistics_collector.so
 node: /opt/ros/humble/lib/librcl.so
 node: /opt/ros/humble/lib/librmw_implementation.so

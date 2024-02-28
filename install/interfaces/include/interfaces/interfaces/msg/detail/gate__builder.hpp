@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Gate_conf
+{
+public:
+  explicit Init_Gate_conf(::interfaces::msg::Gate & msg)
+  : msg_(msg)
+  {}
+  ::interfaces::msg::Gate conf(::interfaces::msg::Gate::_conf_type arg)
+  {
+    msg_.conf = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::interfaces::msg::Gate msg_;
+};
+
 class Init_Gate_h
 {
 public:
   explicit Init_Gate_h(::interfaces::msg::Gate & msg)
   : msg_(msg)
   {}
-  ::interfaces::msg::Gate h(::interfaces::msg::Gate::_h_type arg)
+  Init_Gate_conf h(::interfaces::msg::Gate::_h_type arg)
   {
     msg_.h = std::move(arg);
-    return std::move(msg_);
+    return Init_Gate_conf(msg_);
   }
 
 private:

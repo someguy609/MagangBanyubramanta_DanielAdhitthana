@@ -247,6 +247,9 @@ FastRTPS_LIBRARY_DEBUG:FILEPATH=FastRTPS_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 FastRTPS_LIBRARY_RELEASE:FILEPATH=/opt/ros/humble/lib/libfastrtps.so
 
+//The directory containing a CMake configuration file for InferenceEngine.
+InferenceEngine_DIR:PATH=InferenceEngine_DIR-NOTFOUND
+
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
@@ -258,6 +261,9 @@ OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
+
+//The directory containing a CMake configuration file for OpenVINO.
+OpenVINO_DIR:PATH=/opt/intel/openvino_2023.3.0/runtime/cmake
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=

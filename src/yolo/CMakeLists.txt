@@ -12,12 +12,23 @@ find_package(cv_bridge REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(interfaces REQUIRED)
+find_package(OpenVINO REQUIRED)
 
 add_executable(
   node
   src/node.cpp
 )
 ament_target_dependencies(node rclcpp cv_bridge sensor_msgs OpenCV interfaces)
+
+include_directories(node
+  /opt/intel/openvino_2023/runtime/include
+  /opt/intel/openvino_2023/runtime/include/ie
+  /opt/intel/openvino_2023/runtime/include/ngraph
+)
+
+target_link_libraries(node
+  /opt/intel/openvino_2023/runtime/lib/intel64/libopenvino.so
+)
 
 install(TARGETS
   node

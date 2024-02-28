@@ -13,6 +13,8 @@ module interfaces {
       int32 w;
 
       int32 h;
+
+      float conf;
     };
   };
 };

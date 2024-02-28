@@ -10,6 +10,7 @@
 #include "sensor_msgs/msg/image.hpp"
 #include "opencv2/opencv.hpp"
 #include "interfaces/msg/gate.hpp"
+#include "openvino/openvino.hpp"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -32,9 +33,21 @@ public:
 		publisher_ = this->create_publisher<interfaces::msg::Gate>("detected_object", 10);
 		cap_ = this->create_subscription<sensor_msgs::msg::Image>("capture", 10, std::bind(&YOLO::topic_callback, this, _1));
 
-		net_ = cv::dnn::readNet("src/yolo/src/best.onnx");
+		// net_ = cv::dnn::readNet("src/yolo/src/best.onnx");
+		ov::Core core;
+		std::shared_ptr<ov::Model> net = core.read_model("src/yolo/src/best.onnx");
+		ov::preprocess::PrePostProcessor ppp = ov::preprocess::PrePostProcessor(net);
+		ppp.input().tensor().set_element_type(ov::element::u8).set_layout("NHWC").set_color_format(ov::preprocess::ColorFormat::RGB);
+		ppp.input().preprocess().convert_element_type(ov::element::f32).convert_color(ov::preprocess::ColorFormat::RGB).scale({255, 255, 255}); // .scale({ 112, 112, 112 });
+		ppp.input().model().set_layout("NCHW");
+		ppp.output(0).tensor().set_element_type(ov::element::f32);
+		net = ppp.build();
+		this->compiled_net_ = core.compile_model(net, "CPU");
+		this->infer_req_ = compiled_net_.create_infer_request();
 
 #ifdef DEBUG
+		// for (std::pair<cv::dnn::Backend, cv::dnn::Target> e : cv::dnn::getAvailableBackends())
+		// 	std::cout << e.first << " " << e.second << std::endl;
 		cv::namedWindow("values");
 		cv::createTrackbar("score", "values", &score_thresh, 100);
 		cv::createTrackbar("conf", "values", &conf_thresh, 100);
@@ -55,32 +68,42 @@ private:
 
 		cv::resize(frame, frame, cv::Size(INPUT_WIDTH, INPUT_HEIGHT));
 
-		cv::Mat blob;
-		cv::dnn::blobFromImage(frame, blob, 1. / 255., cv::Size(INPUT_WIDTH, INPUT_HEIGHT), cv::Scalar(), true, false, CV_32FC1);
-		net_.setInput(blob);
+		// cv::Mat blob;
+		// cv::dnn::blobFromImage(frame, blob, 1. / 255., cv::Size(INPUT_WIDTH, INPUT_HEIGHT), cv::Scalar(), true, false, CV_32F);
+		// net_.setInput(blob);
+
+		float *data = (float *)frame.data;
+		input_ = ov::Tensor(compiled_net_.input().get_element_type(), compiled_net_.input().get_shape(), data);
+		infer_req_.set_input_tensor(input_);
 	}
 
 	void postprocess(cv::Mat &frame)
 	{
-		std::vector<cv::Mat> results;
-		net_.forward(results, net_.getUnconnectedOutLayersNames());
+		infer_req_.infer();
+		const ov::Tensor &output_tensor = infer_req_.get_output_tensor(0);
+		ov::Shape output_shape = output_tensor.get_shape();
+		float *data = output_tensor.data<float>();
+
+		// std::vector<cv::Mat> results;
+		// net_.forward(results, net_.getUnconnectedOutLayersNames());
 
 		std::vector<float> confidences;
 		std::vector<cv::Rect> boxes;
 		std::vector<Detection> detections;
 
-		cv::Mat data = results[0];
+		// cv::Mat data = results[0];
 
-		for (int i = 0; i < data.size[1]; i++)
+		for (int i = 0; i < output_shape[1] /*data.size[1]*/; i++)
 		{
-			float *detection = data.ptr<float>(0, i);
+			// float *detection = data.ptr<float>(0, i);
+			float *detection = &data[i * output_shape[2]];
 			float conf = detection[4];
 
 			if (conf < conf_thresh / 100.)
 				continue;
 
 			float *class_scores = detection + 5;
-			cv::Mat scores(1, data.size[2] - 5, CV_32FC1, class_scores);
+			cv::Mat scores(1, output_shape[2] /*data.size[2]*/ - 5, CV_32FC1, class_scores);
 			cv::Point class_id;
 			double max_score;
 			cv::minMaxLoc(scores, 0, &max_score, 0, &class_id);
@@ -157,8 +180,12 @@ private:
 
 	rclcpp::Publisher<interfaces::msg::Gate>::SharedPtr publisher_;
 	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr cap_;
-	cv::dnn::Net net_;
-	int score_thresh = 20, conf_thresh = 40, nms_thresh = 40;
+	// cv::dnn::Net net_;
+	ov::CompiledModel compiled_net_;
+	ov::InferRequest infer_req_;
+	ov::Tensor input_;
+	int score_thresh = 20,
+		conf_thresh = 40, nms_thresh = 40;
 	float x_fact, y_fact;
 	const std::vector<std::string> class_names = {"mouse"};
 };

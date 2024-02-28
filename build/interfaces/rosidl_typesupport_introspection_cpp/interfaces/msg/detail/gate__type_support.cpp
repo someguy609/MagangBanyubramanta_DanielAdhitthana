@@ -37,7 +37,7 @@ void Gate_fini_function(void * message_memory)
   typed_message->~Gate();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Gate_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Gate_message_member_array[5] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -105,13 +105,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Gate_message_
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "conf",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(interfaces::msg::Gate, conf),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Gate_message_members = {
   "interfaces::msg",  // message namespace
   "Gate",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(interfaces::msg::Gate),
   Gate_message_member_array,  // message members
   Gate_init_function,  // function to initialize message memory (memory has to be allocated)

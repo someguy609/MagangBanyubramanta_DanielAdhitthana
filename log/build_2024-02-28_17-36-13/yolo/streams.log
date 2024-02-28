@@ -1,0 +1,122 @@
+[0.145s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/intel/openvino_2023.3.0/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[0.249s] [35m[1mConsolidate compiler generated dependencies of target node[0m
+[0.293s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/node.cpp.o[0m
+[7.387s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:9[m[K,
+[7.388s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.390s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.391s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/attribute_adapter.hpp:[m[K In member function ‘[01m[Kvirtual void ov::ValueAccessor<void>::set_as_any(const ov::Any&)[m[K’:
+[7.393s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/attribute_adapter.hpp:38:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.394s]    38 |     virtual void set_as_any([01;35m[Kconst ov::Any& x[m[K) {
+[7.394s]       |                             [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[7.646s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/util/assign_base.hpp:7[m[K,
+[7.647s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:7[m[K,
+[7.647s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:20[m[K,
+[7.647s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.647s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.647s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.647s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.648s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/sink.hpp:[m[K At global scope:
+[7.648s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/sink.hpp:18:24:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.648s]    18 |     OPENVINO_OP("Sink")[01;35m[K;[m[K
+[7.648s]       |                        [01;35m[K^[m[K
+[7.648s]       |                        [31m[K-[m[K
+[7.649s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:7[m[K,
+[7.649s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:20[m[K,
+[7.650s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.650s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.650s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.650s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.650s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/util/assign_base.hpp:15:52:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.651s]    15 |     OPENVINO_OP("AssignBase", "util", ov::op::Sink)[01;35m[K;[m[K
+[7.651s]       |                                                    [01;35m[K^[m[K
+[7.651s]       |                                                    [31m[K-[m[K
+[7.652s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:20[m[K,
+[7.652s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.652s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.652s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.652s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.653s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:17:54:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.653s]    17 |     OPENVINO_OP("Assign", "opset3", util::AssignBase)[01;35m[K;[m[K
+[7.653s]       |                                                      [01;35m[K^[m[K
+[7.653s]       |                                                      [31m[K-[m[K
+[7.653s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/assign.hpp:45:54:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.654s]    45 |     OPENVINO_OP("Assign", "opset6", util::AssignBase)[01;35m[K;[m[K
+[7.654s]       |                                                      [01;35m[K^[m[K
+[7.654s]       |                                                      [31m[K-[m[K
+[7.708s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:21[m[K,
+[7.708s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.708s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.708s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.709s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.709s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/parameter.hpp:21:39:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.709s]    21 |     OPENVINO_OP("Parameter", "opset1")[01;35m[K;[m[K
+[7.709s]       |                                       [01;35m[K^[m[K
+[7.709s]       |                                       [31m[K-[m[K
+[7.710s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/read_value.hpp:7[m[K,
+[7.711s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:22[m[K,
+[7.711s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.711s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.711s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.711s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.712s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/util/read_value_base.hpp:15:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.712s]    15 |     OPENVINO_OP("ReadValueBase", "util")[01;35m[K;[m[K
+[7.712s]       |                                         [01;35m[K^[m[K
+[7.712s]       |                                         [31m[K-[m[K
+[7.713s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:22[m[K,
+[7.713s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.713s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.713s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.715s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.716s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/read_value.hpp:18:60:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.716s]    18 |     OPENVINO_OP("ReadValue", "opset3", util::ReadValueBase)[01;35m[K;[m[K
+[7.716s]       |                                                            [01;35m[K^[m[K
+[7.716s]       |                                                            [31m[K-[m[K
+[7.717s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/read_value.hpp:48:60:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.717s]    48 |     OPENVINO_OP("ReadValue", "opset6", util::ReadValueBase)[01;35m[K;[m[K
+[7.717s]       |                                                            [01;35m[K^[m[K
+[7.717s]       |                                                            [31m[K-[m[K
+[7.717s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/model.hpp:23[m[K,
+[7.718s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/graph_util.hpp:19[m[K,
+[7.718s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:21[m[K,
+[7.718s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[7.718s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[7.718s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/result.hpp:18:36:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.719s]    18 |     OPENVINO_OP("Result", "opset1")[01;35m[K;[m[K
+[7.719s]       |                                    [01;35m[K^[m[K
+[7.719s]       |                                    [31m[K-[m[K
+[8.091s] In file included from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/validation_util.hpp:9[m[K,
+[8.091s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/core/core.hpp:37[m[K,
+[8.091s]                  from [01m[K/opt/intel/openvino_2023/runtime/include/openvino/openvino.hpp:13[m[K,
+[8.091s]                  from [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:13[m[K:
+[8.092s] [01m[K/opt/intel/openvino_2023/runtime/include/openvino/op/constant.hpp:35:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.092s]    35 |     OPENVINO_OP("Constant", "opset1")[01;35m[K;[m[K
+[8.092s]       |                                      [01;35m[K^[m[K
+[8.092s]       |                                      [31m[K-[m[K
+[9.672s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:[m[K In member function ‘[01m[Kvoid YOLO::postprocess(cv::Mat&)[m[K’:
+[9.673s] [01m[K/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/yolo/src/node.cpp:96:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<long unsigned int>, long unsigned int>::value_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.673s]    96 |                 for (int i = 0; i < output_shape[1] /*data.size[1]*/; i++)
+[26.235s] [100%] [32m[1mLinking CXX executable node[0m
+[27.035s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.409
+[27.039s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.409
+[28.301s] [100%] Built target node
+[28.325s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '0': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/intel/openvino_2023.3.0/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo -- -j4 -l4
+[28.399s] Invoking command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/intel/openvino_2023.3.0/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo
+[28.417s] -- Install configuration: ""
+[28.422s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node
+[28.429s] -- Set runtime path of "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/lib/yolo/node" to ""
+[28.430s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/package_run_dependencies/yolo
+[28.430s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/parent_prefix_path/yolo
+[28.431s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.sh
+[28.431s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/ament_prefix_path.dsv
+[28.431s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.sh
+[28.431s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/environment/path.dsv
+[28.431s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.bash
+[28.432s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.sh
+[28.432s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.zsh
+[28.432s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/local_setup.dsv
+[28.432s] -- Installing: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.dsv
+[28.432s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/ament_index/resource_index/packages/yolo
+[28.432s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig.cmake
+[28.433s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/cmake/yoloConfig-version.cmake
+[28.433s] -- Up-to-date: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo/share/yolo/package.xml
+[28.436s] Invoked command in '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo' returned '0': CMAKE_PREFIX_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/yolo:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/communicator:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller:/opt/ros/humble LD_LIBRARY_PATH=/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/camera/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller/lib:/opt/intel/openvino_2023.3.0/runtime/lib/intel64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/yolo

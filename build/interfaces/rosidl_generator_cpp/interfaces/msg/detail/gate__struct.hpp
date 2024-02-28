@@ -42,6 +42,7 @@ struct Gate_
       this->y = 0l;
       this->w = 0l;
       this->h = 0l;
+      this->conf = 0.0f;
     }
   }
 
@@ -55,6 +56,7 @@ struct Gate_
       this->y = 0l;
       this->w = 0l;
       this->h = 0l;
+      this->conf = 0.0f;
     }
   }
 
@@ -71,6 +73,9 @@ struct Gate_
   using _h_type =
     int32_t;
   _h_type h;
+  using _conf_type =
+    float;
+  _conf_type conf;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -95,6 +100,12 @@ struct Gate_
     const int32_t & _arg)
   {
     this->h = _arg;
+    return *this;
+  }
+  Type & set__conf(
+    const float & _arg)
+  {
+    this->conf = _arg;
     return *this;
   }
 
@@ -150,6 +161,9 @@ struct Gate_
       return false;
     }
     if (this->h != other.h) {
+      return false;
+    }
+    if (this->conf != other.conf) {
       return false;
     }
     return true;

@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/yolo/node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/yolo/node"
-         OLD_RPATH "/opt/ros/humble/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/usr/local/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:/usr/local/lib:/opt/intel/openvino_2023/runtime/lib/intel64:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/yolo/node")

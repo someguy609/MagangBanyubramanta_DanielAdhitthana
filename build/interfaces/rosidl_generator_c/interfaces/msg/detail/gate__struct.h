@@ -24,6 +24,7 @@ typedef struct interfaces__msg__Gate
   int32_t y;
   int32_t w;
   int32_t h;
+  float conf;
 } interfaces__msg__Gate;
 
 // Struct for a sequence of interfaces__msg__Gate.

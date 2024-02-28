@@ -86,6 +86,15 @@ bool interfaces__msg__gate__convert_from_py(PyObject * _pymsg, void * _ros_messa
     ros_message->h = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // conf
+    PyObject * field = PyObject_GetAttrString(_pymsg, "conf");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->conf = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -146,6 +155,17 @@ PyObject * interfaces__msg__gate__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLong(ros_message->h);
     {
       int rc = PyObject_SetAttrString(_pymessage, "h", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // conf
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->conf);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "conf", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -21,7 +21,7 @@ module interfaces {
 
       int32 y;
 
-      float angle;
+      int32 angle;
     };
   };
 };

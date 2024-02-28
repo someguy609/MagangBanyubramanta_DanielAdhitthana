@@ -75,7 +75,7 @@ private:
         message.color = color;
         message.x = moment.m10 / moment.m00 - cap_.get(cv::CAP_PROP_FRAME_WIDTH) / 2;
         message.y = moment.m01 / moment.m00 - cap_.get(cv::CAP_PROP_FRAME_HEIGHT) / 2;
-        message.angle = 2 * float(message.x) / float(cap_.get(cv::CAP_PROP_FRAME_WIDTH));
+        message.angle = message.x; // ??
 
         object_publisher_->publish(message);
     }

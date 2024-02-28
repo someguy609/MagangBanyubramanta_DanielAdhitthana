@@ -28,39 +28,24 @@ public:
 	}
 
 private:
-	void encode(uint8_t *dest, int value)
+	void encode(uint8_t *dest, uint8_t idx, int val)
 	{
-		int neg = value < 0;
-		value *= neg ? -1 : 1;
-		dest[0] = (value >> 8) + neg * 2;
-		dest[1] = value & 0xFF;
-	}
-
-	int decode(uint8_t *src)
-	{
-		int top = src[0];
-		int bottom = src[1];
-
-		int neg = top > 1;
-		top -= neg * 2;
-
-		int value = ((top & 0x7F) << 8) | bottom;
-		if (neg)
-			value *= -1;
-
-		return value;
+		int sign = val < 0;
+		val *= sign ? -1 : 1;
+		dest[0] |= (val >> 8) + sign * 2 << (2 * idx);
+		dest[idx + 1] = val & 0xFF;
 	}
 
 	void topic_callback(const interfaces::msg::Motion &message)
 	{
-		uint8_t buff[8];
+		uint8_t buff[5];
 
-		encode(buff, message.x_cmd);
-		encode(buff + 2, message.y_cmd);
-		encode(buff + 4, message.yaw);
-		encode(buff + 6, message.depth);
+		encode(buff, 0, message.x_cmd);
+		encode(buff, 1, message.y_cmd);
+		encode(buff, 2, message.yaw);
+		encode(buff, 3, message.depth);
 
-		RCLCPP_INFO(this->get_logger(), "Sending \"%s\"", buff);
+		RCLCPP_INFO(this->get_logger(), "Sending motion commands");
 		asio::write(port_, asio::buffer(buff));
 	}
 

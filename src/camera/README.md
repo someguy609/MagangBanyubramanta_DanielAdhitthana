@@ -8,3 +8,4 @@
 - [x] Fix values
 - [x] Fine tune detection
 - [x] Fine tune detection again
+- [ ] Add camera calibration ?

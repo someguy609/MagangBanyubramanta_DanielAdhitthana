@@ -5,4 +5,3 @@ uint8 BLUE = 3
 uint8 type
 int32 x
 int32 y
-int32 angle

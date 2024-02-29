@@ -29,4 +29,9 @@ COLCON_IGNORE
 AMENT_IGNORE
 
 # VSCode
-**/.vscode/
+.vscode
+
+# ROS 2
+**/build/
+**/install/
+**/log/

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces
 
 # Utility rule file for ament_cmake_python_build_interfaces_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_interfaces_egg:
-	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/ament_cmake_python/interfaces && /usr/bin/python3 setup.py egg_info
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/ament_cmake_python/interfaces && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_interfaces_egg: CMakeFiles/ament_cmake_python_build_interfaces_egg
 ament_cmake_python_build_interfaces_egg: CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/depend:
-	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_interfaces_egg.dir/depend
 

@@ -49,9 +49,9 @@ static bool _Object__cdr_serialize(
     return false;
   }
   const _Object__ros_msg_type * ros_message = static_cast<const _Object__ros_msg_type *>(untyped_ros_message);
-  // Field name: color
+  // Field name: type
   {
-    cdr << ros_message->color;
+    cdr << ros_message->type;
   }
 
   // Field name: x
@@ -81,9 +81,9 @@ static bool _Object__cdr_deserialize(
     return false;
   }
   _Object__ros_msg_type * ros_message = static_cast<_Object__ros_msg_type *>(untyped_ros_message);
-  // Field name: color
+  // Field name: type
   {
-    cdr >> ros_message->color;
+    cdr >> ros_message->type;
   }
 
   // Field name: x
@@ -118,9 +118,9 @@ size_t get_serialized_size_interfaces__msg__Object(
   (void)padding;
   (void)wchar_size;
 
-  // field.name color
+  // field.name type
   {
-    size_t item_size = sizeof(ros_message->color);
+    size_t item_size = sizeof(ros_message->type);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -171,7 +171,7 @@ size_t max_serialized_size_interfaces__msg__Object(
   full_bounded = true;
   is_plain = true;
 
-  // member: color
+  // member: type
   {
     size_t array_size = 1;
 

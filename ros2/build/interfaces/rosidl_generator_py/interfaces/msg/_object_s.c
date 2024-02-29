@@ -50,13 +50,13 @@ bool interfaces__msg__object__convert_from_py(PyObject * _pymsg, void * _ros_mes
     assert(strncmp("interfaces.msg._object.Object", full_classname_dest, 29) == 0);
   }
   interfaces__msg__Object * ros_message = _ros_message;
-  {  // color
-    PyObject * field = PyObject_GetAttrString(_pymsg, "color");
+  {  // type
+    PyObject * field = PyObject_GetAttrString(_pymsg, "type");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->color = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->type = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // x
@@ -108,11 +108,11 @@ PyObject * interfaces__msg__object__convert_to_py(void * raw_ros_message)
     }
   }
   interfaces__msg__Object * ros_message = (interfaces__msg__Object *)raw_ros_message;
-  {  // color
+  {  // type
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->color);
+    field = PyLong_FromUnsignedLong(ros_message->type);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "color", field);
+      int rc = PyObject_SetAttrString(_pymessage, "type", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

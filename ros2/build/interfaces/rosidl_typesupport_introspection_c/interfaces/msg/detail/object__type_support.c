@@ -33,14 +33,14 @@ void interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_fini_fu
 
 static rosidl_typesupport_introspection_c__MessageMember interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_message_member_array[4] = {
   {
-    "color",  // name
+    "type",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces__msg__Object, color),  // bytes offset in struct
+    offsetof(interfaces__msg__Object, type),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

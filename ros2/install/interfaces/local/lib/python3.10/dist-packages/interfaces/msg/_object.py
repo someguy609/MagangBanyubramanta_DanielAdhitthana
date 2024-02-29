@@ -20,9 +20,10 @@ class Metaclass_Object(type):
     _TYPE_SUPPORT = None
 
     __constants = {
-        'RED': 0,
-        'YELLOW': 1,
-        'BLUE': 2,
+        'GATE': 0,
+        'RED': 1,
+        'YELLOW': 2,
+        'BLUE': 3,
     }
 
     @classmethod
@@ -51,10 +52,16 @@ class Metaclass_Object(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'GATE': cls.__constants['GATE'],
             'RED': cls.__constants['RED'],
             'YELLOW': cls.__constants['YELLOW'],
             'BLUE': cls.__constants['BLUE'],
         }
+
+    @property
+    def GATE(self):
+        """Message constant 'GATE'."""
+        return Metaclass_Object.__constants['GATE']
 
     @property
     def RED(self):
@@ -77,20 +84,21 @@ class Object(metaclass=Metaclass_Object):
     Message class 'Object'.
 
     Constants:
+      GATE
       RED
       YELLOW
       BLUE
     """
 
     __slots__ = [
-        '_color',
+        '_type',
         '_x',
         '_y',
         '_angle',
     ]
 
     _fields_and_field_types = {
-        'color': 'uint8',
+        'type': 'uint8',
         'x': 'int32',
         'y': 'int32',
         'angle': 'int32',
@@ -107,7 +115,7 @@ class Object(metaclass=Metaclass_Object):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.color = kwargs.get('color', int())
+        self.type = kwargs.get('type', int())
         self.x = kwargs.get('x', int())
         self.y = kwargs.get('y', int())
         self.angle = kwargs.get('angle', int())
@@ -141,7 +149,7 @@ class Object(metaclass=Metaclass_Object):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.color != other.color:
+        if self.type != other.type:
             return False
         if self.x != other.x:
             return False
@@ -156,20 +164,20 @@ class Object(metaclass=Metaclass_Object):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
-    def color(self):
-        """Message field 'color'."""
-        return self._color
+    @builtins.property  # noqa: A003
+    def type(self):  # noqa: A003
+        """Message field 'type'."""
+        return self._type
 
-    @color.setter
-    def color(self, value):
+    @type.setter  # noqa: A003
+    def type(self, value):  # noqa: A003
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'color' field must be of type 'int'"
+                "The 'type' field must be of type 'int'"
             assert value >= 0 and value < 256, \
-                "The 'color' field must be an unsigned integer in [0, 255]"
-        self._color = value
+                "The 'type' field must be an unsigned integer in [0, 255]"
+        self._type = value
 
     @builtins.property
     def x(self):

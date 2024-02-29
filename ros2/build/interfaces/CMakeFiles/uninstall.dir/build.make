@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces
+CMAKE_SOURCE_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces
+CMAKE_BINARY_DIR = /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

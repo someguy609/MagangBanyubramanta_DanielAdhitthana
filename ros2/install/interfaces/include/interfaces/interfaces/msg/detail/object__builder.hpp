@@ -69,15 +69,15 @@ private:
   ::interfaces::msg::Object msg_;
 };
 
-class Init_Object_color
+class Init_Object_type
 {
 public:
-  Init_Object_color()
+  Init_Object_type()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Object_x color(::interfaces::msg::Object::_color_type arg)
+  Init_Object_x type(::interfaces::msg::Object::_type_type arg)
   {
-    msg_.color = std::move(arg);
+    msg_.type = std::move(arg);
     return Init_Object_x(msg_);
   }
 
@@ -96,7 +96,7 @@ template<>
 inline
 auto build<::interfaces::msg::Object>()
 {
-  return interfaces::msg::builder::Init_Object_color();
+  return interfaces::msg::builder::Init_Object_type();
 }
 
 }  // namespace interfaces

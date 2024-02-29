@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/node.dir/src/node.cpp.o: undefined reference to symbol '_ZN3fmt2v87vformatB5cxx11ENS0_17basic_string_viewIcEENS0_17basic_format_argsINS0_20basic_format_contextINS0_8appenderEcEEEE'
-/usr/bin/ld: /lib/x86_64-linux-gnu/libfmt.so.8: error adding symbols: DSO missing from command line
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/node.dir/build.make:174: node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

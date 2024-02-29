@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -59,6 +61,7 @@ class Gate(metaclass=Metaclass_Gate):
         '_y',
         '_w',
         '_h',
+        '_conf',
     ]
 
     _fields_and_field_types = {
@@ -66,6 +69,7 @@ class Gate(metaclass=Metaclass_Gate):
         'y': 'int32',
         'w': 'int32',
         'h': 'int32',
+        'conf': 'float',
     }
 
     SLOT_TYPES = (
@@ -73,6 +77,7 @@ class Gate(metaclass=Metaclass_Gate):
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -83,6 +88,7 @@ class Gate(metaclass=Metaclass_Gate):
         self.y = kwargs.get('y', int())
         self.w = kwargs.get('w', int())
         self.h = kwargs.get('h', int())
+        self.conf = kwargs.get('conf', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -120,6 +126,8 @@ class Gate(metaclass=Metaclass_Gate):
         if self.w != other.w:
             return False
         if self.h != other.h:
+            return False
+        if self.conf != other.conf:
             return False
         return True
 
@@ -187,3 +195,18 @@ class Gate(metaclass=Metaclass_Gate):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'h' field must be an integer in [-2147483648, 2147483647]"
         self._h = value
+
+    @builtins.property
+    def conf(self):
+        """Message field 'conf'."""
+        return self._conf
+
+    @conf.setter
+    def conf(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'conf' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'conf' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._conf = value

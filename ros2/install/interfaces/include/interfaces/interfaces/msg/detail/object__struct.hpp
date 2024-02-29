@@ -38,7 +38,7 @@ struct Object_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->color = 0;
+      this->type = 0;
       this->x = 0l;
       this->y = 0l;
       this->angle = 0l;
@@ -51,7 +51,7 @@ struct Object_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->color = 0;
+      this->type = 0;
       this->x = 0l;
       this->y = 0l;
       this->angle = 0l;
@@ -59,9 +59,9 @@ struct Object_
   }
 
   // field types and members
-  using _color_type =
+  using _type_type =
     uint8_t;
-  _color_type color;
+  _type_type type;
   using _x_type =
     int32_t;
   _x_type x;
@@ -73,10 +73,10 @@ struct Object_
   _angle_type angle;
 
   // setters for named parameter idiom
-  Type & set__color(
+  Type & set__type(
     const uint8_t & _arg)
   {
-    this->color = _arg;
+    this->type = _arg;
     return *this;
   }
   Type & set__x(
@@ -99,12 +99,14 @@ struct Object_
   }
 
   // constant declarations
-  static constexpr uint8_t RED =
+  static constexpr uint8_t GATE =
     0u;
-  static constexpr uint8_t YELLOW =
+  static constexpr uint8_t RED =
     1u;
-  static constexpr uint8_t BLUE =
+  static constexpr uint8_t YELLOW =
     2u;
+  static constexpr uint8_t BLUE =
+    3u;
 
   // pointer types
   using RawPtr =
@@ -146,7 +148,7 @@ struct Object_
   // comparison operators
   bool operator==(const Object_ & other) const
   {
-    if (this->color != other.color) {
+    if (this->type != other.type) {
       return false;
     }
     if (this->x != other.x) {
@@ -171,6 +173,11 @@ using Object =
   interfaces::msg::Object_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t Object_<ContainerAllocator>::GATE;
+#endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>

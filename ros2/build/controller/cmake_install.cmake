@@ -1,8 +1,8 @@
-# Install script for directory: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller
+# Install script for directory: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/controller")
+  set(CMAKE_INSTALL_PREFIX "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/install/controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/controller/node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/controller" TYPE EXECUTABLE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/controller" TYPE EXECUTABLE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/controller/node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/controller/node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/controller/node"
-         OLD_RPATH "/opt/ros/humble/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/install/interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/controller/node")
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller/environment" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_index/share/ament_index/resource_index/packages/controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_index/share/ament_index/resource_index/packages/controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller/cmake" TYPE FILE FILES
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_core/controllerConfig.cmake"
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/ament_cmake_core/controllerConfig-version.cmake"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_core/controllerConfig.cmake"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/ament_cmake_core/controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/src/controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/controller" TYPE FILE FILES "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/controller/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/controller/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,8 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000361] (-) JobUnselected: {'identifier': 'camera'}
-[0.000444] (-) JobUnselected: {'identifier': 'controller'}
-[0.000504] (-) JobUnselected: {'identifier': 'interfaces'}
-[0.000563] (yolo) JobQueued: {'identifier': 'yolo', 'dependencies': OrderedDict([('interfaces', '/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces')])}
-[0.000634] (yolo) JobStarted: {'identifier': 'yolo'}
-[0.079352] (yolo) JobEnded: {'identifier': 'yolo', 'rc': 0}
-[0.082229] (-) EventReactorShutdown: {}

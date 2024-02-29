@@ -1,15 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interfaces__cpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/gate__builder.hpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/gate__struct.hpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/gate__traits.hpp"
   "rosidl_generator_cpp/interfaces/msg/detail/motion__builder.hpp"
   "rosidl_generator_cpp/interfaces/msg/detail/motion__struct.hpp"
   "rosidl_generator_cpp/interfaces/msg/detail/motion__traits.hpp"
   "rosidl_generator_cpp/interfaces/msg/detail/object__builder.hpp"
   "rosidl_generator_cpp/interfaces/msg/detail/object__struct.hpp"
   "rosidl_generator_cpp/interfaces/msg/detail/object__traits.hpp"
-  "rosidl_generator_cpp/interfaces/msg/gate.hpp"
   "rosidl_generator_cpp/interfaces/msg/motion.hpp"
   "rosidl_generator_cpp/interfaces/msg/object.hpp"
 )

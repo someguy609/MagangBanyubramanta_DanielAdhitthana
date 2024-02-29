@@ -1,8 +1,8 @@
-# Install script for directory: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/interfaces__py
+# Install script for directory: /home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/install/interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/install/interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

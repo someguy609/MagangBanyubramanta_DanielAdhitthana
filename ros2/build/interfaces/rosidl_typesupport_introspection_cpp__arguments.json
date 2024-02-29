@@ -1,11 +1,10 @@
 {
   "package_name": "interfaces",
-  "output_dir": "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_typesupport_introspection_cpp/interfaces",
+  "output_dir": "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/rosidl_typesupport_introspection_cpp/interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_adapter/interfaces:msg/Motion.idl",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_adapter/interfaces:msg/Object.idl",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_adapter/interfaces:msg/Gate.idl"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/rosidl_adapter/interfaces:msg/Motion.idl",
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/rosidl_adapter/interfaces:msg/Object.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
@@ -16,8 +15,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_adapter/interfaces/msg/Motion.idl",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_adapter/interfaces/msg/Object.idl",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/build/interfaces/rosidl_adapter/interfaces/msg/Gate.idl"
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/rosidl_adapter/interfaces/msg/Motion.idl",
+    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/build/interfaces/rosidl_adapter/interfaces/msg/Object.idl"
   ]
 }

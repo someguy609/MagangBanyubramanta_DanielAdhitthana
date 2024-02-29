@@ -32,8 +32,8 @@ cdr_serialize(
   const interfaces::msg::Object & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: color
-  cdr << ros_message.color;
+  // Member: type
+  cdr << ros_message.type;
   // Member: x
   cdr << ros_message.x;
   // Member: y
@@ -49,8 +49,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   interfaces::msg::Object & ros_message)
 {
-  // Member: color
-  cdr >> ros_message.color;
+  // Member: type
+  cdr >> ros_message.type;
 
   // Member: x
   cdr >> ros_message.x;
@@ -77,9 +77,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: color
+  // Member: type
   {
-    size_t item_size = sizeof(ros_message.color);
+    size_t item_size = sizeof(ros_message.type);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -125,7 +125,7 @@ max_serialized_size_Object(
   is_plain = true;
 
 
-  // Member: color
+  // Member: type
   {
     size_t array_size = 1;
 

@@ -11,7 +11,7 @@
 #include "sensor_msgs/msg/image.hpp"
 #include "interfaces/msg/object.hpp"
 
-// #define DEBUG
+#define DEBUG
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -29,12 +29,18 @@ public:
 #ifdef DEBUG
         cv::namedWindow("values");
         cv::createTrackbar("hue thresh", "values", &hue_thresh, 90);
-        cv::createTrackbar("min sat", "values", &min_sat, 255);
-        cv::createTrackbar("min val", "values", &min_val, 255);
+        cv::createTrackbar("sat thresh", "values", &sat_thresh, 255);
+        cv::createTrackbar("val thresh", "values", &val_thresh, 255);
         cv::createTrackbar("min area", "values", &min_area, 10000);
         cv::createTrackbar("red hue", "values", &red_hue, 179);
+        cv::createTrackbar("red sat", "values", &red_sat, 255);
+        cv::createTrackbar("red val", "values", &red_val, 255);
         cv::createTrackbar("yellow hue", "values", &yellow_hue, 179);
+        cv::createTrackbar("red sat", "values", &yellow_sat, 255);
+        cv::createTrackbar("yellow val", "values", &yellow_val, 255);
         cv::createTrackbar("blue hue", "values", &blue_hue, 179);
+        cv::createTrackbar("red sat", "values", &blue_sat, 255);
+        cv::createTrackbar("blueval", "values", &blue_val, 255);
 #endif
 
         if (!cap_.isOpened())
@@ -66,16 +72,37 @@ private:
         cv::morphologyEx(frame, frame, cv::MORPH_CLOSE, kernel);
     }
 
-    void embed_msg(cv::Moments &moment, const int color)
+    cv::Point find_center(cv::Mat &frame)
     {
-        if (moment.m00 < min_area)
-            return;
+        std::vector<std::vector<cv::Point>> contours;
+        std::vector<cv::Vec4i> hierarchy;
+        cv::Point center_point;
+        findContours(frame, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+        for (size_t i = 0; i < contours.size(); ++i)
+        {
+            if (cv::contourArea(contours[i]) < min_area)
+                continue;
+            cv::Rect boundRect = boundingRect(contours[i]);
+            center_point.x = boundRect.x + boundRect.width / 2;
+            center_point.y = boundRect.y + boundRect.height / 2;
+
+#ifdef DEBUG
+            cv::rectangle(frame, boundRect, cv::Scalar(255, 0, 255));
+#endif
+        }
+
+        return center_point;
+    }
+
+    void embed_msg(cv::Mat &frame, const int color)
+    {
+        cv::Point center = find_center(frame);
 
         auto message = interfaces::msg::Object();
-        message.color = color;
-        message.x = moment.m10 / moment.m00 - cap_.get(cv::CAP_PROP_FRAME_WIDTH) / 2;
-        message.y = moment.m01 / moment.m00 - cap_.get(cv::CAP_PROP_FRAME_HEIGHT) / 2;
-        message.angle = message.x; // ??
+        message.type = color;
+        message.x = center.x;
+        message.y = center.y;
 
         object_publisher_->publish(message);
     }
@@ -102,10 +129,10 @@ private:
         }
 
         cv::Mat red_lower, red_upper, red, yellow, blue;
-        cv::inRange(hsv_frame, cv::Scalar(red_hue - hue_thresh, min_sat, min_val), cv::Scalar(red_hue + hue_thresh, 255, 255), red_lower);
-        cv::inRange(hsv_frame, cv::Scalar(180 - red_hue - hue_thresh, min_sat, min_val), cv::Scalar(180 - red_hue + hue_thresh, 255, 255), red_upper);
-        cv::inRange(hsv_frame, cv::Scalar(yellow_hue - hue_thresh, min_sat, min_val), cv::Scalar(yellow_hue + hue_thresh, 255, 255), yellow);
-        cv::inRange(hsv_frame, cv::Scalar(blue_hue - hue_thresh, min_sat, min_val), cv::Scalar(blue_hue + hue_thresh, 255, 255), blue);
+        cv::inRange(hsv_frame, cv::Scalar(red_hue - hue_thresh, red_sat, red_val), cv::Scalar(red_hue + hue_thresh, 255, 255), red_lower);
+        cv::inRange(hsv_frame, cv::Scalar(180 - red_hue - hue_thresh, red_sat, red_val), cv::Scalar(180 - red_hue + hue_thresh, 255, 255), red_upper);
+        cv::inRange(hsv_frame, cv::Scalar(yellow_hue - hue_thresh, yellow_sat, yellow_val), cv::Scalar(yellow_hue + hue_thresh, 255, 255), yellow);
+        cv::inRange(hsv_frame, cv::Scalar(blue_hue - hue_thresh, blue_sat, blue_val), cv::Scalar(blue_hue + hue_thresh, 255, 255), blue);
 
         cv::bitwise_or(red_lower, red_upper, red);
 
@@ -113,13 +140,9 @@ private:
         this->morph(yellow);
         this->morph(blue);
 
-        cv::Moments red_moments = cv::moments(red),
-                    yellow_moments = cv::moments(yellow),
-                    blue_moments = cv::moments(blue);
-
-        this->embed_msg(red_moments, interfaces::msg::Object::RED);
-        this->embed_msg(yellow_moments, interfaces::msg::Object::YELLOW);
-        this->embed_msg(blue_moments, interfaces::msg::Object::BLUE);
+        this->embed_msg(red, interfaces::msg::Object::RED);
+        this->embed_msg(yellow, interfaces::msg::Object::YELLOW);
+        this->embed_msg(blue, interfaces::msg::Object::BLUE);
 
 #ifdef DEBUG
         cv::imshow("red", red);
@@ -135,8 +158,10 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     cv::VideoCapture cap_;
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
-    int red_hue = 0, yellow_hue = 30, blue_hue = 120,
-        hue_thresh = 10, min_sat = 150, min_val = 50, min_area = 10000;
+    int red_hue = 0, yellow_hue = 30, blue_hue = 120, hue_thresh = 10,
+        red_sat = 150, yellow_sat = 150, blue_sat = 150, sat_thresh = 10,
+        red_val = 50, yellow_val = 50, blue_val = 50, val_thresh = 10,
+        min_area = 10000;
     unsigned long long int frame_id = 0;
 };
 

@@ -1,7 +1,0 @@
-{
-  "package_name": "interfaces",
-  "non_idl_tuples": [
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces:msg/Motion.msg",
-    "/home/donjoe/Documents/MagangBanyubramanta_DanielAdhitthana/ros2/src/interfaces:msg/Object.msg"
-  ]
-}

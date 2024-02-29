@@ -60,11 +60,11 @@ public:
 private:
 	void topic_callback(const sensor_msgs::msg::Joy &msg)
 	{
-		yaw += ((msg.axes[LR_RIGHT] < 0) - (msg.axes[LR_RIGHT] > 0) * SPEED);
+		yaw += ((msg.axes[LR_RIGHT] < 0) - (msg.axes[LR_RIGHT] > 0)) * SPEED;
 		yaw += (yaw > 180 ? -360 : yaw < -180 ? 360
 											  : 0);
 
-		depth += ((msg.axes[UD_RIGHT] < 0) - (msg.axes[UD_RIGHT] > 0) * SPEED);
+		depth += ((msg.axes[UD_RIGHT] < 0) - (msg.axes[UD_RIGHT] > 0)) * SPEED;
 		depth = MIN(MAX(depth, 0), 100);
 
 		auto data = interfaces::msg::Motion();
@@ -75,6 +75,7 @@ private:
 
 		publisher_->publish(data);
 	}
+
 	rclcpp::Publisher<interfaces::msg::Motion>::SharedPtr publisher_;
 	rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscriber_;
 	int yaw = 0, depth = 0;

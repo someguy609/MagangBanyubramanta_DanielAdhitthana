@@ -36,15 +36,12 @@ public:
         cv::createTrackbar("red sat", "values", &red_sat, 255);
         cv::createTrackbar("red val", "values", &red_val, 255);
         cv::createTrackbar("yellow hue", "values", &yellow_hue, 179);
-        cv::createTrackbar("red sat", "values", &yellow_sat, 255);
+        cv::createTrackbar("yellow sat", "values", &yellow_sat, 255);
         cv::createTrackbar("yellow val", "values", &yellow_val, 255);
         cv::createTrackbar("blue hue", "values", &blue_hue, 179);
-        cv::createTrackbar("red sat", "values", &blue_sat, 255);
-        cv::createTrackbar("blueval", "values", &blue_val, 255);
+        cv::createTrackbar("blue sat", "values", &blue_sat, 255);
+        cv::createTrackbar("blue val", "values", &blue_val, 255);
 #endif
-
-        if (!cap_.isOpened())
-            RCLCPP_ERROR(this->get_logger(), "Failed to open video capture");
     }
 
     ~Camera()
@@ -79,16 +76,17 @@ private:
         cv::Point center_point;
         findContours(frame, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-        for (size_t i = 0; i < contours.size(); ++i)
+        for (size_t i = 0; i < contours.size(); i++)
         {
             if (cv::contourArea(contours[i]) < min_area)
                 continue;
-            cv::Rect boundRect = boundingRect(contours[i]);
-            center_point.x = boundRect.x + boundRect.width / 2;
-            center_point.y = boundRect.y + boundRect.height / 2;
+
+            cv::Rect bbox = boundingRect(contours[i]);
+            center_point.x = bbox.x + bbox.width / 2;
+            center_point.y = bbox.y + bbox.height / 2;
 
 #ifdef DEBUG
-            cv::rectangle(frame, boundRect, cv::Scalar(255, 0, 255));
+            cv::rectangle(frame, bbox, cv::Scalar(255, 255, 255));
 #endif
         }
 
@@ -109,6 +107,12 @@ private:
 
     void timer_callback()
     {
+        if (!cap_.isOpened())
+        {
+            RCLCPP_ERROR(this->get_logger(), "Failed to open video capture");
+            return;
+        }
+
         cv::Mat frame;
 
         if (!cap_.read(frame))

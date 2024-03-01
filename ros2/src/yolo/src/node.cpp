@@ -9,7 +9,7 @@
 #include "cv_bridge/cv_bridge.h"
 #include "sensor_msgs/msg/image.hpp"
 #include "opencv2/opencv.hpp"
-#include "interfaces/msg/gate.hpp"
+#include "interfaces/msg/object.hpp"
 #include "openvino/openvino.hpp"
 
 using namespace std::chrono_literals;
@@ -30,12 +30,12 @@ class YOLO : public rclcpp::Node
 public:
 	YOLO() : Node("YOLO")
 	{
-		publisher_ = this->create_publisher<interfaces::msg::Gate>("detected_object", 10);
+		publisher_ = this->create_publisher<interfaces::msg::Object>("detected_object", 10);
 		cap_ = this->create_subscription<sensor_msgs::msg::Image>("capture", 10, std::bind(&YOLO::topic_callback, this, _1));
 
 		// net_ = cv::dnn::readNet("src/yolo/src/best.onnx");
 		ov::Core core;
-		std::shared_ptr<ov::Model> net = core.read_model("src/yolo/src/best.onnx");
+		std::shared_ptr<ov::Model> net = core.read_model("src/yolo/src/models/v5sb15e10.onnx");
 		ov::preprocess::PrePostProcessor ppp = ov::preprocess::PrePostProcessor(net);
 		ppp.input().tensor().set_element_type(ov::element::u8).set_layout("NHWC").set_color_format(ov::preprocess::ColorFormat::RGB);
 		ppp.input().preprocess().convert_element_type(ov::element::f32).convert_color(ov::preprocess::ColorFormat::RGB).scale({255, 255, 255}); // .scale({ 112, 112, 112 });
@@ -134,12 +134,13 @@ private:
 		for (long unsigned int i = 0; i < indices.size(); i++)
 		{
 			int idx = indices[i];
-			auto message = interfaces::msg::Gate();
+			auto message = interfaces::msg::Object();
 
+			message.type = interfaces::msg::Object::GATE;
 			message.x = detections[idx].x;
 			message.y = detections[idx].y;
-			message.w = detections[idx].w;
-			message.h = detections[idx].h;
+			// message.w = detections[idx].w;
+			// message.h = detections[idx].h;
 
 			publisher_->publish(message);
 
@@ -178,7 +179,7 @@ private:
 #endif
 	}
 
-	rclcpp::Publisher<interfaces::msg::Gate>::SharedPtr publisher_;
+	rclcpp::Publisher<interfaces::msg::Object>::SharedPtr publisher_;
 	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr cap_;
 	// cv::dnn::Net net_;
 	ov::CompiledModel compiled_net_;
@@ -187,7 +188,7 @@ private:
 	int score_thresh = 20,
 		conf_thresh = 40, nms_thresh = 40;
 	float x_fact, y_fact;
-	const std::vector<std::string> class_names = {"mouse"};
+	const std::vector<std::string> class_names = {"flare", "gate"};
 };
 
 int main(int argc, char **argv)

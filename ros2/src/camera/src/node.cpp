@@ -69,12 +69,12 @@ private:
         cv::morphologyEx(frame, frame, cv::MORPH_CLOSE, kernel);
     }
 
-    cv::Point find_center(cv::Mat &frame)
+    cv::Point find_center(cv::Mat &binary, cv::Mat &original, cv::Scalar color = cv::Scalar(255, 255, 255))
     {
         std::vector<std::vector<cv::Point>> contours;
         std::vector<cv::Vec4i> hierarchy;
         cv::Point center_point;
-        findContours(frame, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+        findContours(binary, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
         for (size_t i = 0; i < contours.size(); i++)
         {
@@ -86,16 +86,19 @@ private:
             center_point.y = bbox.y + bbox.height / 2;
 
 #ifdef DEBUG
-            cv::rectangle(frame, bbox, cv::Scalar(255, 255, 255));
+            cv::rectangle(original, bbox, color);
 #endif
         }
 
         return center_point;
     }
 
-    void embed_msg(cv::Mat &frame, const int color)
+    void embed_msg(cv::Mat &frame, cv::Mat &original, const int color)
     {
-        cv::Point center = find_center(frame);
+        int red = color == interfaces::msg::Object::RED;
+        int yellow = color == interfaces::msg::Object::YELLOW;
+        int blue = color == interfaces::msg::Object::BLUE;
+        cv::Point center = find_center(frame, original, 255 * cv::Scalar(blue, yellow, red || yellow));
 
         auto message = interfaces::msg::Object();
         message.type = color;
@@ -144,14 +147,15 @@ private:
         this->morph(yellow);
         this->morph(blue);
 
-        this->embed_msg(red, interfaces::msg::Object::RED);
-        this->embed_msg(yellow, interfaces::msg::Object::YELLOW);
-        this->embed_msg(blue, interfaces::msg::Object::BLUE);
+        this->embed_msg(red, frame, interfaces::msg::Object::RED);
+        this->embed_msg(yellow, frame, interfaces::msg::Object::YELLOW);
+        this->embed_msg(blue, frame, interfaces::msg::Object::BLUE);
 
 #ifdef DEBUG
         cv::imshow("red", red);
         cv::imshow("yellow", yellow);
         cv::imshow("blue", blue);
+        cv::imshow("frame", frame);
 #endif
 
         cv::waitKey(1);

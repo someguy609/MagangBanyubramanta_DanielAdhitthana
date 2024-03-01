@@ -78,8 +78,8 @@ private:
 		depth = MIN(MAX(depth, 0), 100);
 
 		auto data = interfaces::msg::Motion();
-		data.x_cmd = msg.axes[LR_LEFT] * -MAX_VALUE;
-		data.y_cmd = msg.axes[UD_LEFT] * MAX_VALUE;
+		data.x_cmd = msg.axes[LR_LEFT] * -MAX_VALUE * movement_speed;
+		data.y_cmd = msg.axes[UD_LEFT] * MAX_VALUE * movement_speed;
 		data.yaw = yaw;
 		data.depth = depth;
 

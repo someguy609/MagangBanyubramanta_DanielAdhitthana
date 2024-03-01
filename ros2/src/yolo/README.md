@@ -3,8 +3,8 @@
 ## TODO
 - [x] Fix segmentation fault
 - [x] Fix detection
-- [ ] Fix debugger
-- [ ] Change model to gate detector
+- [x] Fix debugger
+- [x] Change model to gate detector
 - [ ] Fine tune detection
 - [x] Clean code
-- [ ] Change model backend
+- [x] Change model backend

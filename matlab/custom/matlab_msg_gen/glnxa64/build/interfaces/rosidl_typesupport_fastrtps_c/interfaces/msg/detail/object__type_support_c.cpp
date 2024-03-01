@@ -49,9 +49,9 @@ static bool _Object__cdr_serialize(
     return false;
   }
   const _Object__ros_msg_type * ros_message = static_cast<const _Object__ros_msg_type *>(untyped_ros_message);
-  // Field name: color
+  // Field name: type
   {
-    cdr << ros_message->color;
+    cdr << ros_message->type;
   }
 
   // Field name: x
@@ -62,11 +62,6 @@ static bool _Object__cdr_serialize(
   // Field name: y
   {
     cdr << ros_message->y;
-  }
-
-  // Field name: angle
-  {
-    cdr << ros_message->angle;
   }
 
   return true;
@@ -81,9 +76,9 @@ static bool _Object__cdr_deserialize(
     return false;
   }
   _Object__ros_msg_type * ros_message = static_cast<_Object__ros_msg_type *>(untyped_ros_message);
-  // Field name: color
+  // Field name: type
   {
-    cdr >> ros_message->color;
+    cdr >> ros_message->type;
   }
 
   // Field name: x
@@ -94,11 +89,6 @@ static bool _Object__cdr_deserialize(
   // Field name: y
   {
     cdr >> ros_message->y;
-  }
-
-  // Field name: angle
-  {
-    cdr >> ros_message->angle;
   }
 
   return true;
@@ -118,9 +108,9 @@ size_t get_serialized_size_interfaces__msg__Object(
   (void)padding;
   (void)wchar_size;
 
-  // field.name color
+  // field.name type
   {
-    size_t item_size = sizeof(ros_message->color);
+    size_t item_size = sizeof(ros_message->type);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -133,12 +123,6 @@ size_t get_serialized_size_interfaces__msg__Object(
   // field.name y
   {
     size_t item_size = sizeof(ros_message->y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name angle
-  {
-    size_t item_size = sizeof(ros_message->angle);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -169,7 +153,7 @@ size_t max_serialized_size_interfaces__msg__Object(
   full_bounded = true;
   is_plain = true;
 
-  // member: color
+  // member: type
   {
     size_t array_size = 1;
 
@@ -183,13 +167,6 @@ size_t max_serialized_size_interfaces__msg__Object(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: y
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: angle
   {
     size_t array_size = 1;
 

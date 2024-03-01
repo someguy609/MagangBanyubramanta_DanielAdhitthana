@@ -21,32 +21,16 @@ namespace msg
 namespace builder
 {
 
-class Init_Object_angle
-{
-public:
-  explicit Init_Object_angle(::interfaces::msg::Object & msg)
-  : msg_(msg)
-  {}
-  ::interfaces::msg::Object angle(::interfaces::msg::Object::_angle_type arg)
-  {
-    msg_.angle = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::interfaces::msg::Object msg_;
-};
-
 class Init_Object_y
 {
 public:
   explicit Init_Object_y(::interfaces::msg::Object & msg)
   : msg_(msg)
   {}
-  Init_Object_angle y(::interfaces::msg::Object::_y_type arg)
+  ::interfaces::msg::Object y(::interfaces::msg::Object::_y_type arg)
   {
     msg_.y = std::move(arg);
-    return Init_Object_angle(msg_);
+    return std::move(msg_);
   }
 
 private:
@@ -69,15 +53,15 @@ private:
   ::interfaces::msg::Object msg_;
 };
 
-class Init_Object_color
+class Init_Object_type
 {
 public:
-  Init_Object_color()
+  Init_Object_type()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Object_x color(::interfaces::msg::Object::_color_type arg)
+  Init_Object_x type(::interfaces::msg::Object::_type_type arg)
   {
-    msg_.color = std::move(arg);
+    msg_.type = std::move(arg);
     return Init_Object_x(msg_);
   }
 
@@ -96,7 +80,7 @@ template<>
 inline
 auto build<::interfaces::msg::Object>()
 {
-  return interfaces::msg::builder::Init_Object_color();
+  return interfaces::msg::builder::Init_Object_type();
 }
 
 }  // namespace interfaces

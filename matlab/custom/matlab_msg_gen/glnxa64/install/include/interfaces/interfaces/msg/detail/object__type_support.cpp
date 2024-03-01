@@ -37,16 +37,16 @@ void Object_fini_function(void * message_memory)
   typed_message->~Object();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Object_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Object_message_member_array[3] = {
   {
-    "color",  // name
+    "type",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces::msg::Object, color),  // bytes offset in struct
+    offsetof(interfaces::msg::Object, type),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -88,30 +88,13 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Object_messag
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
-  },
-  {
-    "angle",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(interfaces::msg::Object, angle),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Object_message_members = {
   "interfaces::msg",  // message namespace
   "Object",  // message name
-  4,  // number of fields
+  3,  // number of fields
   sizeof(interfaces::msg::Object),
   Object_message_member_array,  // message members
   Object_init_function,  // function to initialize message memory (memory has to be allocated)

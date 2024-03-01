@@ -31,16 +31,16 @@ void interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_fini_fu
   interfaces__msg__Object__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_message_member_array[3] = {
   {
-    "color",  // name
+    "type",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(interfaces__msg__Object, color),  // bytes offset in struct
+    offsetof(interfaces__msg__Object, type),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -82,30 +82,13 @@ static rosidl_typesupport_introspection_c__MessageMember interfaces__msg__Object
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
-  },
-  {
-    "angle",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(interfaces__msg__Object, angle),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_message_members = {
   "interfaces__msg",  // message namespace
   "Object",  // message name
-  4,  // number of fields
+  3,  // number of fields
   sizeof(interfaces__msg__Object),
   interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_message_member_array,  // message members
   interfaces__msg__Object__rosidl_typesupport_introspection_c__Object_init_function,  // function to initialize message memory (memory has to be allocated)

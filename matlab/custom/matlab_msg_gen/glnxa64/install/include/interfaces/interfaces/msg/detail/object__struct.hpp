@@ -38,10 +38,9 @@ struct Object_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->color = 0;
+      this->type = 0;
       this->x = 0l;
       this->y = 0l;
-      this->angle = 0l;
     }
   }
 
@@ -51,32 +50,28 @@ struct Object_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->color = 0;
+      this->type = 0;
       this->x = 0l;
       this->y = 0l;
-      this->angle = 0l;
     }
   }
 
   // field types and members
-  using _color_type =
+  using _type_type =
     uint8_t;
-  _color_type color;
+  _type_type type;
   using _x_type =
     int32_t;
   _x_type x;
   using _y_type =
     int32_t;
   _y_type y;
-  using _angle_type =
-    int32_t;
-  _angle_type angle;
 
   // setters for named parameter idiom
-  Type & set__color(
+  Type & set__type(
     const uint8_t & _arg)
   {
-    this->color = _arg;
+    this->type = _arg;
     return *this;
   }
   Type & set__x(
@@ -91,20 +86,16 @@ struct Object_
     this->y = _arg;
     return *this;
   }
-  Type & set__angle(
-    const int32_t & _arg)
-  {
-    this->angle = _arg;
-    return *this;
-  }
 
   // constant declarations
-  static constexpr uint8_t RED =
+  static constexpr uint8_t GATE =
     0u;
-  static constexpr uint8_t YELLOW =
+  static constexpr uint8_t RED =
     1u;
-  static constexpr uint8_t BLUE =
+  static constexpr uint8_t YELLOW =
     2u;
+  static constexpr uint8_t BLUE =
+    3u;
 
   // pointer types
   using RawPtr =
@@ -146,16 +137,13 @@ struct Object_
   // comparison operators
   bool operator==(const Object_ & other) const
   {
-    if (this->color != other.color) {
+    if (this->type != other.type) {
       return false;
     }
     if (this->x != other.x) {
       return false;
     }
     if (this->y != other.y) {
-      return false;
-    }
-    if (this->angle != other.angle) {
       return false;
     }
     return true;
@@ -171,6 +159,8 @@ using Object =
   interfaces::msg::Object_<std::allocator<void>>;
 
 // constant definitions
+template<typename ContainerAllocator>
+constexpr uint8_t Object_<ContainerAllocator>::GATE;
 template<typename ContainerAllocator>
 constexpr uint8_t Object_<ContainerAllocator>::RED;
 template<typename ContainerAllocator>

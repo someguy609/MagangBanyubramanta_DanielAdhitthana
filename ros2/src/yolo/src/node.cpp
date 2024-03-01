@@ -145,15 +145,19 @@ private:
 			publisher_->publish(message);
 
 #ifdef DEBUG
-			std::string label = class_names[detections[idx].cls];
+			char label[256];
+			sprintf(label, "%s %.2f", class_names[detections[idx].cls].c_str(), confidences[idx]);
+			// std::string label = class_names[detections[idx].cls];
+			cv::Rect box = boxes[idx];
 
-			cv::Point2i top_left = boxes[idx].tl();
 			int base_line;
-			cv::Size label_size = cv::getTextSize(label, cv::FONT_HERSHEY_SIMPLEX, 0.5, 1, &base_line);
+			cv::Size label_size = cv::getTextSize(label, cv::FONT_HERSHEY_SIMPLEX, 0.7, 1.5, &base_line);
+			cv::Point top_left = box.tl();
+			cv::Point bottom_right = top_left + cv::Point(label_size.width, label_size.height + base_line);
 
-			cv::rectangle(frame, boxes[idx], cv::Scalar(0, 0, 255));
-			cv::rectangle(frame, top_left, cv::Point(label_size.width, top_left.y + base_line), cv::Scalar(0, 0, 255), -1);
-			cv::putText(frame, label, top_left, cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 255));
+			cv::rectangle(frame, box, cv::Scalar(0, 0, 255), 3);
+			cv::rectangle(frame, top_left, bottom_right, cv::Scalar(0, 0, 255), -1);
+			cv::putText(frame, label, top_left + cv::Point(0, label_size.height), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(255, 255, 255));
 			cv::resize(frame, frame, cv::Size(0, 0), x_fact, y_fact);
 #endif
 		}

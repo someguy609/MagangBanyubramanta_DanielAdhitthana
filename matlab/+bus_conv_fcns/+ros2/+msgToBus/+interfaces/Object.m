@@ -4,4 +4,6 @@ function slBusOut = Object(msgIn, slBusOut, varargin)
     slBusOut.type = uint8(msgIn.type);
     slBusOut.x = int32(msgIn.x);
     slBusOut.y = int32(msgIn.y);
+    slBusOut.w = int32(msgIn.w);
+    slBusOut.h = int32(msgIn.h);
 end

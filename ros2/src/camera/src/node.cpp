@@ -16,6 +16,11 @@
 using namespace std::chrono_literals;
 using std::placeholders::_1;
 
+struct Detection
+{
+    int x, y, w, h;
+};
+
 class Camera : public rclcpp::Node
 {
 public:
@@ -69,11 +74,16 @@ private:
         cv::morphologyEx(frame, frame, cv::MORPH_CLOSE, kernel);
     }
 
-    cv::Point find_center(cv::Mat &binary, cv::Mat &original, cv::Scalar color = cv::Scalar(255, 255, 255))
+    Detection get_box(cv::Mat &binary, cv::Mat &original, cv::Scalar color = cv::Scalar(255, 255, 255))
     {
         std::vector<std::vector<cv::Point>> contours;
         std::vector<cv::Vec4i> hierarchy;
-        cv::Point center_point;
+        Detection data;
+        data.x = 0;
+        data.y = 0;
+        data.w = 0;
+        data.h = 0;
+
         findContours(binary, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
         for (size_t i = 0; i < contours.size(); i++)
@@ -82,15 +92,19 @@ private:
                 continue;
 
             cv::Rect bbox = boundingRect(contours[i]);
-            center_point.x = bbox.x + bbox.width / 2;
-            center_point.y = bbox.y + bbox.height / 2;
+            data.x = bbox.x + bbox.width / 2;
+            data.y = bbox.y + bbox.height / 2;
+            data.w = bbox.width;
+            data.h = bbox.height;
 
 #ifdef DEBUG
             cv::rectangle(original, bbox, color);
 #endif
+
+            break;
         }
 
-        return center_point;
+        return data;
     }
 
     void embed_msg(cv::Mat &frame, cv::Mat &original, const int color)
@@ -98,12 +112,17 @@ private:
         int red = color == interfaces::msg::Object::RED;
         int yellow = color == interfaces::msg::Object::YELLOW;
         int blue = color == interfaces::msg::Object::BLUE;
-        cv::Point center = find_center(frame, original, 255 * cv::Scalar(blue, yellow, red || yellow));
+        Detection data = get_box(frame, original, 255 * cv::Scalar(blue, yellow, red || yellow));
+
+        if (data.x <= 0 || data.y <= 0)
+            return;
 
         auto message = interfaces::msg::Object();
         message.type = color;
-        message.x = center.x;
-        message.y = center.y;
+        message.x = data.x;
+        message.y = data.y;
+        message.w = data.w;
+        message.h = data.h;
 
         object_publisher_->publish(message);
     }

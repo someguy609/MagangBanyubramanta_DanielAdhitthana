@@ -20,6 +20,8 @@ interfaces__msg__Object__init(interfaces__msg__Object * msg)
   // type
   // x
   // y
+  // w
+  // h
   return true;
 }
 
@@ -32,6 +34,8 @@ interfaces__msg__Object__fini(interfaces__msg__Object * msg)
   // type
   // x
   // y
+  // w
+  // h
 }
 
 bool
@@ -52,6 +56,14 @@ interfaces__msg__Object__are_equal(const interfaces__msg__Object * lhs, const in
   if (lhs->y != rhs->y) {
     return false;
   }
+  // w
+  if (lhs->w != rhs->w) {
+    return false;
+  }
+  // h
+  if (lhs->h != rhs->h) {
+    return false;
+  }
   return true;
 }
 
@@ -69,6 +81,10 @@ interfaces__msg__Object__copy(
   output->x = input->x;
   // y
   output->y = input->y;
+  // w
+  output->w = input->w;
+  // h
+  output->h = input->h;
   return true;
 }
 

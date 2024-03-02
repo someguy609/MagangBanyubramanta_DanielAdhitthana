@@ -41,6 +41,8 @@ struct Object_
       this->type = 0;
       this->x = 0l;
       this->y = 0l;
+      this->w = 0l;
+      this->h = 0l;
     }
   }
 
@@ -53,6 +55,8 @@ struct Object_
       this->type = 0;
       this->x = 0l;
       this->y = 0l;
+      this->w = 0l;
+      this->h = 0l;
     }
   }
 
@@ -66,6 +70,12 @@ struct Object_
   using _y_type =
     int32_t;
   _y_type y;
+  using _w_type =
+    int32_t;
+  _w_type w;
+  using _h_type =
+    int32_t;
+  _h_type h;
 
   // setters for named parameter idiom
   Type & set__type(
@@ -84,6 +94,18 @@ struct Object_
     const int32_t & _arg)
   {
     this->y = _arg;
+    return *this;
+  }
+  Type & set__w(
+    const int32_t & _arg)
+  {
+    this->w = _arg;
+    return *this;
+  }
+  Type & set__h(
+    const int32_t & _arg)
+  {
+    this->h = _arg;
     return *this;
   }
 
@@ -144,6 +166,12 @@ struct Object_
       return false;
     }
     if (this->y != other.y) {
+      return false;
+    }
+    if (this->w != other.w) {
+      return false;
+    }
+    if (this->h != other.h) {
       return false;
     }
     return true;

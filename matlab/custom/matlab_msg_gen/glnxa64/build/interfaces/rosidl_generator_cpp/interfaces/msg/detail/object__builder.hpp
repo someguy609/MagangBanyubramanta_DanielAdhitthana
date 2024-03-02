@@ -21,16 +21,48 @@ namespace msg
 namespace builder
 {
 
+class Init_Object_h
+{
+public:
+  explicit Init_Object_h(::interfaces::msg::Object & msg)
+  : msg_(msg)
+  {}
+  ::interfaces::msg::Object h(::interfaces::msg::Object::_h_type arg)
+  {
+    msg_.h = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::interfaces::msg::Object msg_;
+};
+
+class Init_Object_w
+{
+public:
+  explicit Init_Object_w(::interfaces::msg::Object & msg)
+  : msg_(msg)
+  {}
+  Init_Object_h w(::interfaces::msg::Object::_w_type arg)
+  {
+    msg_.w = std::move(arg);
+    return Init_Object_h(msg_);
+  }
+
+private:
+  ::interfaces::msg::Object msg_;
+};
+
 class Init_Object_y
 {
 public:
   explicit Init_Object_y(::interfaces::msg::Object & msg)
   : msg_(msg)
   {}
-  ::interfaces::msg::Object y(::interfaces::msg::Object::_y_type arg)
+  Init_Object_w y(::interfaces::msg::Object::_y_type arg)
   {
     msg_.y = std::move(arg);
-    return std::move(msg_);
+    return Init_Object_w(msg_);
   }
 
 private:

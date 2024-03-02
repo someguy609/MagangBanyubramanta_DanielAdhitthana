@@ -47,6 +47,8 @@ typedef struct interfaces__msg__Object
   uint8_t type;
   int32_t x;
   int32_t y;
+  int32_t w;
+  int32_t h;
 } interfaces__msg__Object;
 
 // Struct for a sequence of interfaces__msg__Object.

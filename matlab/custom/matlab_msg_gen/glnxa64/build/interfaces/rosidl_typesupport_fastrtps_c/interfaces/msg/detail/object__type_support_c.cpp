@@ -64,6 +64,16 @@ static bool _Object__cdr_serialize(
     cdr << ros_message->y;
   }
 
+  // Field name: w
+  {
+    cdr << ros_message->w;
+  }
+
+  // Field name: h
+  {
+    cdr << ros_message->h;
+  }
+
   return true;
 }
 
@@ -89,6 +99,16 @@ static bool _Object__cdr_deserialize(
   // Field name: y
   {
     cdr >> ros_message->y;
+  }
+
+  // Field name: w
+  {
+    cdr >> ros_message->w;
+  }
+
+  // Field name: h
+  {
+    cdr >> ros_message->h;
   }
 
   return true;
@@ -123,6 +143,18 @@ size_t get_serialized_size_interfaces__msg__Object(
   // field.name y
   {
     size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name w
+  {
+    size_t item_size = sizeof(ros_message->w);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name h
+  {
+    size_t item_size = sizeof(ros_message->h);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -167,6 +199,20 @@ size_t max_serialized_size_interfaces__msg__Object(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: y
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: w
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: h
   {
     size_t array_size = 1;
 

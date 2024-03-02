@@ -134,20 +134,23 @@ private:
 		for (long unsigned int i = 0; i < indices.size(); i++)
 		{
 			int idx = indices[i];
-			auto message = interfaces::msg::Object();
 
-			message.type = interfaces::msg::Object::GATE;
-			message.x = detections[idx].x;
-			message.y = detections[idx].y;
-			// message.w = detections[idx].w;
-			// message.h = detections[idx].h;
+			if (class_names[detections[idx].cls] != "flare")
+			{
+				auto message = interfaces::msg::Object();
 
-			publisher_->publish(message);
+				message.type = interfaces::msg::Object::GATE;
+				message.x = detections[idx].x;
+				message.y = detections[idx].y;
+				message.w = detections[idx].w;
+				message.h = detections[idx].h;
+
+				publisher_->publish(message);
+			}
 
 #ifdef DEBUG
 			char label[256];
 			sprintf(label, "%s %.2f", class_names[detections[idx].cls].c_str(), confidences[idx]);
-			// std::string label = class_names[detections[idx].cls];
 			cv::Rect box = boxes[idx];
 
 			int base_line;

@@ -61,11 +61,29 @@ class INTERFACES_EXPORT ros2_interfaces_msg_Object_common : public MATLABROS2Msg
     } catch (matlab::Exception&) {
         throw std::invalid_argument("Field 'y' is wrong type; expected a int32.");
     }
+    try {
+        //w
+        const matlab::data::TypedArray<int32_t> w_arr = arr["w"];
+        msg->w = w_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'w' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'w' is wrong type; expected a int32.");
+    }
+    try {
+        //h
+        const matlab::data::TypedArray<int32_t> h_arr = arr["h"];
+        msg->h = h_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'h' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'h' is wrong type; expected a int32.");
+    }
   }
   //----------------------------------------------------------------------------
   MDArray_T ros2_interfaces_msg_Object_common::get_arr(MDFactory_T& factory, const interfaces::msg::Object* msg,
        MultiLibLoader loader, size_t size) {
-    auto outArray = factory.createStructArray({size,1},{"MessageType","GATE","RED","YELLOW","BLUE","type","x","y"});
+    auto outArray = factory.createStructArray({size,1},{"MessageType","GATE","RED","YELLOW","BLUE","type","x","y","w","h"});
     for(size_t ctr = 0; ctr < size; ctr++){
     outArray[ctr]["MessageType"] = factory.createCharArray("interfaces/Object");
     // GATE
@@ -89,6 +107,12 @@ class INTERFACES_EXPORT ros2_interfaces_msg_Object_common : public MATLABROS2Msg
     // y
     auto currentElement_y = (msg + ctr)->y;
     outArray[ctr]["y"] = factory.createScalar(currentElement_y);
+    // w
+    auto currentElement_w = (msg + ctr)->w;
+    outArray[ctr]["w"] = factory.createScalar(currentElement_w);
+    // h
+    auto currentElement_h = (msg + ctr)->h;
+    outArray[ctr]["h"] = factory.createScalar(currentElement_h);
     }
     return std::move(outArray);
   } 
